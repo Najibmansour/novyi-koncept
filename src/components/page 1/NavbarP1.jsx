@@ -4,7 +4,7 @@ import Logo from "../svgs/symbols/logo/Logo";
 const NavbarP1 = () => {
   return (
     <div className="navbar ">
-      <Logo className="w-20 ml-40 mt-32" />
+      <Logo className="lg:w-20 lg:ml-40 lg:mt-32 w-14 ml-10 mt-24 " />
     </div>
   );
 };
