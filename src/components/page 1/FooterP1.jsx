@@ -1,5 +1,5 @@
 import React from "react";
-import DownArrow from "../svgs/symbols/downArrow";
+import DownArrow from "../svgs/downArrow";
 
 const FooterP1 = () => {
   return (

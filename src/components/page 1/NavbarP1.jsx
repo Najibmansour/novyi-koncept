@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../svgs/symbols/logo/Logo";
+import Logo from "../svgs/logo/Logo";
 
 const NavbarP1 = () => {
   return (
