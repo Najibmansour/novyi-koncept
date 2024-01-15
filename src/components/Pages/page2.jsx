@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Laptop from "../svgs/laptop";
 import Bullet from "../svgs/bullet";
 
@@ -32,8 +32,10 @@ const descList = [
 ];
 
 const Page2 = () => {
-  const isMobile = window.innerWidth <= 768 ? true : false;
-  console.log(isMobile);
+  const [isMobile, setIsMobile] = useState();
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 768 ? true : false);
+  }, []);
 
   return (
     <div className=" flex justify-center items-center w-screen h-screen  ">
