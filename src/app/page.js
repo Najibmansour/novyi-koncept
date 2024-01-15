@@ -1,3 +1,4 @@
+// "use client";
 import Page1 from "@/components/Pages/page1";
 import Page2 from "@/components/Pages/page2";
 

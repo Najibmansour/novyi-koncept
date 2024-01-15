@@ -33,6 +33,7 @@ const descList = [
 
 const Page2 = () => {
   const isMobile = window.innerWidth <= 768 ? true : false;
+  console.log(isMobile);
 
   return (
     <div className=" flex justify-center items-center w-screen h-screen  ">
