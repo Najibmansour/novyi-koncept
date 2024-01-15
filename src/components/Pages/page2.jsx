@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Laptop from "../svgs/laptop";
 import Bullet from "../svgs/bullet";
@@ -31,24 +32,28 @@ const descList = [
 ];
 
 const Page2 = () => {
+  const isMobile = window.innerWidth <= 768 ? true : false;
+
   return (
     <div className=" flex justify-center items-center w-screen h-screen  ">
-      <div className=" grid lg:grid-cols-2 grid-cols-1 ">
+      <div className=" grid lg:grid-cols-2 grid-cols-1 gap-10 lg:gap-0">
         <div className=" lg:order-last">
           <Laptop />
         </div>
         <div className=" flex items-center">
-          <ul dir="rtl" className="lg:mr-20">
+          <ul dir={isMobile ? "ltr" : "rtl"} className="lg:mr-20 pl-10">
             {descList.map((e) => {
               return (
                 <li key={e.id} className="">
                   <p className="flex flex-row">
                     <Bullet />
-                    <span className="mr-3 font-bold lg:text-xl text-primary tracking-[0.04rem]">
+                    <span className="lg:mr-3 ml-3 font-bold lg:text-xl text-primary tracking-[0.04rem]">
                       {e.title}
                     </span>
                   </p>
-                  <p className="mr-6">{e.desc}</p>
+                  <p className="lg:mr-6 ml-6 lg:pl-64 pr-10 lg:pr-0">
+                    {e.desc}
+                  </p>
                 </li>
               );
             })}
