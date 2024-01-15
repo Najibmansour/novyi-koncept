@@ -8,15 +8,15 @@ const Bullet = () => {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       id="e69PDoXl34g1"
       viewBox="0 0 30 30"
-      shape-rendering="geometricPrecision"
-      text-rendering="geometricPrecision"
+      shapeRendering="geometricPrecision"
+      textRendering="geometricPrecision"
     >
       <ellipse
         rx="14.541109"
         ry="14.541109"
         transform="translate(15 15)"
         fill="#2e3192"
-        stroke-width="0"
+        strokeWidth="0"
       />
     </svg>
   );

@@ -9,7 +9,7 @@ const Laptop = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g clip-path="url(#clip0_134_11138)">
+        <g clipPath="url(#clip0_134_11138)">
           <path
             d="M18.01 320.02H403V75.63C403 69.37 397.92 64.29 391.66 64.29H29.35C23.09 64.29 18.01 69.37 18.01 75.63V320.02Z"
             fill="#181B52"
