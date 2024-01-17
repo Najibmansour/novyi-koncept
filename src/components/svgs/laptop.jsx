@@ -2,7 +2,7 @@ import React from "react";
 
 const Laptop = () => {
   return (
-    <div className="flex ">
+    <div className="flex  lg:justify-start justify-center">
       <svg
         className="lg:w-[40rem] w-[20rem]"
         viewBox="0 0 572 430"
