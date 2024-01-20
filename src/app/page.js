@@ -7,7 +7,7 @@ import Page4 from "@/components/Pages/page4";
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      <Page1 />
+      {/* <Page1 /> */}
       <Page2 />
     </div>
   );

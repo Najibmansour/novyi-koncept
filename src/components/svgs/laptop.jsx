@@ -4,7 +4,7 @@ const Laptop = (props) => {
   return (
     <div className="flex  lg:justify-start justify-center" {...props}>
       <svg
-        className="lg:w-[30rem] w-[20rem]"
+        className="lg:w-[30rem] w-[18rem]"
         viewBox="0 0 454 353"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

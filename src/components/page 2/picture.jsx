@@ -1,9 +1,9 @@
 import React from "react";
 import Laptop from "../svgs/laptop";
 
-const PictureLaptop = () => {
+const PictureLaptop = (props) => {
   return (
-    <div className=" lg:order-last">
+    <div {...props}>
       <Laptop />
     </div>
   );
