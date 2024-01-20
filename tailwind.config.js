@@ -7,8 +7,8 @@ module.exports = {
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          primary: "#2e3192",
-          secondary: "teal",
+          primary: "#2E3192",
+          secondary: "#8C936E",
         },
       },
     ],

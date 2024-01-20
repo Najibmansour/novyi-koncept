@@ -9,8 +9,6 @@ export default function Home() {
     <div className="overflow-hidden">
       <Page1 />
       <Page2 />
-      <Page3 />
-      <Page4 />
     </div>
   );
 }

@@ -5,28 +5,23 @@ import Bullet from "../svgs/bullet";
 const descList = [
   {
     id: 0,
-    title: "Разблокируйте потенциал",
-    desc: "Комплексный анализ онлайн-присутствия",
+    title: "Работаем c селлерами по всей России",
   },
   {
     id: 1,
-    title: "Глубокий анализ",
-    desc: "Выявление сильных и слабых сторон, a также скрытых возможностей",
+    title: "Проведем аудит",
   },
   {
     id: 2,
-    title: "Экспертные исследования",
-    desc: "Оптимизация вашего онлайн-присутствия c ценным анализом",
+    title: "Произведём расчеты",
   },
   {
     id: 3,
-    title: "Уверенная навигация",
-    desc: " Основана на трендах рынка, бенчмарках конкурентов и стратегической карте",
+    title: "Быстро запускаем продажи",
   },
   {
     id: 4,
-    title: "Поднимите свой бренд",
-    desc: "Оставайтесь впереди в постоянно меняющемся цифровом мире c нашим анализом онлайн-присутствия",
+    title: "Настроим эффективное продвижение",
   },
 ];
 
@@ -37,17 +32,17 @@ const PointsText = () => {
   }, []);
   return (
     <div className=" flex items-center">
-      <ul dir={isMobile ? "ltr" : "rtl"} className="lg:mr-20 pl-10">
+      <ul className="lg:mr-20 pl-10">
         {descList.map((e) => {
           return (
-            <li key={e.id} className="">
+            <li key={e.id} className="gap-10">
               <p className="flex flex-row">
                 <Bullet />
-                <span className="lg:mr-3 ml-3 font-bold lg:text-xl text-primary tracking-[0.04rem]">
+                <span className="pl-4 lg:text-2xl font-[530] my-4  tracking-[0.06rem] w-96">
                   {e.title}
                 </span>
               </p>
-              <p className="lg:mr-6 ml-6 lg:pl-64 pr-10 lg:pr-0">{e.desc}</p>
+              <p className="pl-10">{e.desc}</p>
             </li>
           );
         })}
