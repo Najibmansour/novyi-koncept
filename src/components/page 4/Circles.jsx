@@ -39,7 +39,7 @@ export default function Circles() {
 
 function Circle({ IconComponent, text }) {
   return (
-    <div className="flex flex-col w-[150px] gap-4">
+    <div className="flex flex-col w-min gap-4">
       <div className="p-8 border-secondary border-4 rounded-full">
         <IconComponent />
       </div>
