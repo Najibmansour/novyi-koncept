@@ -24,7 +24,7 @@ const circles = [
   {
     circle: Circle5,
     text: "Аналитика продаж",
-    classNameAdd: "w-max lg:col-span-1 col-span-2 ",
+    classNameAdd: "w-max lg:col-span-1 col-span-2 w-[100%] flex justify-center",
   },
 ];
 
@@ -49,10 +49,10 @@ export default function Circles() {
 function Circle({ IconComponent, text, classNameAdd }) {
   return (
     <div className={"flex flex-col w-min lg:col-span-1 "}>
-      <div className="lg:p-8 p-6 border-secondary border-4 rounded-full ">
+      <div className="lg:p-8 p-5 border-secondary border-4 rounded-full ">
         <IconComponent />
       </div>
-      <p className="text-center lg:text-2xl text-xl">{text}</p>
+      <p className="text-center lg:text-2xl ">{text}</p>
     </div>
   );
 }

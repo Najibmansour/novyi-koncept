@@ -1,7 +1,7 @@
-
-export default function Icon2() {
+export default function Icon2(props) {
   return (
     <svg
+      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="81"
       height="81"
@@ -47,4 +47,3 @@ export default function Icon2() {
     </svg>
   );
 }
-
