@@ -1,4 +1,5 @@
 // "use client";
+import Footer from "@/components/Footer";
 import Page1 from "@/components/Pages/page1";
 import Page2 from "@/components/Pages/page2";
 import Page3 from "@/components/Pages/page3";
@@ -13,6 +14,7 @@ export default function Home() {
       <Page3 />
       <Page4 />
       <Page5 />
+      <Footer />
     </div>
   );
 }
