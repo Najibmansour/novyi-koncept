@@ -3,7 +3,55 @@
 @tailwind utilities;
 
 @media only screen and (max-width: 768px) {
-  /* body {
-    background-color: lightblue;
-  } */
+  body {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2e3192;
+
+  border-radius: 0.4rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+/* width  ////////////////////////////////////////////////////////////////////*/
+div.scrollHorizontal::-webkit-scrollbar {
+  width: 9px;
+  display: none;
+}
+
+/* Track */
+div.scrollHorizontal::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+div.scrollHorizontal::-webkit-scrollbar-thumb {
+  background: #2e3192;
+
+  border-radius: 0.4rem;
+}
+
+/* Handle on hover */
+div.scrollHorizontal::-webkit-scrollbar-thumb:hover {
+  background: #444;
 }

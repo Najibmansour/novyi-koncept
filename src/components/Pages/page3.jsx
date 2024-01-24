@@ -146,8 +146,10 @@ const vecs = [
 export default function Page3() {
   return (
     <div className="w-screen h-screen flex justify-center items-center flex-col gap-5">
-      <h1 className="text-4xl font-bold text-primary ">Наши услуги</h1>
-      <div className="overflow-auto lg:w-[70%] w-[90%] h-[70%] px-5">
+      <h1 className="lg:text-4xl text-3xl font-bold text-primary py-2">
+        Наши услуги
+      </h1>
+      <div className="overflow-auto lg:w-[80%] w-[90%] h-[75%] px-5">
         <div className="flex  justify-center ">
           <div className=" flex flex-col gap-12  ">
             {vecs.map((vec, i) => (
@@ -157,13 +159,13 @@ export default function Page3() {
                 key={i}
               >
                 <h3
-                  className={`font-bold mb-2 ${
+                  className={`font-bold mb-2 lg:text-2xl  ${
                     i % 2 == 0 ? "text-primary" : "text-secondary"
                   }`}
                 >
                   {vec.title}
                 </h3>
-                <ul className="list-disc list-outside marker:text-primary">
+                <ul className="list-disc list-outside marker:text-primary lg:text-2xl ">
                   {vec.points.map((point, i) => (
                     <li key={i} className="my-4">
                       {point}
@@ -175,8 +177,8 @@ export default function Page3() {
           </div>
         </div>
       </div>
-      <div className="flex flex-row justify-end w-[70%]">
-        <button className="font-bold lg:px-16 lg:py-8 px-8 py-4 hover:underline underline-offset-4 text-xl">
+      <div className="flex flex-row lg:justify-end justify-center w-[70%]">
+        <button className="font-bold lg:px-16 lg:py-8 py-4  hover:underline underline-offset-4 lg:text-xl">
           CONTINUE
         </button>
       </div>

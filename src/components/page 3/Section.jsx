@@ -12,10 +12,10 @@ export default function Section({ direction, Img, children }) {
 
   return (
     <div className={parentStyles}>
-      <div className="flex justify-center items-center lg:p-12 p-7">
+      <div className="flex justify-center items-center lg:p-12 p-3">
         <Img
           fill={direction == "left" ? "#2E3192" : "#929B78"}
-          className="w-28 "
+          className="lg:w-28  w-24"
         />
       </div>
       <div className="">{children}</div>

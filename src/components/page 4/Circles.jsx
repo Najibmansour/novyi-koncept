@@ -24,26 +24,35 @@ const circles = [
   {
     circle: Circle5,
     text: "Аналитика продаж",
+    classNameAdd: "w-max lg:col-span-1 col-span-2 ",
   },
 ];
 
 export default function Circles() {
   return (
-    <div className="flex justify-evenly gap-4 w-full flex-wrap ">
-      {circles.map((circle, i) => (
-        <Circle key={i} IconComponent={circle.circle} text={circle.text} />
-      ))}
+    <div className="flex justify-center  ">
+      <div className="grid lg:grid-cols-5 grid-cols-2 w-full lg:gap-40 gap-8 ">
+        {circles.map((circle, i) => (
+          <div key={i} className={circle.classNameAdd}>
+            <Circle
+              IconComponent={circle.circle}
+              text={circle.text}
+              classNameAdd={circle.classNameAdd}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
 
-function Circle({ IconComponent, text }) {
+function Circle({ IconComponent, text, classNameAdd }) {
   return (
-    <div className="flex flex-col w-[150px] gap-4">
-      <div className="p-8 border-secondary border-4 rounded-full">
+    <div className={"flex flex-col w-min lg:col-span-1 "}>
+      <div className="lg:p-8 p-6 border-secondary border-4 rounded-full ">
         <IconComponent />
       </div>
-      <p className="text-center">{text}</p>
+      <p className="text-center lg:text-2xl text-xl">{text}</p>
     </div>
   );
 }

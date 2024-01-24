@@ -37,9 +37,9 @@ const PointsText = (props) => {
           {descList.map((e) => {
             return (
               <li key={e.id} className="gap-10">
-                <p className="flex flex-row items-start w-[100%]">
+                <p className="flex flex-row items-start lg:w-[100%] w-[87%] mx-auto">
                   <Bullet />
-                  <span className="pl-4 lg:text-2xl  pb-4  tracking-[0.06rem] w-96">
+                  <span className="pl-4 lg:text-2xl pb-4 tracking-[0.06rem] w-96">
                     {e.title}
                   </span>
                 </p>
