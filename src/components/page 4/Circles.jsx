@@ -24,7 +24,8 @@ const circles = [
   {
     circle: Circle5,
     text: "Аналитика продаж",
-    classNameAdd: "w-max lg:col-span-1 col-span-2 w-[100%] flex justify-center",
+    classNameAdd:
+      "w-max lg:col-span-1 col-span-2 min-w-[100%] flex justify-center",
   },
 ];
 

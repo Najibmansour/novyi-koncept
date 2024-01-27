@@ -5,12 +5,11 @@ import Telegram_Logo from "./svgs/logo/Telegram_Logo";
 import Vk_Logo from "./svgs/logo/Vk_Logo";
 import Whatsapp_Logo from "./svgs/logo/Whatsapp_Logo";
 
-
 export default function Footer() {
   return (
-    <footer className="bg-primary flex flex-col items-center gap-4 pt-[100px] pb-[50px] text-xl text-[#F1F2F2]">
+    <footer className="h-screen bg-primary flex flex-col justify-center items-center gap-4 pt-[100px] pb-[50px] text-xl text-white">
       <div className="text-center w-[70vw]">
-        <h3 className="text-3xl font-bold">Новый Концепт</h3>
+        <h3 className="text-2xl font-bold">Новый Концепт</h3>
         <p className="font-bold">
           Добро пожаловать в мир непревзойдённого качества и доверия
         </p>
@@ -23,7 +22,7 @@ export default function Footer() {
         <br />
         <p>
           конкурировать в мире электронной торговли. Доверьтесь компании «Новый
-          Концепт»  и вы обретете надежного партнера для развития вашего бизнеса
+          Концепт» и вы обретете надежного партнера для развития вашего бизнеса
           на маркетплейсах. С нами вы погрузитесь в безопасную онлайн среду, где
           ваше спокойствие стоит на первом месте
         </p>
@@ -38,7 +37,7 @@ export default function Footer() {
         <div className="flex justify-center items-center">
           <Phone_Icon />
         </div>
-        <span>+7 (937) 261 261 8</span>
+        <span>+7 (937) 261 261 8</span>
         <div className="flex justify-center items-center">
           <Location_Icon />
         </div>
