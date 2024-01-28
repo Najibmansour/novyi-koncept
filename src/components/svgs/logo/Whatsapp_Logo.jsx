@@ -1,8 +1,7 @@
-export default function Whatsapp_Logo() {
+export default function Whatsapp_Logo(props) {
   return (
     <svg
-      width="49"
-      height="50"
+      {...props}
       viewBox="0 0 49 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

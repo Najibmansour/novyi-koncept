@@ -1,10 +1,7 @@
-
-
-export default function Telegram_Logo() {
+export default function Telegram_Logo(props) {
   return (
     <svg
-      width="55"
-      height="54"
+      {...props}
       viewBox="0 0 55 54"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

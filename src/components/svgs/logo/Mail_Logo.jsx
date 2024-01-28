@@ -1,11 +1,9 @@
+import React from "react";
 
-import React from 'react'
-
-export default function Mail_Logo({ width = 50, height = 37 }) {
+export default function Mail_Logo(props) {
   return (
     <svg
-      width={width}
-      height={height}
+      {...props}
       viewBox="0 0 50 39"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

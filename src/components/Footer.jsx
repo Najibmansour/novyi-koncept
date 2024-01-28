@@ -7,8 +7,8 @@ import Whatsapp_Logo from "./svgs/logo/Whatsapp_Logo";
 
 export default function Footer() {
   return (
-    <footer className="h-screen bg-primary flex flex-col justify-center items-center gap-4 pt-[100px] pb-[50px] text-xl text-white">
-      <div className="text-center w-[70vw]">
+    <footer className="h-screen bg-primary flex flex-col justify-center items-center lg:gap-4 gap-8 text-sm lg:text-2xl text-white">
+      <div className="text-center lg:w-[70vw] w-[80vw] ">
         <h3 className="text-2xl font-bold">Новый Концепт</h3>
         <p className="font-bold">
           Добро пожаловать в мир непревзойдённого качества и доверия
@@ -28,29 +28,29 @@ export default function Footer() {
         </p>
       </div>
       <div className="flex justify-center gap-4 items-center">
-        <Mail_Logo />
-        <Vk_Logo />
-        <Telegram_Logo />
-        <Whatsapp_Logo />
+        <Mail_Logo className="lg:w-14 w-10" />
+        <Vk_Logo className="lg:w-14 w-10" />
+        <Telegram_Logo className="lg:w-14 w-10" />
+        <Whatsapp_Logo className="lg:w-14 w-10" />
       </div>
-      <address className="grid mx-4 justify-center items-center gap-1 grid-cols-[1fr_90%]">
+      <address className="grid mx-4 justify-center items-center gap-y-4 lg:w-[50vw] w-[80vw] grid-cols-[1fr_90%] lg:text-2xl">
         <div className="flex justify-center items-center">
-          <Phone_Icon />
+          <Phone_Icon className="lg:w-7 w-4" />
         </div>
         <span>+7 (937) 261 261 8</span>
         <div className="flex justify-center items-center">
-          <Location_Icon />
+          <Location_Icon className="lg:w-7 w-4" />
         </div>
         <span>410012, г. Саратов, ул. Слонова, д. 1, ДЦ «Парус»</span>
         <div className="flex justify-center items-center">
-          <Mail_Logo width={27} height={20} />
+          <Mail_Logo className="lg:w-7 w-4" />
         </div>
         <span>new-concept@bk.ru</span>
       </address>
-      <button className="px-6 py-2 rounded-2xl text-xl border-[3px]">
+      <button className="px-6 py-2 rounded-2xl lg:text-xl lg:mt-8 border-[3px]">
         Оставьте заявку
       </button>
-      <small className="mt-8 -mb-6">2024 NOVYI KONCEPT</small>
+      <small className="lg:mt-4 mt-0 -mb-6 text-sm">2024 NOVYI KONCEPT</small>
     </footer>
   );
 }

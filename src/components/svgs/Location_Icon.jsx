@@ -1,10 +1,7 @@
-
-
-export default function Location_Icon() {
+export default function Location_Icon(props) {
   return (
     <svg
-      width="18"
-      height="25"
+      {...props}
       viewBox="0 0 18 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
