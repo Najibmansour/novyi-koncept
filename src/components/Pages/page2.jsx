@@ -2,6 +2,7 @@ import React from "react";
 import GridElement from "../page 2/gridElement";
 import PointsText from "../page 2/PointsText";
 import PictureLaptop from "../page 2/picture";
+import Link from "next/link";
 
 const Page2 = () => {
   return (
@@ -20,9 +21,9 @@ const Page2 = () => {
           <PointsText className="" />
         </div>
       </div>
-      <button className="btn btn-secondary lg:text-xl ">
-        Оставьте заявку{" "}
-      </button>
+      <Link href="/contact" className="btn btn-secondary lg:text-xl ">
+        Оставьте заявку
+      </Link>
     </div>
   );
 };

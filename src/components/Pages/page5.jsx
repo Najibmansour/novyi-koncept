@@ -1,10 +1,10 @@
 export default function page5() {
   return (
-    <div className="lg:p-12 p-4 mt-10 flex flex-col h-screen items-center lg:gap-16 gap-8 ">
+    <div className="lg:px-12 px-4  flex flex-col h-screen items-center lg:gap-8 gap-8 ">
       <h2 className="lg:text-4xl text-3xl text-primary font-bold text-center">
         Часто задаваемые вопросы
       </h2>
-      <div className="w-screen overflow-x-auto overflow-y-hidden scrollHorizontal h-full ">
+      <div className="w-screen overflow-x-auto overflow-y-hidden scrollHorizontal h-full bg-red-100 ">
         <div className="grid grid-cols-2 min-w-[750px] h-[90%] lg:max-w-[70%]  mx-8 lg:mx-auto ">
           <Box
             pos="top-left"
