@@ -10,7 +10,7 @@ import ModalButton from "./modal/modalButton";
 export default function Footer() {
   return (
     <footer className="h-screen bg-primary flex flex-col justify-center items-center lg:gap-10 gap-8 text-sm lg:text-2xl text-white">
-      <div className="text-center lg:w-[70vw] w-[80vw] ">
+      <div className="text-center lg:w-[70vw] w-[80vw]">
         <h3 className="text-2xl font-bold">Новый Концепт</h3>
         <p className="font-bold">
           Добро пожаловать в мир непревзойдённого качества и доверия
@@ -35,11 +35,11 @@ export default function Footer() {
         <Telegram_Logo className="lg:w-12 w-10" />
         <Whatsapp_Logo className="lg:w-12 w-10" />
       </div>
-      <address className="grid mx-4 justify-center items-center gap-y-4 lg:w-[50vw] w-[80vw] grid-cols-[1fr_90%] lg:text-2xl">
+      <address className="grid mx-4 justify-center items-center gap-t-4 lg:w-[50vw] w-[80vw] grid-cols-[1fr_90%] lg:text-2xl">
         <div className="flex justify-center items-center">
           <Phone_Icon className="lg:w-9 w-6" />
         </div>
-        <span>+7 (937) 261 261 8</span>
+        <Link href="tel:+79372618">+7 (937) 261 261 8</Link>
         <div className="flex justify-center items-center">
           <Location_Icon className="lg:w-7 w-4" />
         </div>
@@ -47,7 +47,7 @@ export default function Footer() {
         <div className="flex justify-center items-center">
           <Mail_Logo className="lg:w-7 w-4" />
         </div>
-        <span>new-concept@bk.ru</span>
+        <Link href="mailto:new-concept@bk.ru">new-concept@bk.ru</Link>
       </address>
       {/* <Link
         href="/contact"
@@ -57,9 +57,9 @@ export default function Footer() {
       </Link> */}
       <ModalButton
         text="Оставьте заявку"
-        className="px-6 py-2 rounded-2xl lg:text-xl lg:mt-8 border-[3px]"
+        className="px-6 py-2 rounded-2xl lg:text-xl border-[3px]"
       />
-      <small className="lg:mt-4 mt-0 -mb-6 text-sm">2024 NOVYI KONCEPT</small>
+      <small className="lg:mt-4 mt-0 text-sm">2024 NOVYI KONCEPT</small>
     </footer>
   );
 }

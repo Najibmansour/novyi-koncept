@@ -30,8 +30,11 @@ const ModalForm = () => {
   };
   return (
     <div>
-      <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle ">
-        <div class="flex flex-col justify-center items-center bg-white lg:p-10 lg:rounded-2xl lg:mt-32 mt-20 lg:gap-10 gap-5">
+      <dialog
+        id="my_modal_5"
+        className="modal modal-bottom sm:modal-middle justify-center items-center  "
+      >
+        <div class="flex flex-col justify-center items-center bg-white lg:p-10 pt-10  lg:rounded-2xl rounded-t-3xl lg:mt-32 mt-20 lg:gap-10 gap-5">
           <h2 class=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
             Оставьте заявку
           </h2>
