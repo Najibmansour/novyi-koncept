@@ -8,7 +8,7 @@ import ModalButton from "../modal/modalButton";
 
 const Page2 = () => {
   return (
-    <div className="flex justify-center items-center w-screen h-screen flex-col lg:gap-16 gap-8 lg:mt-5">
+    <div className="flex justify-center items-center w-screen h-screen flex-col lg:gap-16 gap-8 mt-10">
       <div className="grid gap-y-5 lg:grid-cols-2 lg:grid-rows-3 grid-cols-1 ">
         <div className="lg:col-span-2  flex flex-col items-center lg:order-first ">
           <p className="font-semibold lg:text-5xl text-2xl lg:w-[50rem] text-center text-secondary">

@@ -2,6 +2,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 const ModalForm = () => {
   const form = useRef();
@@ -17,26 +18,6 @@ const ModalForm = () => {
     watch,
     formState: { errors },
   } = useForm();
-
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   console.log(form.current);
-  //   emailjs
-  //     .send(
-  //       "novo-concept-service-vqw",
-  //       "template_vthxzz5",
-  //       { from_name: name, from_email: mail, from_phone: tel, message: desc },
-  //       "FTfq34dz5c8TJFC5s"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
 
   const onSubmit = (data) => {
     console.log(data);
@@ -60,6 +41,16 @@ const ModalForm = () => {
           console.log(error.text);
         }
       );
+    document.getElementById("my_modal_5").close();
+    toast.info("Request sent succesfuly", {
+      unstyled: false,
+      classNames: {
+        toast: "bg-white rounded-xl p-3",
+        title: "text-red-400 text-xl",
+        description: "text-red-400",
+      },
+      duration: 2500,
+    });
   };
   return (
     <div>
