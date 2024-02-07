@@ -67,7 +67,7 @@ const ModalForm = () => {
         id="my_modal_5"
         className="modal modal-bottom sm:modal-middle justify-center items-center  "
       >
-        <div class="flex flex-col justify-center items-center bg-white lg:p-10 pt-8 lg:rounded-2xl rounded-t-3xl lg:mt-32 mt-20 lg:gap-10 gap-3">
+        <div class="flex flex-col justify-center items-center bg-white lg:p-10 pt-8 lg:rounded-2xl rounded-t-3xl lg:mt-0 mt-20 lg:gap-10 gap-3">
           <h2 class=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
             Оставьте заявку
           </h2>
