@@ -1,5 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
+import { useForm } from "react-hook-form";
 
 const ModalForm = () => {
   const form = useRef();
@@ -9,15 +11,46 @@ const ModalForm = () => {
   const [tel, setTel] = useState();
   const [desc, setDesc] = useState();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    console.log(form.current);
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   console.log(form.current);
+  //   emailjs
+  //     .send(
+  //       "novo-concept-service-vqw",
+  //       "template_vthxzz5",
+  //       { from_name: name, from_email: mail, from_phone: tel, message: desc },
+  //       "FTfq34dz5c8TJFC5s"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
+
+  const onSubmit = (data) => {
+    console.log(data);
     emailjs
-      .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
-        { name: name, mail: mail, tel: tel, desc: desc },
-        "YOUR_PUBLIC_KEY"
+      .send(
+        "novo-concept-service-vqw",
+        "template_vthxzz5",
+        {
+          from_name: data.from_name,
+          from_email: data.from_email,
+          from_phone: data.from_phone,
+          message: data.message,
+        },
+        "FTfq34dz5c8TJFC5s"
       )
       .then(
         (result) => {
@@ -34,66 +67,123 @@ const ModalForm = () => {
         id="my_modal_5"
         className="modal modal-bottom sm:modal-middle justify-center items-center  "
       >
-        <div class="flex flex-col justify-center items-center bg-white lg:p-10 pt-10  lg:rounded-2xl rounded-t-3xl lg:mt-32 mt-20 lg:gap-10 gap-5">
+        <div class="flex flex-col justify-center items-center bg-white lg:p-10 pt-8 lg:rounded-2xl rounded-t-3xl lg:mt-32 mt-20 lg:gap-10 gap-3">
           <h2 class=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
             Оставьте заявку
           </h2>
+
+          <p className="lg:text-xl text-xs  lg:w-[30vw] w-[90%] text-center visible lg:hidden ">
+            Я разрешаю обработку персональных данных и соглашаюсь c политикой
+            конфедициальности
+          </p>
           <form
             ref={form}
-            onSubmit={sendEmail}
+            onSubmit={handleSubmit(onSubmit)}
             class=" grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:gap-10 gap-8 lg:w-[70vw] w-[80vw]"
           >
-            <div className="w-[100%]  flex flex-wrap lg:gap-10 gap-8 ">
-              <input
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                type="text"
-                id="name"
-                class="lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary placeholder:opacity-80 border-opacity-80 min-w-full lg:text-xl text-md text-secondary lg:border-[5px] border-4 border-secondary   rounded-2xl shadow-sm  "
-                placeholder="Ваше имя"
-                required
-              />
+            <div className="w-[100%]  flex flex-wrap lg:gap-10 gap-6 ">
+              <div className="min-w-full ">
+                {errors.from_name?.message && (
+                  <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                    {errors.from_name.message}
+                  </span>
+                )}
+                <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  type="text"
+                  id="name"
+                  className="lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80 min-w-full lg:text-xl text-md text-secondary lg:border-[5px] border-4 border-secondary   rounded-2xl shadow-sm  "
+                  placeholder="Ваше имя"
+                  {...register("from_name", {
+                    maxLength: {
+                      value: 30,
+                      message: "Must have at max 30 characters",
+                    },
+                    pattern: { value: /^[^\d]+$/, message: "Not valid name" },
+                    required: "Name is required",
+                  })}
+                />
+              </div>
 
-              <input
-                value={mail}
-                onChange={(e) => setMail(e.target.value)}
-                type="email"
-                id="mail"
-                class=" lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
-                placeholder="Email"
-                required
-              />
-              <input
-                value={tel}
-                onChange={(e) => setTel(e.target.value)}
-                type="text"
-                id="phone"
-                class=" lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
-                placeholder="Телефон (+7)"
-                required
-              />
+              <div className="min-w-full">
+                {errors.from_email?.message && (
+                  <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                    {errors.from_email?.message}
+                  </span>
+                )}
+                <input
+                  value={mail}
+                  onChange={(e) => setMail(e.target.value)}
+                  id="mail"
+                  class=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+                  placeholder="Email"
+                  {...register("from_email", {
+                    pattern: {
+                      value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                      message: "Not a valid email",
+                    },
+                    required: "Email is required",
+                  })}
+                />
+              </div>
+              <div className="min-w-full">
+                {errors.from_phone?.message && (
+                  <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                    {errors.from_phone.message}
+                  </span>
+                )}
+                <input
+                  value={tel}
+                  onChange={(e) => setTel(e.target.value)}
+                  type="text"
+                  id="phone"
+                  class=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+                  placeholder="Телефон (+7)"
+                  {...register("from_phone", {
+                    pattern: {
+                      value: /^\d+$/,
+                      message: "Dont use symbols or spaces or letters",
+                    },
+                    maxLength: {
+                      value: 15,
+                      message: "Not a valid phone number",
+                    },
+                    required: "Phone number is required",
+                  })}
+                />
+              </div>
             </div>
 
             <div className="lg:row-span-1 w-[100%] flex flex-col ">
+              {errors.message?.message && (
+                <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                  {errors.message.message}
+                </span>
+              )}
               <textarea
                 value={desc}
                 onChange={(e) => setDesc(e.target.value)}
                 id="comment"
                 rows="6"
-                class="lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary text-secondary placeholder:opacity-80 border-opacity-80  lg:text-xl text-md rounded-2xl shadow-sm lg:border-[5px] border-4 border-secondary  "
+                class="lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary text-secondary placeholder:opacity-80 border-opacity-80  lg:text-xl text-md rounded-2xl shadow-sm lg:border-[5px] border-4 border-secondary  "
                 placeholder="Комментарии"
+                {...register("message", {
+                  required: "Please enter your Message",
+                  maxLength: {
+                    value: 400,
+                    message: "Cant be more than 400 characters long",
+                  },
+                })}
               />
-              <div className="flex  flex-row lg:justify-end justify-center items-center lg:mr-10 mt-8">
-                <button
-                  type="submit"
-                  class="py-3 px-5 lg:text-xl text-md font-medium text-center text-white  rounded-2xl bg-primary-700 sm:w-fit bg-secondary "
-                >
+              <div className="flex  flex-row lg:justify-end justify-center items-center lg:mr-10 mt-6">
+                <button class="py-3 px-5 lg:text-lg focus:bg-secondary text-sm font-medium text-center text-white  rounded-2xl bg-primary-700 sm:w-fit bg-secondary ">
                   Отправить
                 </button>
               </div>
             </div>
           </form>
-          <h3 className="lg:text-xl text-md lg:w-[30vw] w-[90vw] text-center">
+          <h3 className="lg:text-xl text-md lg:w-[30vw] w-[90vw] text-center lg:visible invisible ">
             Я разрешаю обработку персональных данных и соглашаюсь c политикой
             конфедициальности
           </h3>
