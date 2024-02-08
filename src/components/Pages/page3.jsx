@@ -178,7 +178,7 @@ export default function Page3() {
         </div>
       </div>
       <div className="flex flex-row lg:justify-end justify-center w-[70%]">
-        <button className="font-bold lg:px-16 lg:py-8 py-4  hover:underline underline-offset-4 lg:text-xl text-primary">
+        <button className="font-bold lg:px-16 lg:py-4 rounded-2xl py-2 bg-opacity-90 transition-colors hover:bg-blue-200 lg:text-xl text-primary">
           CONTINUE
         </button>
       </div>

@@ -1,6 +1,6 @@
 export default function page5() {
   return (
-    <div className="lg:px-12 px-4  flex flex-col h-screen items-center lg:gap-8 gap-8 ">
+    <div className="lg:px-12 px-4 mt-10 flex flex-col h-screen items-center lg:gap-8 gap-8 ">
       <h2 className="lg:text-4xl text-3xl text-primary font-bold text-center">
         Часто задаваемые вопросы
       </h2>

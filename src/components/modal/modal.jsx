@@ -59,14 +59,25 @@ const ModalForm = () => {
         className="modal modal-bottom sm:modal-middle justify-center items-center  "
       >
         <div class="flex flex-col justify-center items-center bg-white lg:p-10 pt-8 lg:rounded-2xl rounded-t-3xl lg:mt-0 mt-20 lg:gap-10 gap-3">
-          <h2 class=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
-            Оставьте заявку
-          </h2>
+          <div className="flex-row flex w-full justify-center relative">
+            <form method="dialog">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-3 -top-5 lg:-right-8 lg:-top-8">
+                ✕
+              </button>
+            </form>
+
+            <h2 class=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
+              Оставьте заявку
+            </h2>
+          </div>
 
           <p className="lg:text-xl text-xs  lg:w-[30vw] w-[90%] text-center visible lg:hidden ">
             Я разрешаю обработку персональных данных и соглашаюсь c политикой
             конфедициальности
           </p>
+          <form method="dialog">
+            {/* if there is a button in form, it will close the modal */}
+          </form>
           <form
             ref={form}
             onSubmit={handleSubmit(onSubmit)}
@@ -174,6 +185,7 @@ const ModalForm = () => {
               </div>
             </div>
           </form>
+
           <h3 className="lg:text-xl text-md lg:w-[30vw] w-[90vw] text-center lg:visible invisible ">
             Я разрешаю обработку персональных данных и соглашаюсь c политикой
             конфедициальности

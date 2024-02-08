@@ -5,7 +5,7 @@ import FooterP1 from "../page 1/FooterP1";
 
 const Page1 = () => {
   return (
-    <div className="w-screen h-screen bg-primary flex flex-col items-center">
+    <div className="w-screen h-[100svh] bg-primary flex flex-col items-center">
       <NavbarP1 />
       <HeroP1 />
       <FooterP1 />

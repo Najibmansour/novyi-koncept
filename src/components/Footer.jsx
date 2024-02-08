@@ -9,7 +9,7 @@ import ModalButton from "./modal/modalButton";
 
 export default function Footer() {
   return (
-    <footer className="h-screen bg-primary flex flex-col justify-center items-center lg:gap-10 gap-8 text-sm lg:text-2xl text-white">
+    <footer className="h-[100svh] bg-primary flex flex-col justify-center items-center lg:gap-10 gap-8 text-sm lg:text-2xl text-white">
       <div className="text-center lg:w-[70vw] w-[80vw]">
         <h3 className="text-2xl font-bold">Новый Концепт</h3>
         <p className="font-bold">
