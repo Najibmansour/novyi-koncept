@@ -20,7 +20,7 @@ export default function page5() {
           scrub: false,
           start: "center-=90 center",
           end: "center center",
-          markers: true,
+          markers: false,
           toggleActions: "play none reverse none",
         },
       });
