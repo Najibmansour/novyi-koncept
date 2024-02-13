@@ -2,10 +2,10 @@ import React from "react";
 
 const LogoComponent = ({ children }) => {
   return (
-    <div class="w-min h-min relative">
-      <div class="w-min h-min ">
+    <div className="w-min h-min relative">
+      <div className="w-min h-min ">
         <svg
-          class=""
+          className=""
           width="348"
           // width="116"
           height="200"
@@ -20,7 +20,7 @@ const LogoComponent = ({ children }) => {
             fill="#2E3192"
           />
         </svg>
-        <div class="absolute top-[3rem] left-[2rem]">{children}</div>
+        <div className="absolute top-[3rem] left-[2rem]">{children}</div>
       </div>
 
       <div className=" w-[62px] h-[62px] bg-[#2e3192] rounded-full absolute bottom-0 left-[16rem]">

@@ -58,7 +58,7 @@ const ModalForm = () => {
         id="my_modal_5"
         className="modal modal-bottom sm:modal-middle justify-center items-center  "
       >
-        <div class="flex flex-col justify-center items-center bg-white lg:p-10 pt-8 lg:rounded-2xl rounded-t-3xl lg:mt-0 mt-20 lg:gap-10 gap-3">
+        <div className="flex flex-col justify-center items-center bg-white lg:p-10 pt-8 lg:rounded-2xl rounded-t-3xl lg:mt-0 mt-20 lg:gap-10 gap-3">
           <div className="flex-row flex w-full justify-center relative">
             <form method="dialog">
               <button className="btn btn-sm btn-circle btn-ghost absolute right-3 -top-5 lg:-right-8 lg:-top-8">
@@ -66,7 +66,7 @@ const ModalForm = () => {
               </button>
             </form>
 
-            <h2 class=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
+            <h2 className=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
               Оставьте заявку
             </h2>
           </div>
@@ -81,7 +81,7 @@ const ModalForm = () => {
           <form
             ref={form}
             onSubmit={handleSubmit(onSubmit)}
-            class=" grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:gap-10 gap-8 lg:w-[70vw] w-[80vw]"
+            className=" grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:gap-10 gap-8 lg:w-[70vw] w-[80vw]"
           >
             <div className="w-[100%]  flex flex-wrap lg:gap-10 gap-6 ">
               <div className="min-w-full ">
@@ -118,7 +118,7 @@ const ModalForm = () => {
                   value={mail}
                   onChange={(e) => setMail(e.target.value)}
                   id="mail"
-                  class=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+                  className=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
                   placeholder="Email"
                   {...register("from_email", {
                     pattern: {
@@ -140,7 +140,7 @@ const ModalForm = () => {
                   onChange={(e) => setTel(e.target.value)}
                   type="text"
                   id="phone"
-                  class=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+                  className=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
                   placeholder="Телефон (+7)"
                   {...register("from_phone", {
                     pattern: {
@@ -168,7 +168,7 @@ const ModalForm = () => {
                 onChange={(e) => setDesc(e.target.value)}
                 id="comment"
                 rows="6"
-                class="lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary text-secondary placeholder:opacity-80 border-opacity-80  lg:text-xl text-md rounded-2xl shadow-sm lg:border-[5px] border-4 border-secondary  "
+                className="lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary text-secondary placeholder:opacity-80 border-opacity-80  lg:text-xl text-md rounded-2xl shadow-sm lg:border-[5px] border-4 border-secondary  "
                 placeholder="Комментарии"
                 {...register("message", {
                   required: "Please enter your Message",
@@ -179,7 +179,7 @@ const ModalForm = () => {
                 })}
               />
               <div className="flex  flex-row lg:justify-end justify-center items-center lg:mr-10 mt-6">
-                <button class="py-3 px-5 lg:text-lg focus:bg-secondary text-sm font-medium text-center text-white  rounded-2xl bg-primary-700 sm:w-fit bg-secondary ">
+                <button className="py-3 px-5 lg:text-lg focus:bg-secondary text-sm font-medium text-center text-white  rounded-2xl bg-primary-700 sm:w-fit bg-secondary ">
                   Отправить
                 </button>
               </div>

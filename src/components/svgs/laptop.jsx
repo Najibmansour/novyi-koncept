@@ -327,9 +327,6 @@ const Laptop = (props) => {
         />
         <mask
           id="mask0_260_3050"
-          style={{
-            maskType: "luminance",
-          }}
           maskUnits="userSpaceOnUse"
           x={74}
           y={20}

@@ -1,11 +1,39 @@
+// "use client";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
 export default function page5() {
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    let mm = gsap.matchMedia();
+
+    mm.add("(max-width: 800px)", () => {
+      gsap.to("#BigBox", {
+        x: "-110%",
+        duration: 1,
+        ease: "power2.inOut",
+
+        scrollTrigger: {
+          trigger: "#BigBox",
+          scrub: false,
+          start: "center-=90 center",
+          end: "center center",
+          markers: true,
+          toggleActions: "play none reverse none",
+        },
+      });
+    });
+  });
+
   return (
     <div className="lg:px-12 px-4 mt-10 flex flex-col h-screen items-center lg:gap-8 gap-8 ">
       <h2 className="lg:text-4xl text-3xl text-primary font-bold text-center">
         Часто задаваемые вопросы
       </h2>
-      <div className="w-screen overflow-x-auto overflow-y-hidden scrollHorizontal h-full">
-        <div className="grid grid-cols-2 min-w-[750px] h-[90%] lg:max-w-[70%]  mx-8 lg:mx-auto ">
+      <div className=" w-screen scrollHorizontal h-full" id="BigBox">
+        <div className="grid grid-cols-2 min-w-[750px] h-[90%] lg:max-w-[70%]  mx-5 lg:mx-auto ">
           <Box
             pos="top-left"
             title="Почему я должен выбрать именно вас?"
