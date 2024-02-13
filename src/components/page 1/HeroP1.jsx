@@ -19,15 +19,15 @@ const HeroP1 = () => {
           y: "100%",
           opacity: 0,
           duration: 0.5,
-          ease: "power2.out",
-          stagger: { amount: 1 },
+          ease: "power2.in",
+          stagger: { amount: 1.4 },
         },
         {
           y: 0,
           opacity: 1,
           duration: 0.5,
-          ease: "power2.out",
-          stagger: { amount: 1 },
+          ease: "power2.in",
+          stagger: { amount: 1.4 },
         }
       );
     });
