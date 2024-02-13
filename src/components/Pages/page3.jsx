@@ -161,9 +161,8 @@ export default function Page3() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     let boxes = gsap.utils.toArray(".Box");
-    console.log(boxes);
+    // console.log(boxes);
     boxes.forEach((box) => {
-      console.log(box.id);
       gsap.fromTo(
         box,
         {

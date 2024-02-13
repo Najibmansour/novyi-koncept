@@ -20,7 +20,7 @@ const ModalForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
     emailjs
       .send(
         "novo-concept-service-vqw",
