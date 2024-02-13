@@ -145,43 +145,36 @@ const vecs = [
 
 export default function Page3() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center flex-col gap-5">
-      <h1 className="lg:text-4xl text-3xl font-bold text-primary py-2">
-        Наши услуги
-      </h1>
-      <div className="overflow-auto lg:w-[80%] w-[90%] h-[75%] px-5">
-        <div className="flex  justify-center ">
-          <div className=" flex flex-col gap-12  ">
-            {vecs.map((vec, i) => (
-              <Section
-                direction={i % 2 == 0 ? "left" : "right"}
-                Img={vec.vec}
-                key={i}
-              >
-                <h3
-                  className={`font-bold mb-2 lg:text-2xl  ${
-                    i % 2 == 0 ? "text-primary" : "text-secondary"
-                  }`}
-                >
-                  {vec.title}
-                </h3>
-                <ul className="list-disc list-outside marker:text-primary lg:text-2xl ">
-                  {vec.points.map((point, i) => (
-                    <li key={i} className="my-4">
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              </Section>
-            ))}
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-row lg:justify-end justify-center w-[70%]">
-        <button className="font-bold lg:px-16 lg:py-4 rounded-2xl py-2 bg-opacity-90 transition-colors hover:bg-blue-200 lg:text-xl text-primary">
-          CONTINUE
-        </button>
+    <div className="w-screen ">
+      <div className="flex flex-col gap-12 ">
+        {vecs.map((vec, i) => (
+          <Section
+            direction={i % 2 == 0 ? "left" : "right"}
+            Img={vec.vec}
+            key={i}
+          >
+            <h3
+              className={`font-bold mb-2 lg:text-2xl  ${
+                i % 2 == 0 ? "text-primary" : "text-secondary"
+              }`}
+            >
+              {vec.title}
+            </h3>
+            <ul className="list-disc list-outside marker:text-primary lg:text-2xl ">
+              {vec.points.map((point, i) => (
+                <li key={i} className="my-4">
+                  {point}
+                </li>
+              ))}
+            </ul>
+          </Section>
+        ))}
       </div>
     </div>
   );
+}
+{
+  /* <h1 className="lg:text-4xl text-3xl font-bold text-primary py-2">
+        Наши услуги
+      </h1> */
 }
