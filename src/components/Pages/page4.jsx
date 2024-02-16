@@ -2,8 +2,8 @@ import Circles from "../page 4/Circles";
 
 export default function page4() {
   return (
-    <div className="lg:p-12 pt-10 flex flex-col items-center lg:gap-16 gap-10">
-      <h2 className="lg:text-4xl text-3xl text-secondary font-bold text-center">
+    <div className="flex flex-col items-center gap-10 pt-10 lg:gap-16 lg:p-12">
+      <h2 className="text-center text-3xl font-bold text-secondary lg:text-4xl">
         Стратегический подход
       </h2>
       <Circles />

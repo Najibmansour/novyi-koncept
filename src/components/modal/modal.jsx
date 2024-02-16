@@ -31,7 +31,7 @@ const ModalForm = () => {
           from_phone: data.from_phone,
           message: data.message,
         },
-        "FTfq34dz5c8TJFC5s"
+        "FTfq34dz5c8TJFC5s",
       )
       .then(
         (result) => {
@@ -39,7 +39,7 @@ const ModalForm = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
     document.getElementById("my_modal_5").close();
     toast.info("Request sent succesfuly", {
@@ -56,22 +56,22 @@ const ModalForm = () => {
     <div>
       <dialog
         id="my_modal_5"
-        className="modal modal-bottom sm:modal-middle justify-center items-center  "
+        className="modal modal-bottom items-center justify-center sm:modal-middle  "
       >
-        <div className="flex flex-col justify-center items-center bg-white lg:p-10 pt-8 lg:rounded-2xl rounded-t-3xl lg:mt-0 mt-20 lg:gap-10 gap-3">
-          <div className="flex-row flex w-full justify-center relative">
+        <div className="mt-20 flex flex-col items-center justify-center gap-3 rounded-t-3xl bg-white pt-8 lg:mt-0 lg:gap-10 lg:rounded-2xl lg:p-10">
+          <div className="relative flex w-full flex-row justify-center">
             <form method="dialog">
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-3 -top-5 lg:-right-8 lg:-top-8">
+              <button className="btn btn-circle btn-ghost btn-sm absolute -top-5 right-3 lg:-right-8 lg:-top-8">
                 ✕
               </button>
             </form>
 
-            <h2 className=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
+            <h2 className=" text-center text-2xl font-extrabold tracking-tight text-secondary lg:text-5xl  ">
               Оставьте заявку
             </h2>
           </div>
 
-          <p className="lg:text-xl text-xs  lg:w-[30vw] w-[90%] text-center visible lg:hidden ">
+          <p className="visible w-[90%]  text-center text-xs lg:hidden lg:w-[30vw] lg:text-xl ">
             Я разрешаю обработку персональных данных и соглашаюсь c политикой
             конфедициальности
           </p>
@@ -81,12 +81,12 @@ const ModalForm = () => {
           <form
             ref={form}
             onSubmit={handleSubmit(onSubmit)}
-            className=" grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:gap-10 gap-8 lg:w-[70vw] w-[80vw]"
+            className=" grid w-[80vw] grid-cols-1 grid-rows-1 gap-8 lg:w-[70vw] lg:grid-cols-2 lg:gap-10"
           >
-            <div className="w-[100%]  flex flex-wrap lg:gap-10 gap-6 ">
+            <div className="flex  w-[100%] flex-wrap gap-6 lg:gap-10 ">
               <div className="min-w-full ">
                 {errors.from_name?.message && (
-                  <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                  <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
                     {errors.from_name.message}
                   </span>
                 )}
@@ -95,7 +95,7 @@ const ModalForm = () => {
                   onChange={(e) => setName(e.target.value)}
                   type="text"
                   id="name"
-                  className="lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80 min-w-full lg:text-xl text-md text-secondary lg:border-[5px] border-4 border-secondary   rounded-2xl shadow-sm  "
+                  className="text-md min-w-full rounded-2xl border-4 border-secondary border-opacity-80 px-3 py-2 text-secondary shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8   lg:py-4 lg:text-xl  "
                   placeholder="Ваше имя"
                   {...register("from_name", {
                     maxLength: {
@@ -110,7 +110,7 @@ const ModalForm = () => {
 
               <div className="min-w-full">
                 {errors.from_email?.message && (
-                  <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                  <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
                     {errors.from_email?.message}
                   </span>
                 )}
@@ -118,7 +118,7 @@ const ModalForm = () => {
                   value={mail}
                   onChange={(e) => setMail(e.target.value)}
                   id="mail"
-                  className=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+                  className=" text-md min-w-full rounded-2xl border-4 border-secondary border-opacity-80 px-3  py-2  text-secondary shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8 lg:py-4 lg:text-xl  "
                   placeholder="Email"
                   {...register("from_email", {
                     pattern: {
@@ -131,7 +131,7 @@ const ModalForm = () => {
               </div>
               <div className="min-w-full">
                 {errors.from_phone?.message && (
-                  <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                  <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
                     {errors.from_phone.message}
                   </span>
                 )}
@@ -140,7 +140,7 @@ const ModalForm = () => {
                   onChange={(e) => setTel(e.target.value)}
                   type="text"
                   id="phone"
-                  className=" lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+                  className=" text-md min-w-full rounded-2xl border-4 border-secondary border-opacity-80 px-3  py-2  text-secondary shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8 lg:py-4 lg:text-xl  "
                   placeholder="Телефон (+7)"
                   {...register("from_phone", {
                     pattern: {
@@ -157,9 +157,9 @@ const ModalForm = () => {
               </div>
             </div>
 
-            <div className="lg:row-span-1 w-[100%] flex flex-col ">
+            <div className="flex w-[100%] flex-col lg:row-span-1 ">
               {errors.message?.message && (
-                <span className="absolute -mt-6 text-red-600 text-sm lg:ml-5 ml-1">
+                <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
                   {errors.message.message}
                 </span>
               )}
@@ -168,7 +168,7 @@ const ModalForm = () => {
                 onChange={(e) => setDesc(e.target.value)}
                 id="comment"
                 rows="6"
-                className="lg:py-4 lg:px-8 px-3 py-2 focus:border-secondary text-secondary placeholder:opacity-80 border-opacity-80  lg:text-xl text-md rounded-2xl shadow-sm lg:border-[5px] border-4 border-secondary  "
+                className="text-md rounded-2xl border-4 border-secondary border-opacity-80 px-3 py-2 text-secondary  shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8 lg:py-4 lg:text-xl  "
                 placeholder="Комментарии"
                 {...register("message", {
                   required: "Please enter your Message",
@@ -178,15 +178,15 @@ const ModalForm = () => {
                   },
                 })}
               />
-              <div className="flex  flex-row lg:justify-end justify-center items-center lg:mr-10 mt-6">
-                <button className="py-3 px-5 lg:text-lg focus:bg-secondary text-sm font-medium text-center text-white  rounded-2xl bg-primary-700 sm:w-fit bg-secondary ">
+              <div className="mt-6  flex flex-row items-center justify-center lg:mr-10 lg:justify-end">
+                <button className="bg-primary-700 rounded-2xl bg-secondary px-5 py-3 text-center text-sm font-medium  text-white focus:bg-secondary sm:w-fit lg:text-lg ">
                   Отправить
                 </button>
               </div>
             </div>
           </form>
 
-          <h3 className="lg:text-xl text-md lg:w-[30vw] w-[90vw] text-center lg:visible invisible ">
+          <h3 className="text-md invisible w-[90vw] text-center lg:visible lg:w-[30vw] lg:text-xl ">
             Я разрешаю обработку персональных данных и соглашаюсь c политикой
             конфедициальности
           </h3>

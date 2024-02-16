@@ -32,7 +32,7 @@ const circles = [
 export default function Circles() {
   return (
     <div className="flex justify-center  ">
-      <div className="grid lg:grid-cols-5 grid-cols-2 w-full lg:gap-20 gap-8 ">
+      <div className="grid w-full grid-cols-2 gap-8 lg:grid-cols-5 lg:gap-20 ">
         {circles.map((circle, i) => (
           <div key={i} className={circle.classNameAdd}>
             <Circle
@@ -49,8 +49,8 @@ export default function Circles() {
 
 function Circle({ IconComponent, text, classNameAdd }) {
   return (
-    <div className={"flex flex-col w-min lg:col-span-1 "}>
-      <div className="lg:p-8 p-5 border-secondary border-4 rounded-full ">
+    <div className={"flex w-min flex-col lg:col-span-1 "}>
+      <div className="rounded-full border-4 border-secondary p-5 lg:p-8 ">
         <IconComponent />
       </div>
       <p className="text-center lg:text-2xl ">{text}</p>

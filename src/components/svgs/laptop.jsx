@@ -2,9 +2,9 @@ import React from "react";
 
 const Laptop = (props) => {
   return (
-    <div className="flex  lg:justify-start justify-center" {...props}>
+    <div className="flex  justify-center lg:justify-start" {...props}>
       <svg
-        className="lg:w-[30rem] w-[16.5rem]"
+        className="w-[16.5rem] lg:w-[30rem]"
         viewBox="0 0 454 353"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

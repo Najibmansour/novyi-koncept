@@ -184,18 +184,18 @@ export default function Page3() {
             end: "+=500",
             markers: false,
           },
-        }
+        },
       );
     });
   });
 
   return (
     <div className="w-screen ">
-      <div className="flex flex-col lg:gap-28 gap-12 ">
+      <div className="flex flex-col gap-12 lg:gap-28 ">
         {vecs.map((vec, i) => (
           <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
             <h3
-              className={`font-bold mb-2 lg:text-2xl  ${
+              className={`mb-2 font-bold lg:text-2xl  ${
                 i % 2 == 0 ? "text-primary" : "text-secondary"
               }`}
             >

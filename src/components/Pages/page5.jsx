@@ -28,12 +28,12 @@ export default function page5() {
   });
 
   return (
-    <div className="lg:px-12 px-4 mt-10 flex flex-col h-screen items-center lg:gap-8 gap-8 ">
-      <h2 className="lg:text-4xl text-3xl text-primary font-bold text-center">
+    <div className="mt-10 flex h-screen flex-col items-center gap-8 px-4 lg:gap-8 lg:px-12 ">
+      <h2 className="text-center text-3xl font-bold text-primary lg:text-4xl">
         Часто задаваемые вопросы
       </h2>
-      <div className=" w-screen scrollHorizontal h-full" id="BigBox">
-        <div className="grid grid-cols-2 min-w-[750px] h-[90%] lg:max-w-[70%]  mx-5 lg:mx-auto ">
+      <div className=" scrollHorizontal h-full w-screen" id="BigBox">
+        <div className="mx-5 grid h-[90%] min-w-[750px] grid-cols-2  lg:mx-auto lg:max-w-[70%] ">
           <Box
             pos="top-left"
             title="Почему я должен выбрать именно вас?"
@@ -90,16 +90,16 @@ function Box({ pos, title, text }) {
     <div
       className={
         borderStyle +
-        " lg:h-[400px] flex flex-col justify-center items-center gap-4 border-primary border-4 " +
+        " flex flex-col items-center justify-center gap-4 border-4 border-primary lg:h-[400px] " +
         align +
         " " +
         cornerStyle
       }
     >
-      <h3 className="text-primary font-semibold lg:w-[70%] w-[80%] lg:text-2xl">
+      <h3 className="w-[80%] font-semibold text-primary lg:w-[70%] lg:text-2xl">
         {title}
       </h3>
-      <p className="lg:w-[70%] w-[80%] lg:text-2xl">{text}</p>
+      <p className="w-[80%] lg:w-[70%] lg:text-2xl">{text}</p>
     </div>
   );
 }

@@ -8,18 +8,18 @@ import ModalButton from "../modal/modalButton";
 
 const Page2 = () => {
   return (
-    <div className="flex justify-center items-center w-screen h-screen flex-col lg:gap-16 gap-8 mt-10">
-      <div className="grid gap-y-5 lg:grid-cols-2 lg:grid-rows-3 grid-cols-1 ">
-        <div className="lg:col-span-2  flex flex-col items-center lg:order-first ">
-          <p className="font-semibold lg:text-5xl text-2xl lg:w-[50rem] text-center text-secondary">
+    <div className="mt-10 flex h-screen w-screen flex-col items-center justify-center gap-8 lg:gap-16">
+      <div className="grid grid-cols-1 gap-y-5 lg:grid-cols-2 lg:grid-rows-3 ">
+        <div className="flex  flex-col items-center lg:order-first lg:col-span-2 ">
+          <p className="text-center text-2xl font-semibold text-secondary lg:w-[50rem] lg:text-5xl">
             Наша миccия
           </p>
-          <p className="lg:text-5xl text-xl lg:w-[50rem] text-center text-secondary">
+          <p className="text-center text-xl text-secondary lg:w-[50rem] lg:text-5xl">
             освободить время клиентов и увеличить их прибыль
           </p>
         </div>
-        <PictureLaptop className="lg:row-span-2 order-first lg:order-last" />
-        <div className="lg:row-span-2 m-auto">
+        <PictureLaptop className="order-first lg:order-last lg:row-span-2" />
+        <div className="m-auto lg:row-span-2">
           <PointsText className="" />
         </div>
       </div>

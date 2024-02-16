@@ -3,10 +3,10 @@ import DownArrow from "../svgs/downArrow";
 
 const FooterP1 = () => {
   return (
-    <div className="text-primary-content flex flex-col justify-end items-center flex-1 lg:pb-10 pb-3 ">
-      <div className=" animate-bounce  flex flex-col items-center">
-        <p className="lg:text-xl text-sm lg:mb-4 mb-1">Почему выбирают нас</p>
-        <DownArrow className="lg:w-10 w-6" />
+    <div className="flex flex-1 flex-col items-center justify-end pb-3 text-primary-content lg:pb-10 ">
+      <div className=" flex  animate-bounce flex-col items-center">
+        <p className="mb-1 text-sm lg:mb-4 lg:text-xl">Почему выбирают нас</p>
+        <DownArrow className="w-6 lg:w-10" />
       </div>
     </div>
   );

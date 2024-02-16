@@ -16,15 +16,15 @@ export default function Section({ direction, Img, children, inRef, id }) {
       ref={inRef}
       className={`Box flex w-[100%]  ${
         direction === "right"
-          ? "justify-start Box-Left"
-          : "justify-end Box-Right"
+          ? "Box-Left justify-start"
+          : "Box-Right justify-end"
       }`}
     >
       <div className={parentStyles}>
-        <div className="flex justify-center items-center lg:p-12 p-3 ">
+        <div className="flex items-center justify-center p-3 lg:p-12 ">
           <Img
             fill={direction == "left" ? "#2E3192" : "#929B78"}
-            className="lg:w-28 w-24"
+            className="w-24 lg:w-28"
           />
         </div>
         <div className="">{children}</div>

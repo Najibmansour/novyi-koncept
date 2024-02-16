@@ -17,7 +17,7 @@ const Contact = () => {
         "YOUR_SERVICE_ID",
         "YOUR_TEMPLATE_ID",
         { name: name, mail: mail, tel: tel, desc: desc },
-        "YOUR_PUBLIC_KEY"
+        "YOUR_PUBLIC_KEY",
       )
       .then(
         (result) => {
@@ -25,28 +25,28 @@ const Contact = () => {
         },
         (error) => {
           console.log(error.text);
-        }
+        },
       );
   };
 
   return (
-    <section className="bg-white w-screen h-screen overflow-scroll">
-      <div className="flex flex-col justify-center items-center  lg:mt-32 mt-20 lg:gap-10 gap-5">
-        <h2 className=" lg:text-5xl text-2xl tracking-tight font-extrabold text-center text-secondary  ">
+    <section className="h-screen w-screen overflow-scroll bg-white">
+      <div className="mt-20 flex flex-col items-center  justify-center gap-5 lg:mt-32 lg:gap-10">
+        <h2 className=" text-center text-2xl font-extrabold tracking-tight text-secondary lg:text-5xl  ">
           Оставьте заявку
         </h2>
         <form
           ref={form}
           onSubmit={sendEmail}
-          className=" grid lg:grid-cols-2 grid-cols-1 grid-rows-1 lg:gap-10 gap-8 lg:w-[70vw] w-[80vw]"
+          className=" grid w-[80vw] grid-cols-1 grid-rows-1 gap-8 lg:w-[70vw] lg:grid-cols-2 lg:gap-10"
         >
-          <div className="w-[100%]  flex flex-wrap lg:gap-10 gap-8 ">
+          <div className="flex  w-[100%] flex-wrap gap-8 lg:gap-10 ">
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
               type="email"
               id="name"
-              className="lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary placeholder:opacity-80 border-opacity-80 min-w-full lg:text-xl text-md text-secondary lg:border-[5px] border-4 border-secondary   rounded-2xl shadow-sm  "
+              className="text-md min-w-full rounded-2xl border-4 border-secondary border-opacity-80 px-6 py-3 text-secondary shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8   lg:py-4 lg:text-xl  "
               placeholder="Ваше имя"
               required
             />
@@ -56,7 +56,7 @@ const Contact = () => {
               onChange={(e) => setMail(e.target.value)}
               type="text"
               id="mail"
-              className=" lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+              className=" text-md min-w-full rounded-2xl border-4 border-secondary border-opacity-80 px-6  py-3  text-secondary shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8 lg:py-4 lg:text-xl  "
               placeholder="Email"
               required
             />
@@ -65,32 +65,32 @@ const Contact = () => {
               onChange={(e) => setTel(e.target.value)}
               type="text"
               id="phone"
-              className=" lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary placeholder:opacity-80 border-opacity-80  min-w-full  lg:text-xl text-md text-secondary rounded-2xl lg:border-[5px] border-4 border-secondary shadow-sm  "
+              className=" text-md min-w-full rounded-2xl border-4 border-secondary border-opacity-80 px-6  py-3  text-secondary shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8 lg:py-4 lg:text-xl  "
               placeholder="Телефон (+7)"
               required
             />
           </div>
 
-          <div className="lg:row-span-1 w-[100%] flex flex-col ">
+          <div className="flex w-[100%] flex-col lg:row-span-1 ">
             <textarea
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
               id="comment"
               rows="6"
-              className="lg:py-4 lg:px-8 px-6 py-3 focus:border-secondary text-secondary placeholder:opacity-80 border-opacity-80  lg:text-xl text-md rounded-2xl shadow-sm lg:border-[5px] border-4 border-secondary  "
+              className="text-md rounded-2xl border-4 border-secondary border-opacity-80 px-6 py-3 text-secondary  shadow-sm placeholder:opacity-80 focus:border-secondary lg:border-[5px] lg:px-8 lg:py-4 lg:text-xl  "
               placeholder="Комментарии"
             />
-            <div className="flex  flex-row lg:justify-end justify-center items-center lg:mr-10 mt-8">
+            <div className="mt-8  flex flex-row items-center justify-center lg:mr-10 lg:justify-end">
               <button
                 type="submit"
-                className="py-3 px-5 lg:text-xl text-md font-medium text-center text-white  rounded-2xl bg-primary-700 sm:w-fit bg-secondary "
+                className="text-md bg-primary-700 rounded-2xl bg-secondary px-5 py-3 text-center  font-medium text-white sm:w-fit lg:text-xl "
               >
                 Отправить
               </button>
             </div>
           </div>
         </form>
-        <h3 className="lg:text-xl text-md lg:w-[30vw] w-[90vw] text-center">
+        <h3 className="text-md w-[90vw] text-center lg:w-[30vw] lg:text-xl">
           Я разрешаю обработку персональных данных и соглашаюсь c политикой
           конфедициальности
         </h3>

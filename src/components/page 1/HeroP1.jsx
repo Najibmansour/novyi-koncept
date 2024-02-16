@@ -28,20 +28,21 @@ const HeroP1 = () => {
           duration: 0.5,
           ease: "power2.in",
           stagger: { amount: 1.4 },
-        }
+        },
       );
     });
   }
 
   return (
-    <div className="grid lg:grid-cols-2 grid-cols-1 grid-rows-1 pt-0 lg:gap-24 gap-4 ">
+    <div className="grid grid-cols-1 grid-rows-1 gap-4 pt-0 lg:grid-cols-2 lg:gap-24 ">
       <AvatarP1 />
-      <div className="lg:flex items-center ">
-        <div className="w-80 h-48 flex justify-center items-center ">
+      <div className="items-center lg:flex ">
+        <div className="flex h-48 w-80 items-center justify-center ">
           <p
             // ref={myText}
+
             id="target"
-            className="targetText font-normal text-white lg:w-[100%] w-[80%] text-[1.4rem] leading-[normal] tracking-wider text-center lg:text-4xl  lg:text-left"
+            className="targetText w-[80%] text-center text-[1.4rem] font-normal leading-[normal] tracking-wider text-white lg:w-[100%] lg:text-left  lg:text-4xl"
           >
             Мы, компания , поможем вам пройти путь от идеи магазина до запуска и
             первых продаж

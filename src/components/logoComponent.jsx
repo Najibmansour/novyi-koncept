@@ -2,8 +2,8 @@ import React from "react";
 
 const LogoComponent = ({ children }) => {
   return (
-    <div className="w-min h-min relative">
-      <div className="w-min h-min ">
+    <div className="relative h-min w-min">
+      <div className="h-min w-min ">
         <svg
           className=""
           width="348"
@@ -20,12 +20,12 @@ const LogoComponent = ({ children }) => {
             fill="#2E3192"
           />
         </svg>
-        <div className="absolute top-[3rem] left-[2rem]">{children}</div>
+        <div className="absolute left-[2rem] top-[3rem]">{children}</div>
       </div>
 
-      <div className=" w-[62px] h-[62px] bg-[#2e3192] rounded-full absolute bottom-0 left-[16rem]">
+      <div className=" absolute bottom-0 left-[16rem] h-[62px] w-[62px] rounded-full bg-[#2e3192]">
         <svg
-          className="absolute top-[23%] left-[23%]"
+          className="absolute left-[23%] top-[23%]"
           width="34"
           height="34"
           viewBox="0 0 34 34"

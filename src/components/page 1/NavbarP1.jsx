@@ -3,10 +3,10 @@ import Logo from "../svgs/logo/Logo";
 
 const NavbarP1 = () => {
   return (
-    <nav className="navbar  lg:mb-10 px-10 lg:pt-16 pt-8 lg:pl-28 items-center ">
-      <div className="w-full lg:flex grid place-items-stretch ">
-        <Logo className="lg:w-20 w-14  " />
-        <p className="text-white font-bold w-[100%] pt-4 lg:pt-0 text-center lg:text-4xl text-xl ">
+    <nav className="navbar  items-center px-10 pt-8 lg:mb-10 lg:pl-28 lg:pt-16 ">
+      <div className="grid w-full place-items-stretch lg:flex ">
+        <Logo className="w-14 lg:w-20  " />
+        <p className="w-[100%] pt-4 text-center text-xl font-bold text-white lg:pt-0 lg:text-4xl ">
           Добиться успеха на маркетплейсах ЛЕГКО!
         </p>
       </div>
