@@ -73,7 +73,7 @@ function Box({ pos, title, text }) {
       borderStyle = "border-r-0";
       break;
     case "top-right":
-      cornerStyle = "rounded-tr-[4.5rem]";
+      cornerStyle = "rounded-tr-[4.5rem] ";
       break;
     case "bottom-left":
       cornerStyle = "rounded-bl-[4.5rem]";

@@ -9,20 +9,26 @@ import ModalButton from "./modal/modalButton";
 
 export default function Footer() {
   return (
-    <footer className="flex h-[100svh] flex-col items-center justify-center gap-8 bg-primary text-sm text-white lg:mt-10 lg:gap-5 lg:text-2xl">
-      <div className="w-[80vw] text-center lg:w-[70vw]">
-        <h3 className="text-2xl font-bold">Новый Концепт</h3>
-        <p className="font-bold">
+    <footer className="lg:gap- flex h-[100svh] flex-col items-center justify-center gap-5 bg-primary text-sm text-white lg:mt-8 lg:text-xl">
+      <div className="w-[90vw] text-center lg:w-[70vw] ">
+        <h3 className="text-xl font-bold tracking-wider lg:text-5xl">
+          Новый Концепт
+        </h3>
+        <br />
+
+        <p className="text-md font-bold text-gray-200 lg:text-2xl">
           Добро пожаловать в мир непревзойдённого качества и доверия
         </p>
-        <p className="text-gray-200">
+        <br />
+
+        <p className="text-gray-200 lg:text-xl">
           Если вам необходимо запустить бизнdescес на маркетплейсах, обратитесь
           к нам. Мы готовы предоставить вам все необходимые знания, опыт и
           поддержку, чтобы ваш бизнес мог успешно конкурировать в мире
           электронной торговли.
         </p>
         <br />
-        <p className="text-gray-200">
+        <p className="text-gray-200 lg:text-xl">
           конкурировать в мире электронной торговли. Доверьтесь компании «Новый
           Концепт» и вы обретете надежного партнера для развития вашего бизнеса
           на маркетплейсах. С нами вы погрузитесь в безопасную онлайн среду, где
@@ -30,10 +36,10 @@ export default function Footer() {
         </p>
       </div>
       <div className="flex items-center justify-center gap-x-4">
-        <Mail_Logo className="w-10 lg:w-12" />
-        <Vk_Logo className="w-10 lg:w-12" />
-        <Telegram_Logo className="w-10 lg:w-12" />
-        <Whatsapp_Logo className="w-10 lg:w-12" />
+        <Mail_Logo className="w-9 lg:w-12" />
+        <Vk_Logo className="w-9 lg:w-12" />
+        <Telegram_Logo className="w-9 lg:w-12" />
+        <Whatsapp_Logo className="w-9 lg:w-12" />
       </div>
       <address className="mx-4 grid w-[80vw] grid-cols-[1fr_90%] items-center justify-center text-gray-200 lg:w-[50vw] lg:text-2xl">
         <div className="flex items-center justify-center">
@@ -53,7 +59,7 @@ export default function Footer() {
         text="Оставьте заявку"
         className="rounded-2xl border-[3px] px-6 py-2 lg:text-xl"
       />
-      <small className="text-sm  lg:mt-4">2024 NOVYI KONCEPT</small>
+      <small className="text-xs  lg:mt-4">© 2024 NOVYI KONCEPT</small>
     </footer>
   );
 }

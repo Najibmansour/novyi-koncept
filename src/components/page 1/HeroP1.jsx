@@ -42,7 +42,7 @@ const HeroP1 = () => {
             // ref={myText}
 
             id="target"
-            className="targetText w-[80%] text-center text-[1.4rem] font-normal leading-[normal] tracking-wider text-white lg:w-[100%] lg:text-left  lg:text-4xl"
+            className="targetText  w-[80%] text-center text-[1.4rem] font-normal leading-[normal] tracking-wider text-white lg:w-[100%] lg:text-left  lg:text-4xl"
           >
             Мы, компания , поможем вам пройти путь от идеи магазина до запуска и
             первых продаж
