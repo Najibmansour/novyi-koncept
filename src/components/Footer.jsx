@@ -14,12 +14,12 @@ export default function Footer() {
         <h3 className="text-xl font-bold tracking-wider lg:text-5xl">
           Новый Концепт
         </h3>
-        <br />
+        {/* <br /> */}
 
-        <p className="text-md font-bold text-gray-200 lg:text-2xl">
+        <p className="text-md my-3 font-bold text-gray-200 lg:text-2xl">
           Добро пожаловать в мир непревзойдённого качества и доверия
         </p>
-        <br />
+        {/* <br /> */}
 
         <p className="text-gray-200 lg:text-xl">
           Если вам необходимо запустить бизнdescес на маркетплейсах, обратитесь
