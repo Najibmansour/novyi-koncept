@@ -38,7 +38,7 @@ const HeroP1 = () => {
       <AvatarP1 />
       <div className="items-center lg:flex ">
         <div className="flex h-48 w-80 items-center justify-center ">
-          <p
+          <h2
             // ref={myText}
 
             id="target"
@@ -46,7 +46,7 @@ const HeroP1 = () => {
           >
             Мы, компания , поможем вам пройти путь от идеи магазина до запуска и
             первых продаж
-          </p>
+          </h2>
         </div>
       </div>
     </div>
