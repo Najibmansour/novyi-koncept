@@ -2,7 +2,10 @@ import { Toaster } from "sonner";
 import "./globals.css";
 
 export const metadata = {
-  title: "Novyi Koncept",
+  title: {
+    default: "Novyi Koncept",
+    template: "%s | Novyi Koncept",
+  },
   description: "Novyi concept description",
 };
 
