@@ -32,6 +32,17 @@ export const metadata = {
     "Turkmenistan",
     "Belarus",
   ],
+
+  openGraph: {
+    title: "Novyi Koncept",
+    description:
+      'NOVYI KONCEPT provides manufacturers and traders with sales consulting services on marketplaces as trading platforms, helping to sell, promote, and support on Russian and foreign marketplaces;"НОВЫЙ КОНЦЕПТ" предоставляет производителям и трейдерам консультационные услуги по продажам на торговых площадках (маркетплейсах), помогая продавать, продвигать, поддерживать на российских и зарубежных маркетплейсах;',
+    url: "https://novyikoncept.com",
+    siteName: "Novyi Koncept",
+    images: [],
+    locale: "ru_RU",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
