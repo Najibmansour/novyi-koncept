@@ -42,11 +42,11 @@ const ModalForm = () => {
         },
       );
     document.getElementById("my_modal_5").close();
-    toast.info("Request sent succesfuly", {
+    toast.success("Request sent succesfuly", {
       unstyled: false,
       classNames: {
-        toast: "bg-white rounded-xl p-3",
-        title: "text-red-400 text-xl",
+        toast: "bg-white rounded-xl lg:p-3",
+        title: "text-red-400 lg:text-xl",
         description: "text-red-400",
       },
       duration: 2500,

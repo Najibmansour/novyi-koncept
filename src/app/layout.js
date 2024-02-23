@@ -1,5 +1,5 @@
 import { Toaster } from "sonner";
-import "./globals.css";
+import "./globals.scss";
 
 export const metadata = {
   title: {

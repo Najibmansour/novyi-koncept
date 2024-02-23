@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Location_Icon from "./svgs/Location_Icon";
-import Phone_Icon from "./svgs/Phone_Icon";
+import Location_Icon from "./svgs/logo/Location_Icon";
+import Phone_Icon from "./svgs/logo/Phone_Icon";
 import Mail_Logo from "./svgs/logo/Mail_Logo";
 import Telegram_Logo from "./svgs/logo/Telegram_Logo";
 import Vk_Logo from "./svgs/logo/Vk_Logo";
@@ -41,7 +41,7 @@ export default function Footer() {
         <Telegram_Logo className="w-9 lg:w-12" />
         <Whatsapp_Logo className="w-9 lg:w-12" />
       </div>
-      <address className="mx-4 grid w-[80vw] grid-cols-[1fr_90%] items-center justify-center text-gray-200 lg:w-[50vw] lg:text-2xl">
+      <address className="mx-4 grid w-[80vw] grid-cols-[1fr_90%] items-center justify-center space-y-2 text-gray-200 lg:w-[50vw] lg:text-2xl">
         <div className="flex items-center justify-center">
           <Phone_Icon className="w-6 lg:w-9" />
         </div>

@@ -11,7 +11,7 @@ export default function Section({ direction, Img, children, inRef, id }) {
   }
 
   return (
-    <div
+    <article
       id={id}
       ref={inRef}
       className={`Box flex w-[100%]  ${
@@ -29,6 +29,6 @@ export default function Section({ direction, Img, children, inRef, id }) {
         </div>
         <div className="">{children}</div>
       </div>
-    </div>
+    </article>
   );
 }

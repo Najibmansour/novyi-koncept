@@ -2,6 +2,7 @@
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import GridFour from "../page 5/grid";
 
 export default function page5() {
   gsap.registerPlugin(ScrollTrigger);
@@ -28,12 +29,16 @@ export default function page5() {
   });
 
   return (
-    <div className="mt-10 flex h-screen flex-col items-center gap-8 px-4 lg:gap-8 lg:px-12 ">
+    <div className="mt-10 flex h-screen flex-col items-center justify-center gap-5 px-4 lg:gap-8 lg:px-12 ">
       <h2 className="text-center text-3xl font-bold text-primary lg:text-4xl">
         Часто задаваемые вопросы
       </h2>
-      <div className=" scrollHorizontal h-full w-screen" id="BigBox">
-        <div className="mx-5 grid h-[90%] min-w-[750px] grid-cols-2  lg:mx-auto lg:max-w-[70%] ">
+      <article
+        className=" scrollHorizontal h-full w-screen flex-col items-center lg:flex "
+        id="BigBox"
+      >
+        <GridFour id="BigBox" />
+        {/* <div className="mx-5 grid h-[90%] min-w-[750px] grid-cols-2  lg:mx-auto lg:max-w-[70%] ">
           <Box
             pos="top-left"
             title="Почему я должен выбрать именно вас?"
@@ -54,8 +59,8 @@ export default function page5() {
             title="Как мы будем взаимодействовать в процессе работы?"
             text="Мы закрепим за вами персонального менеджера,  который будет вести ваш проект и будет находиться  на связи"
           />
-        </div>
-      </div>
+        </div> */}
+      </article>
     </div>
   );
 }
@@ -90,16 +95,16 @@ function Box({ pos, title, text }) {
     <div
       className={
         borderStyle +
-        " flex flex-col items-center justify-center gap-4 border-4 border-primary lg:h-[400px] " +
+        "flex flex-col items-center justify-center gap-4 border-4 border-primary lg:h-[500px]" +
         align +
         " " +
         cornerStyle
       }
     >
-      <h3 className="w-[80%] font-semibold text-primary lg:w-[70%] lg:text-2xl">
+      <h3 className="w-[100%] font-semibold text-primary lg:w-[70%] lg:text-2xl">
         {title}
       </h3>
-      <p className="w-[80%] lg:w-[70%] lg:text-2xl">{text}</p>
+      <p className="w-[100%] lg:w-[70%] lg:text-2xl">{text}</p>
     </div>
   );
 }
