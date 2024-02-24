@@ -1,10 +1,10 @@
-// "use client";
+"use client";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import GridFour from "../page 5/grid";
 
-export default function page5() {
+export default function Table() {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
@@ -30,7 +30,7 @@ export default function page5() {
 
   return (
     <div className="mt-10 flex h-screen flex-col items-center justify-center gap-5 px-4 lg:gap-8 lg:px-12 ">
-      <h2 className="text-center text-3xl font-bold text-primary lg:text-4xl">
+      <h2 className="text-center text-4xl font-bold text-white lg:text-5xl">
         Часто задаваемые вопросы
       </h2>
       <article
@@ -38,28 +38,6 @@ export default function page5() {
         id="BigBox"
       >
         <GridFour id="BigBox" />
-        {/* <div className="mx-5 grid h-[90%] min-w-[750px] grid-cols-2  lg:mx-auto lg:max-w-[70%] ">
-          <Box
-            pos="top-left"
-            title="Почему я должен выбрать именно вас?"
-            text=" В нашей команде профессионалы высокого уровня, которые знают все об алгоритмах маркетплейсов"
-          />
-          <Box
-            pos="top-right"
-            title="Я только планирую выйти на маркетплейсы, чем вы можете быть мне полезны?"
-            text="Проведем анализ выбранного вами товара и составим четкий план развития бизнеса для уверенного и успешного старта"
-          />
-          <Box
-            pos="bottom-left"
-            title="Сколько стоят ваши услуги?"
-            text="Стоимость услуг зависит от требуемого спектра услуг и количества SKU. Оставьте заявку, мы свяжемся и посчитаем стоимость услуг индивидуально"
-          />
-          <Box
-            pos="bottom-right"
-            title="Как мы будем взаимодействовать в процессе работы?"
-            text="Мы закрепим за вами персонального менеджера,  который будет вести ваш проект и будет находиться  на связи"
-          />
-        </div> */}
       </article>
     </div>
   );
@@ -95,13 +73,13 @@ function Box({ pos, title, text }) {
     <div
       className={
         borderStyle +
-        "flex flex-col items-center justify-center gap-4 border-4 border-primary lg:h-[500px]" +
+        "flex flex-col items-center justify-center gap-4 border-4 border-white lg:h-[500px]" +
         align +
         " " +
         cornerStyle
       }
     >
-      <h3 className="w-[100%] font-semibold text-primary lg:w-[70%] lg:text-2xl">
+      <h3 className="w-[100%] font-semibold text-white lg:w-[70%] lg:text-2xl">
         {title}
       </h3>
       <p className="w-[100%] lg:w-[70%] lg:text-2xl">{text}</p>

@@ -37,11 +37,11 @@ const PointsText = (props) => {
           {descList.map((e) => {
             return (
               <li key={e.id} className="w-full">
-                <p className=" flex flex-row  lg:w-[110%] ">
+                <p className=" flex flex-row-reverse lg:w-[110%]  lg:flex-row ">
                   <span className="flex-1 text-wrap  tracking-[0.06rem] lg:pl-0 lg:text-2xl">
                     {e.title}
                   </span>
-                  <Bullet className="w-3 " />
+                  <Bullet className="mr-4 w-2 lg:w-3" />
                 </p>
               </li>
             );

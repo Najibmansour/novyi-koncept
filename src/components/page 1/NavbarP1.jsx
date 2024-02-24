@@ -18,9 +18,9 @@ const NavbarP1 = () => {
         <Logo className="w-14" />
       </div>
       <div className="flex w-[40%] flex-row items-center justify-between text-2xl text-white">
-        <p>Home</p>
-        <p>About</p>
-        <p>Services</p>
+        <p className="transition-transform hover:scale-125">Home</p>
+        <p className="transition-transform hover:scale-125">About</p>
+        <p className="transition-transform hover:scale-125">Services</p>
       </div>
     </nav>
   );

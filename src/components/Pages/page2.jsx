@@ -9,7 +9,7 @@ import ModalButton from "../modal/modalButton";
 const Page2 = () => {
   return (
     <section className="mt-10 flex h-screen w-screen flex-col items-center justify-center gap-8 bg-transparent lg:gap-16">
-      <div className="ml-10 grid w-[80%] grid-cols-1 gap-10 gap-y-5 lg:grid-cols-2 lg:grid-rows-3">
+      <div className="grid w-[80%] grid-cols-1 gap-10 gap-y-5 lg:ml-10 lg:grid-cols-2 lg:grid-rows-3">
         <div className=" flex flex-row items-end justify-center pb-5 lg:order-first lg:col-span-2">
           <p>
             <span className="font-['Helvetica-Bold',Helvetica] text-xl font-semibold text-white lg:w-[30%] lg:text-5xl">
