@@ -67,7 +67,7 @@ const HeroP1 = () => {
                 <h1 className=" text-center text-xl lg:text-5xl ">
                   Добиться успеха на маркетплейсах ЛЕГКО !
                 </h1>
-                <h2 className="w-[90%] bg-black text-lg lg:w-[70%] lg:text-xl ">
+                <h2 className="w-[90%]  text-lg lg:w-[70%] lg:text-xl ">
                   Мы, компания Новый Концепт, поможем вам пройти путь от идеи
                   магазина до запуска и первых продаж
                 </h2>

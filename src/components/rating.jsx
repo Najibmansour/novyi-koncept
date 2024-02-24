@@ -1,8 +1,9 @@
+import { cn } from "@/lib/cn";
 import React from "react";
 
-const Rating = ({ rating, name }) => {
+const Rating = ({ rating, name, className }) => {
   return (
-    <div className="rating rating-lg">
+    <div className={cn("rating rating-md lg:rating-lg", className)}>
       <input
         type="radio"
         name={name}
