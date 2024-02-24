@@ -9,39 +9,34 @@ import ModalButton from "./modal/modalButton";
 
 export default function Footer() {
   return (
-    <footer className="lg:gap- flex h-[100svh] flex-col items-center justify-center gap-5 bg-primary text-sm text-white lg:mt-8 lg:text-xl">
-      <div className="w-[90vw] text-center lg:w-[70vw] ">
-        <h3 className="text-xl font-bold tracking-wider lg:text-5xl">
+    <footer className="flex h-[90svh] flex-col items-center justify-center gap-5 bg-transparent text-sm text-white  lg:text-xl">
+      <div className="w-[90vw] text-left lg:w-[75vw] ">
+        <h3 className="text-center text-4xl font-bold tracking-wider lg:mb-10 lg:text-5xl">
           Новый Концепт
         </h3>
         {/* <br /> */}
 
-        <p className="text-md my-3 font-bold text-gray-200 lg:text-2xl">
+        <p className="text-md logoFont  my-3 font-bold text-gray-200 lg:text-2xl">
           Добро пожаловать в мир непревзойдённого качества и доверия
         </p>
         {/* <br /> */}
 
-        <p className="text-gray-200 lg:text-xl">
+        <p className="logoFont text-gray-200  lg:text-xl">
           Если вам необходимо запустить бизнdescес на маркетплейсах, обратитесь
           к нам. Мы готовы предоставить вам все необходимые знания, опыт и
           поддержку, чтобы ваш бизнес мог успешно конкурировать в мире
           электронной торговли.
         </p>
         <br />
-        <p className="text-gray-200 lg:text-xl">
+        <p className="logoFont text-gray-200  lg:text-xl">
           конкурировать в мире электронной торговли. Доверьтесь компании «Новый
           Концепт» и вы обретете надежного партнера для развития вашего бизнеса
           на маркетплейсах. С нами вы погрузитесь в безопасную онлайн среду, где
           ваше спокойствие стоит на первом месте
         </p>
       </div>
-      <div className="flex items-center justify-center gap-x-4">
-        <Mail_Logo className="w-9 lg:w-12" />
-        <Vk_Logo className="w-9 lg:w-12" />
-        <Telegram_Logo className="w-9 lg:w-12" />
-        <Whatsapp_Logo className="w-9 lg:w-12" />
-      </div>
-      <address className="mx-4 grid w-[80vw] grid-cols-[1fr_90%] items-center justify-center space-y-2 text-gray-200 lg:w-[50vw] lg:text-2xl">
+
+      <address className="mx-4 grid w-[85vw] grid-cols-[1fr_90%] items-center justify-center space-y-2 text-gray-200 lg:w-[80vw] lg:text-2xl">
         <div className="flex items-center justify-center">
           <Phone_Icon className="w-6 lg:w-9" />
         </div>
@@ -55,10 +50,16 @@ export default function Footer() {
         </div>
         <Link href="mailto:new-concept@bk.ru">new-concept@bk.ru</Link>
       </address>
-      <ModalButton
+      {/* <ModalButton
         text="Оставьте заявку"
         className="rounded-2xl border-[3px] px-6 py-2 lg:text-xl"
-      />
+      /> */}
+      <div className="flex items-center justify-center gap-x-4">
+        <Mail_Logo className="w-9 lg:w-12" />
+        <Vk_Logo className="w-9 lg:w-12" />
+        <Telegram_Logo className="w-9 lg:w-12" />
+        <Whatsapp_Logo className="w-9 lg:w-12" />
+      </div>
       <small className="text-xs  lg:mt-4">© 2024 NOVYI KONCEPT</small>
     </footer>
   );

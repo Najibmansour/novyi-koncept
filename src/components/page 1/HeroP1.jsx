@@ -6,6 +6,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Logo from "../svgs/logo/Logo";
 import NavbarP1 from "./NavbarP1";
+import { cn } from "@/lib/cn";
 // import { SplitText } from "@cyriacbr/react-split-text";
 
 const HeroP1 = () => {
@@ -53,19 +54,19 @@ const HeroP1 = () => {
     //   </div>
     // </div>
     <section className="flex h-screen w-screen flex-row items-center justify-center ">
-      <div className="shadow-3xl  mb-10 flex h-[95svh] w-[80%] flex-row items-center justify-center rounded-[3rem] bg-opacity-50 bg-gradient-to-tr from-fuchsia-300 from-[1%] to-indigo-800 to-[99%] grayscale-[0.4] filter lg:mb-0 lg:h-[90%] lg:w-[90%] lg:rounded-[4rem]">
+      <div className="relative  mb-10 flex h-[95svh] w-[80%] flex-row items-center justify-center overflow-clip rounded-[3rem] bg-opacity-50 bg-gradient-to-tr from-gray-100 from-[1%] to-indigo-800 to-[99%] shadow-3xl grayscale-[0.4] filter lg:mb-0 lg:h-[90%] lg:w-[90%] lg:rounded-[4rem]">
         <div className="h-[90%] w-[90%] ">
-          <NavbarP1></NavbarP1>
+          <NavbarP1 />
           <div className="grid h-[75%] w-full grid-cols-2  ">
             <div className="flex w-full items-center justify-center">
-              <p>Logo</p>
+              <Logo className="p-10 opacity-40  filter" />
             </div>
             <div className="flex  w-full flex-col items-center justify-center  text-white">
-              <div className="w-[90%] space-y-4">
+              <div className="logoFont w-[90%] space-y-4 tracking-wider">
                 <h1 className="text-5xl">
                   Добиться успеха на маркетплейсах ЛЕГКО !
                 </h1>
-                <h2 className="w-[70%] text-xl">
+                <h2 className="w-[70%] text-xl ">
                   Мы, компания Новый Концепт, поможем вам пройти путь от идеи
                   магазина до запуска и первых продаж
                 </h2>
@@ -77,6 +78,7 @@ const HeroP1 = () => {
             Почему выбирают нас
           </div>
         </div>
+        <div className="bg-noise absolute -z-50 h-full  w-full blur-[2px] filter"></div>
       </div>
     </section>
   );

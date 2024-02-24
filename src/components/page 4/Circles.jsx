@@ -49,11 +49,15 @@ export default function Circles() {
 
 function Circle({ IconComponent, text, classNameAdd }) {
   return (
-    <div className={"flex w-min flex-col lg:col-span-1 "}>
-      <div className="rounded-full border-4 border-secondary p-5 lg:p-8 ">
+    <div
+      className={
+        "flex w-min flex-col transition-transform hover:-translate-y-5 lg:col-span-1"
+      }
+    >
+      <div className="rounded-full border-4 border-white p-5 lg:p-8 ">
         <IconComponent />
       </div>
-      <p className="text-center lg:text-2xl ">{text}</p>
+      <p className="text-center text-white lg:text-xl">{text}</p>
     </div>
   );
 }

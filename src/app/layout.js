@@ -49,7 +49,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Toaster position="top-center" richColors />
-      <body className=" font-['Helvetica-Bold',Helvetica]">{children}</body>
+      <body className=" ">{children}</body>
     </html>
   );
 }
+
+// font-['Helvetica-Bold',Helvetica]

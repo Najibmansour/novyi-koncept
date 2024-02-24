@@ -13,7 +13,7 @@ const NavbarP1 = () => {
     //     </h1>
     //   </div>
     // </div>
-    <nav className="hidden h-[13%] w-full items-center justify-between border border-2 border-white px-10 lg:flex lg:flex-row">
+    <nav className="hidden h-[13%] w-full items-center justify-between rounded-3xl border-2 border-white px-10 lg:flex lg:flex-row">
       <div>
         <Logo className="w-14" />
       </div>

@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.cdnfonts.com/css/franklin-gothic");
+
 $randStarty1: random(500);
 $randStarty2: random(500);
 $randStarty3: random(500);
@@ -17,9 +19,9 @@ $randRot2: random(45);
 $randRot3: random(45);
 $randRot4: random(45);
 
-body {
-  font-family: "Helvetica", "Arial", sans-serif;
-}
+// body {
+//   font-family: "Helvetica", "Arial", sans-serif;
+// }
 
 @keyframes blob1 {
   0% {
@@ -106,4 +108,9 @@ body {
 }
 .shape4 {
   animation: blob2 8s ease-in-out infinite;
+}
+
+.logoFont {
+  font-family: "Franklin Gothic";
+  font-weight: 300;
 }

@@ -4,10 +4,10 @@ import Rating from "../rating";
 const Reviews = () => {
   return (
     <section className="flex h-screen w-screen flex-row justify-center">
-      <article className="flex h-[95%] w-[70%] flex-col items-center space-y-4">
+      <article className="relative flex h-[95%] w-[70%] flex-col items-center space-y-4">
         <h1 className="text-6xl text-white">Обзор и Рейтинг</h1>
-        <div className="flex h-full w-full flex-col space-y-6 ">
-          <div className="flex h-[33%] flex-row rounded-3xl border-2 border-white bg-white bg-opacity-10">
+        <div className="flex h-full w-full flex-col space-y-6  transition-transform ">
+          <div className="flex h-[40%] flex-row rounded-3xl border-2 border-white bg-white bg-opacity-10">
             <div className="w-[15%] flex-auto  px-10 py-5">
               <figure className="h-20 w-20 rounded-full bg-white " />
             </div>
@@ -32,7 +32,7 @@ const Reviews = () => {
               </blockquote>
             </article>
           </div>
-          <div className="flex h-[33%] flex-row rounded-3xl border-2 border-white bg-white bg-opacity-10">
+          <div className="flex h-[40%] flex-row rounded-3xl border-2 border-white bg-white bg-opacity-10">
             <div className="w-[15%] flex-auto  px-10 py-5">
               <figure className="h-20 w-20 rounded-full bg-white " />
             </div>
@@ -83,6 +83,14 @@ const Reviews = () => {
                 сработались! Рекомендую!
               </blockquote>
             </article>
+          </div>
+        </div>
+
+        <div className="group absolute -bottom-7 h-[30%] w-[102%] rounded-b-3xl  bg-gradient-to-t from-gray-300  from-[1%] to-transparent to-[99%]  opacity-0 transition-all  hover:opacity-90  ">
+          <div className=" flex h-full w-full flex-row items-center justify-center rounded-b-3xl  text-center text-3xl font-bold text-transparent shadow-3xl hover:text-rose-950">
+            <p className="btn btn-ghost mt-12 rounded-full text-xl shadow-2xl hover:bg-gray-200">
+              SHOW MORE
+            </p>
           </div>
         </div>
       </article>
