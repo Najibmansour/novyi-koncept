@@ -8,8 +8,8 @@ import ModalButton from "../modal/modalButton";
 
 const Page2 = () => {
   return (
-    <section className="mt-10 flex h-screen w-screen flex-col items-center justify-center gap-8 bg-transparent lg:gap-16">
-      <div className="grid w-[80%] grid-cols-1 gap-10 gap-y-5 lg:ml-10 lg:grid-cols-2 lg:grid-rows-3">
+    <section className="flex h-screen w-screen flex-col items-center justify-center gap-8 bg-transparent lg:mt-10 lg:gap-16">
+      <div className="grid w-[80%] grid-cols-1 gap-10 gap-y-4 lg:ml-10 lg:grid-cols-2 lg:grid-rows-3">
         <div className=" flex flex-row items-end justify-center pb-5 lg:order-first lg:col-span-2">
           <p>
             <span className="font-['Helvetica-Bold',Helvetica] text-xl font-semibold text-white lg:w-[30%] lg:text-5xl">
@@ -20,14 +20,11 @@ const Page2 = () => {
             </span>
           </p>
         </div>
-        <PictureLaptop className="order-first lg:order-last lg:row-span-2" />
+        <PictureLaptop className="order-first flex flex-row justify-center lg:order-last lg:row-span-2" />
         <div className="my-auto  text-white lg:row-span-2 ">
           <PointsText className="" />
         </div>
       </div>
-      {/* <Link href="/contact" className="btn btn-white lg:text-xl ">
-        Оставьте заявку
-      </Link> */}
       <ModalButton
         text="Оставьте заявку"
         className="btn-white btn rounded-full text-purple-700 shadow-3xl lg:text-2xl"

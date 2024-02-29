@@ -55,10 +55,18 @@ export default function Footer() {
         className="rounded-2xl border-[3px] px-6 py-2 lg:text-xl"
       /> */}
       <div className="flex items-center justify-center gap-x-4">
-        <Mail_Logo className="w-9 lg:w-12" />
-        <Vk_Logo className="w-9 lg:w-12" />
-        <Telegram_Logo className="w-9 lg:w-12" />
-        <Whatsapp_Logo className="w-9 lg:w-12" />
+        <Link href="https://wa.me/+79372612618">
+          <Mail_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+        </Link>
+        <Link href="https://wa.me/+79372612618">
+          <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+        </Link>
+        <Link href="https://wa.me/+79372612618">
+          <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+        </Link>
+        <Link href="https://wa.me/+79372612618">
+          <Whatsapp_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+        </Link>
       </div>
       <small className="text-xs  lg:mt-4">© 2024 NOVYI KONCEPT</small>
     </footer>

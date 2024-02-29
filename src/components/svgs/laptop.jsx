@@ -413,7 +413,7 @@ const Laptop = (props) => {
     // </div>
 
     <svg
-      className="w-[16.5rem] lg:w-[30rem]"
+      className="w-[14rem] lg:w-[30rem]"
       viewBox="0 0 369 278"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

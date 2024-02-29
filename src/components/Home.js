@@ -32,34 +32,26 @@ export default function HomePage() {
   });
 
   return (
-    // <div className="overflow-hidden">
-    //   <Page1 />
-    //   <Page2 />
-    //   <Page3 />
-    //   <Page4 />
-    //   <Page5 />
-    //   <Footer />
-    // </div>
     <>
-      <div className="absolute -z-50 bg-gradient-to-r from-pink-700 to-fuchsia-700">
+      <div className="absolute -z-50 h-[100%] bg-gradient-to-r from-pink-700 to-fuchsia-700">
         <BackgroudGradient />
       </div>
       <section className="">
         <HeroP1 />
       </section>
-      <section>
+      <section className="">
         <Page2 />
       </section>
-      <section>
+      <section className="">
         <Reviews />
       </section>
-      <section>
+      <section className="">
         <Table />
       </section>
-      <section>
+      <section className="">
         <CirclesPage />
       </section>
-      <footer>
+      <footer className="">
         <Footer />
       </footer>
     </>

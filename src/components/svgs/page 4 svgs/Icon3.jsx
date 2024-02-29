@@ -2,9 +2,8 @@ export default function Icon3(props) {
   return (
     <svg
       {...props}
+      className="h-[70px] w-[70px] lg:h-[80px] lg:w-[80px]"
       xmlns="http://www.w3.org/2000/svg"
-      width="81"
-      height="81"
       viewBox="0 0 67 81"
       fill="none"
     >

@@ -33,14 +33,14 @@ const GridFour = (props) => {
   return (
     <div
       className={cn(
-        "ml-6 grid w-[80%] min-w-[750px] grid-cols-2 grid-rows-2 rounded-[4.5rem] border-4 border-white  bg-gradient-to-tr from-gray-100 from-[1%] to-indigo-800 to-[99%] grayscale-[0.3]",
+        "ml-6 grid w-[80%] min-w-[750px] grid-cols-2 grid-rows-2 rounded-[4.5rem] border-4 border-white  bg-gradient-to-tr from-gray-400 from-[1%] to-indigo-800 to-[99%] grayscale-[0.3]",
         props.className,
       )}
     >
       {boxes.map((box, i) => (
         <article
           key={i}
-          className={"bg-noise h-[40vh]  space-y-3 p-7 lg:p-14" + box.className}
+          className={"h-[40vh] space-y-3  bg-noise p-7 lg:p-14" + box.className}
         >
           <h3 className="text-lg font-semibold text-white lg:text-2xl">
             {box.title}

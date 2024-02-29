@@ -17,10 +17,13 @@ const NavbarP1 = () => {
       <div>
         <Logo className="w-14" />
       </div>
-      <div className="flex w-[40%] flex-row items-center justify-between text-2xl text-white">
-        <p className="transition-transform hover:scale-125">Home</p>
+      <div className="flex w-[50%] flex-row items-center justify-end text-2xl text-white">
+        {/* <p className="transition-transform hover:scale-125">Home</p>
         <p className="transition-transform hover:scale-125">About</p>
-        <p className="transition-transform hover:scale-125">Services</p>
+        <p className="transition-transform hover:scale-125">Services</p> */}
+        <h1 className="text-xl lg:text-xl ">
+          Добиться успеха на маркетплейсах ЛЕГКО !
+        </h1>
       </div>
     </nav>
   );
