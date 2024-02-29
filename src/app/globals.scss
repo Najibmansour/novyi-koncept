@@ -169,3 +169,13 @@ $randRot4: random(45);
   font-family: "Franklin Gothic", sans-serif;
   font-weight: 300;
 }
+
+.half-border-left {
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, transparent 60%, white 40%) 100% 1;
+}
+
+.half-border-right {
+  border-top: 3px solid;
+  border-image: linear-gradient(to left, transparent 60%, white 60%) 100% 1;
+}

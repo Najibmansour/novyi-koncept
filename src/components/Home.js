@@ -10,6 +10,7 @@ import HeroP1 from "./page 1/HeroP1";
 import Reviews from "./Pages/reviews";
 import Table from "@/components/Pages/page5";
 import CirclesPage from "@/components/Pages/page4";
+import Page3 from "./Pages/page3";
 
 export const metadata = { title: "Achieving success on marketplaces is EASY!" };
 
@@ -17,10 +18,6 @@ export default function HomePage() {
   gsap.registerPlugin(ScrollTrigger);
   useGSAP(() => {
     const lenis = new Lenis();
-
-    // lenis.on("scroll", (e) => {
-    //   console.log(e);
-    // });
 
     lenis.on("scroll", ScrollTrigger.update);
 
@@ -41,6 +38,9 @@ export default function HomePage() {
       </section>
       <section className="">
         <Page2 />
+      </section>
+      <section className="">
+        <Page3 />
       </section>
       <section className="">
         <Reviews />

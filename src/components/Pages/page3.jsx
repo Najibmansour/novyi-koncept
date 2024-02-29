@@ -158,58 +158,54 @@ const vecs = [
 ];
 
 export default function Page3() {
-  gsap.registerPlugin(ScrollTrigger);
-  useGSAP(() => {
-    let boxes = gsap.utils.toArray(".Box");
-    // console.log(boxes);
-    boxes.forEach((box) => {
-      gsap.fromTo(
-        box,
-        {
-          x: box.id == "left" ? "100%" : "-100%",
-          scrollTrigger: {
-            trigger: box,
-            start: "top bottom-=200",
-            scrub: true,
-            end: "+=500",
-            markers: false,
-          },
-        },
-        {
-          x: 0,
-          scrollTrigger: {
-            trigger: box,
-            start: "top bottom-=200",
-            scrub: true,
-            end: "+=500",
-            markers: false,
-          },
-        },
-      );
-    });
-  });
+  // gsap.registerPlugin(ScrollTrigger);
+  // useGSAP(() => {
+  //   let boxes = gsap.utils.toArray(".Box");
+  //   // console.log(boxes);
+  //   boxes.forEach((box) => {
+  //     gsap.fromTo(
+  //       box,
+  //       {
+  //         x: box.id == "left" ? "100%" : "-100%",
+  //         scrollTrigger: {
+  //           trigger: box,
+  //           start: "top bottom-=200",
+  //           scrub: true,
+  //           end: "+=500",
+  //           markers: false,
+  //         },
+  //       },
+  //       {
+  //         x: 0,
+  //         scrollTrigger: {
+  //           trigger: box,
+  //           start: "top bottom-=200",
+  //           scrub: true,
+  //           end: "+=500",
+  //           markers: false,
+  //         },
+  //       },
+  //     );
+  //   });
+  // });
 
   return (
-    <div className="w-screen ">
-      <div className="flex flex-col gap-12 lg:gap-28 ">
-        {vecs.map((vec, i) => (
-          <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
-            <h3
-              className={`mb-2 font-bold lg:text-2xl  ${
-                i % 2 == 0 ? "text-primary" : "text-secondary"
-              }`}
-            >
-              {vec.title}
-            </h3>
-            <ul className="list-item list-outside marker:text-primary lg:text-2xl ">
-              {vec.points.map((point, i) => (
-                <li key={i} className="my-4">
-                  {point}
-                </li>
-              ))}
-            </ul>
-          </Section>
-        ))}
+    <div className="flex w-screen flex-row justify-center">
+      <div className="w-[76vw]">
+        <div className="flex flex-col gap-0 ">
+          {vecs.map((vec, i) => (
+            <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
+              <h3 className="font-bold lg:text-3xl">{vec.title}</h3>
+              <blockquote className="list-outside  marker:bg-white lg:text-lg ">
+                {vec.points.map((point, i) => (
+                  <li key={i} className="my-2">
+                    {point}
+                  </li>
+                ))}
+              </blockquote>
+            </Section>
+          ))}
+        </div>
       </div>
     </div>
   );

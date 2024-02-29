@@ -1,8 +1,9 @@
 import React from "react";
 
-const Logo = ({ className }) => {
+const Logo = ({ className, forwardRef }) => {
   return (
     <svg
+      ref={forwardRef}
       className={className}
       viewBox="0 0 64 49"
       fill="none"

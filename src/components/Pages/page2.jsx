@@ -1,8 +1,6 @@
 import React from "react";
-import GridElement from "../page 2/gridElement";
 import PointsText from "../page 2/PointsText";
 import PictureLaptop from "../page 2/picture";
-import Link from "next/link";
 import ModalForm from "../modal/modal";
 import ModalButton from "../modal/modalButton";
 
