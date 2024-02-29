@@ -170,55 +170,40 @@ $randRot4: random(45);
   font-weight: 300;
 }
 
-.half-border-left {
-  border-left: 10px #fff solid;
+.box-left {
+  position: relative;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
-
-.half-border-right {
-  border-right: 10px #fff solid;
-}
-
-.half-border-left::before {
-  content: "";
-  right: 10%;
-  position: absolute;
-  top: 0;
-  width: 75%;
-  height: 3px;
-  background-color: white;
-  display: block;
-}
-
-.half-border-left::after {
+.box-left::before {
   content: "";
   position: absolute;
-  right: 10%;
-  bottom: 0;
-  width: 75%;
-  height: 3px;
-  background-color: white;
-  display: block;
+  inset: 0;
+  border-radius: 600px;
+  padding: 4px;
+  background: linear-gradient(90deg, white 60%, transparent 40%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
-.half-border-right::before {
-  content: "";
-  left: 10%;
-
-  position: absolute;
-  top: 0;
-  width: 75%;
-  height: 3px;
-  background-color: #fff;
-  display: block;
+.box-right {
+  position: relative;
+  margin-top: -2px;
+  margin-bottom: -2px;
 }
-
-.half-border-right::after {
+.box-right::before {
   content: "";
-  left: 15%;
   position: absolute;
-  bottom: 0;
-  width: 75%;
-  height: 3px;
-  background-color: #fff;
-  display: block;
+  inset: 0;
+  border-radius: 600px;
+  padding: 4px;
+  background: linear-gradient(-90deg, white 60%, transparent 40%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }

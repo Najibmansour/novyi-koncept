@@ -2,10 +2,10 @@ export default function Section({ direction, Img, children, inRef, id }) {
   let parentStyles = "";
   if (direction == "left") {
     parentStyles =
-      "flex flex-col lg:w-[80%]  rounded-l-full lg:-ml-[13%] -my-[2px] py-8 px-8 border-4 border-white border-r-0 sm:flex-row";
+      "flex flex-col gap-10 items-center box-left w-full lg:h-[40vh]-my-[2px] py-8 px-8  sm:flex-row";
   } else if (direction == "right") {
     parentStyles =
-      "flex flex-col lg:w-[80%]  rounded-r-full lg:-mr-[13%] -my-[2px] py-8 px-8 border-4 border-white border-l-0 sm:flex-row-reverse";
+      "flex flex-col gap-0 items-center box-right w-full lg:h-[40vh]-my-[2px] py-8 px-8  sm:flex-row-reverse";
   } else {
     return <p className="text-red-500">Missing direction</p>;
   }

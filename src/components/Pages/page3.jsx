@@ -196,9 +196,9 @@ export default function Page3() {
           {vecs.map((vec, i) => (
             <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
               <h3 className="font-bold lg:text-3xl">{vec.title}</h3>
-              <blockquote className="list-outside  marker:bg-white lg:text-lg ">
+              <blockquote className="list-outside marker:bg-white lg:text-sm ">
                 {vec.points.map((point, i) => (
-                  <li key={i} className="my-2">
+                  <li key={i} className="tracking-tight">
                     {point}
                   </li>
                 ))}
