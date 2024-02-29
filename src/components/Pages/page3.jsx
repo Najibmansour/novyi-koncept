@@ -190,7 +190,7 @@ export default function Page3() {
   // });
 
   return (
-    <div className="flex w-screen flex-row justify-center">
+    <div className="mb-10 flex w-screen flex-row justify-center">
       <div className="w-[76vw]">
         <div className="flex flex-col gap-0 ">
           {vecs.map((vec, i) => (
