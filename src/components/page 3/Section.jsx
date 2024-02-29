@@ -2,10 +2,10 @@ export default function Section({ direction, Img, children, inRef, id }) {
   let parentStyles = "";
   if (direction == "left") {
     parentStyles =
-      "flex flex-col lg:w-[100%] w-[90%] border-white half-border-left  text-white rounded-l-full lg:px-12 px-9 py-8 gap-8 sm:flex-row";
+      "flex flex-col lg:w-[80%]  rounded-l-full lg:-ml-[13%] -my-[2px] py-8 px-8 border-4 border-white border-r-0 sm:flex-row";
   } else if (direction == "right") {
     parentStyles =
-      "flex flex-col lg:w-[100%] w-[90%] border-white half-border-right  text-white border-t-0 rounded-r-full lg:px-12 px-4 py-8 gap-8 sm:flex-row-reverse";
+      "flex flex-col lg:w-[80%]  rounded-r-full lg:-mr-[13%] -my-[2px] py-8 px-8 border-4 border-white border-l-0 sm:flex-row-reverse";
   } else {
     return <p className="text-red-500">Missing direction</p>;
   }
@@ -14,19 +14,21 @@ export default function Section({ direction, Img, children, inRef, id }) {
     <article
       id={id}
       ref={inRef}
-      className={`Box text flex w-[100%]  ${
-        direction === "right"
-          ? "Box-Left justify-start"
-          : "Box-Right justify-end"
+      className={`Box text relative flex w-[100%] flex-col items-center text-white  ${
+        direction === "right" ? "Box-Left " : "Box-Right "
       }`}
     >
       <div className="" />
       <div className={parentStyles}>
-        <div className="flex items-center justify-center rounded-full bg-white p-3 shadow-3xl lg:p-12 ">
-          <Img fill={"#ffffff"} className="w-24 lg:w-28" />
+        <div className="flex w-[20%] items-center justify-center ">
+          <div className="rounded-full bg-white p-10">
+            <Img fill="#ffffff" className="h-24 w-24 lg:h-28 lg:w-28" />
+          </div>
         </div>
-        <blockquote className="">{children}</blockquote>
+        <blockquote className="w-[80%] ">{children}</blockquote>
       </div>
+      {/* <hr className="absolute -top-[2px] right-[15%] h-[4px] w-[75%] bg-white" />
+      <hr className="absolute -bottom-[2px] right-[15%] h-[4px] w-[75%] bg-white" /> */}
     </article>
   );
 }

@@ -53,9 +53,9 @@ const PointsText = (props) => {
         x: 0,
         scrollTrigger: {
           trigger: boxes,
-          start: "top center",
+          start: "top-=100 center",
           scrub: false,
-          end: "+=500",
+          end: "bottom center",
           markers: true,
         },
         duration: 0.3,
@@ -67,14 +67,14 @@ const PointsText = (props) => {
     <div {...props}>
       <div className="flex w-full lg:items-center">
         <ul
-          className="flex w-[100%] flex-col gap-4 lg:mr-20 lg:gap-5 lg:pl-0"
+          className="flex w-full flex-col gap-4 lg:mr-20 lg:gap-5 "
           ref={points}
         >
           {descList.map((e) => {
             return (
               <li key={e.id} className="w-full">
-                <p className=" flex flex-row-reverse lg:w-[100%] lg:flex-row ">
-                  <span className="flex-1 text-wrap tracking-[0.06rem] lg:pl-0 lg:text-2xl">
+                <p className="flex flex-row-reverse lg:w-[100%] lg:flex-row ">
+                  <span className="flex-1 text-wrap tracking-[0.06rem]  lg:text-2xl">
                     {e.title}
                   </span>
                   <Bullet className="mr-4 w-2 lg:w-3" />

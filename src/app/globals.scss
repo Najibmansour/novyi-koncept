@@ -171,11 +171,54 @@ $randRot4: random(45);
 }
 
 .half-border-left {
-  border-top: 3px solid;
-  border-image: linear-gradient(to right, transparent 60%, white 40%) 100% 1;
+  border-left: 10px #fff solid;
 }
 
 .half-border-right {
-  border-top: 3px solid;
-  border-image: linear-gradient(to left, transparent 60%, white 60%) 100% 1;
+  border-right: 10px #fff solid;
+}
+
+.half-border-left::before {
+  content: "";
+  right: 10%;
+  position: absolute;
+  top: 0;
+  width: 75%;
+  height: 3px;
+  background-color: white;
+  display: block;
+}
+
+.half-border-left::after {
+  content: "";
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  width: 75%;
+  height: 3px;
+  background-color: white;
+  display: block;
+}
+
+.half-border-right::before {
+  content: "";
+  left: 10%;
+
+  position: absolute;
+  top: 0;
+  width: 75%;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+}
+
+.half-border-right::after {
+  content: "";
+  left: 15%;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  height: 3px;
+  background-color: #fff;
+  display: block;
 }
