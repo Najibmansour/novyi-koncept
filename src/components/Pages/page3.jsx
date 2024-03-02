@@ -199,7 +199,7 @@ export default function Page3() {
                 start: isDesktop ? "top100 bottom-=150" : "top center-=100",
                 scrub: isDesktop ? true : false,
                 end: isDesktop ? "bottom bottom-=150" : "bottom bottom-=150",
-                markers: true,
+                markers: false,
               },
             },
           );
