@@ -56,7 +56,7 @@ const PointsText = (props) => {
           start: "top-=100 center",
           scrub: false,
           end: "bottom center",
-          markers: true,
+          markers: false,
         },
         duration: 0.3,
         stagger: { amount: 0.4 },

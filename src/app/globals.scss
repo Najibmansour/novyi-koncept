@@ -182,7 +182,7 @@ $randRot4: random(45);
     inset: 0;
     border-radius: 600px;
     padding: 4px;
-    background: linear-gradient(90deg, white 75%, transparent 25%);
+    background: linear-gradient(120deg, white 75%, transparent 25%);
     -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
@@ -201,7 +201,7 @@ $randRot4: random(45);
     inset: 0;
     border-radius: 600px;
     padding: 4px;
-    background: linear-gradient(-90deg, white 75%, transparent 25%);
+    background: linear-gradient(-120deg, white 75%, transparent 25%);
     -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);
@@ -215,7 +215,7 @@ $randRot4: random(45);
     inset: 0;
     border-radius: 600px;
     padding: 4px;
-    background: linear-gradient(-90deg, black 75%, transparent 25%);
+    background: linear-gradient(-120deg, black 75%, transparent 25%);
     -webkit-mask:
       linear-gradient(#fff 0 0) content-box,
       linear-gradient(#fff 0 0);

@@ -18,34 +18,48 @@ const HeroP1 = () => {
     console.log(myText.words);
 
     useGSAP(() => {
-      gsap.fromTo(
-        myText.words,
+      let mm = gsap.matchMedia();
+      let breakPoint = 800;
+      mm.add(
         {
-          y: "100%",
-          opacity: 0,
-          duration: 0.5,
-          ease: "power2.in",
-          stagger: { amount: 1.4 },
+          // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+          isDesktop: `(min-width: ${breakPoint}px)`,
+          isMobile: `(max-width: ${breakPoint - 1}px)`,
+          reduceMotion: "(prefers-reduced-motion: reduce)",
         },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.5,
-          ease: "power2.in",
-          stagger: { amount: 1.4 },
-        },
-      );
-      gsap.fromTo(
-        logoRef.current,
-        {
-          opacity: 0,
-          duration: 1.3,
-          ease: "power2.in",
-        },
-        {
-          opacity: 0.4,
-          duration: 1.2,
-          ease: "power2.in",
+        (context) => {
+          let { isDesktop, isMobile, reduceMotion } = context.conditions;
+
+          gsap.fromTo(
+            myText.words,
+            {
+              y: "100%",
+              opacity: 0,
+              duration: 0.5,
+              ease: "power2.in",
+              stagger: { amount: 1.4 },
+            },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 0.5,
+              ease: "power2.in",
+              stagger: { amount: 1.4 },
+            },
+          );
+          gsap.fromTo(
+            logoRef.current,
+            {
+              opacity: 0,
+              duration: 1.3,
+              ease: "power2.in",
+            },
+            {
+              opacity: 0.4,
+              duration: 1.2,
+              ease: "power2.in",
+            },
+          );
         },
       );
     });

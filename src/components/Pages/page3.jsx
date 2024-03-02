@@ -164,27 +164,45 @@ export default function Page3() {
     let boxes = gsap.utils.toArray(".Box");
     // console.log(boxes);
     boxes.forEach((box) => {
-      gsap.fromTo(
-        box,
+      let mm = gsap.matchMedia();
+      let breakPoint = 800;
+
+      mm.add(
         {
-          x: box.id == "left" ? "100%" : "-100%",
-          scrollTrigger: {
-            trigger: box,
-            start: "top bottom-=200",
-            scrub: true,
-            end: "+=500",
-            markers: false,
-          },
+          // set up any number of arbitrarily-named conditions. The function below will be called when ANY of them match.
+          isDesktop: `(min-width: ${breakPoint}px)`,
+          isMobile: `(max-width: ${breakPoint - 1}px)`,
+          reduceMotion: "(prefers-reduced-motion: reduce)",
         },
-        {
-          x: 0,
-          scrollTrigger: {
-            trigger: box,
-            start: "top bottom-=200",
-            scrub: true,
-            end: "+=500",
-            markers: false,
-          },
+        (cont) => {
+          let { isDesktop, isMobile, reduceMotion } = cont.conditions;
+          gsap.fromTo(
+            box,
+            {
+              x: isDesktop ? (box.id == "left" ? "100%" : "-100%") : 0,
+              y: isMobile ? "20%" : 0,
+              opacity: 0,
+              scrollTrigger: {
+                trigger: box,
+                // start: "top bottom-=150",
+                scrub: isDesktop ? true : false,
+                // end: "bottom bottom-=150",
+                markers: false,
+              },
+            },
+            {
+              x: 0,
+              y: 0,
+              opacity: 1,
+              scrollTrigger: {
+                trigger: box,
+                start: isDesktop ? "top100 bottom-=150" : "top center-=100",
+                scrub: isDesktop ? true : false,
+                end: isDesktop ? "bottom bottom-=150" : "bottom bottom-=150",
+                markers: true,
+              },
+            },
+          );
         },
       );
     });
