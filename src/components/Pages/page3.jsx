@@ -1,3 +1,4 @@
+"use client";
 import Section from "../page 3/Section";
 import Vector from "../svgs/logo/vectors/Vector";
 import Vector1 from "../svgs/logo/vectors/Vector1";
@@ -158,47 +159,49 @@ const vecs = [
 ];
 
 export default function Page3() {
-  // gsap.registerPlugin(ScrollTrigger);
-  // useGSAP(() => {
-  //   let boxes = gsap.utils.toArray(".Box");
-  //   // console.log(boxes);
-  //   boxes.forEach((box) => {
-  //     gsap.fromTo(
-  //       box,
-  //       {
-  //         x: box.id == "left" ? "100%" : "-100%",
-  //         scrollTrigger: {
-  //           trigger: box,
-  //           start: "top bottom-=200",
-  //           scrub: true,
-  //           end: "+=500",
-  //           markers: false,
-  //         },
-  //       },
-  //       {
-  //         x: 0,
-  //         scrollTrigger: {
-  //           trigger: box,
-  //           start: "top bottom-=200",
-  //           scrub: true,
-  //           end: "+=500",
-  //           markers: false,
-  //         },
-  //       },
-  //     );
-  //   });
-  // });
+  gsap.registerPlugin(ScrollTrigger);
+  useGSAP(() => {
+    let boxes = gsap.utils.toArray(".Box");
+    // console.log(boxes);
+    boxes.forEach((box) => {
+      gsap.fromTo(
+        box,
+        {
+          x: box.id == "left" ? "100%" : "-100%",
+          scrollTrigger: {
+            trigger: box,
+            start: "top bottom-=200",
+            scrub: true,
+            end: "+=500",
+            markers: false,
+          },
+        },
+        {
+          x: 0,
+          scrollTrigger: {
+            trigger: box,
+            start: "top bottom-=200",
+            scrub: true,
+            end: "+=500",
+            markers: false,
+          },
+        },
+      );
+    });
+  });
 
   return (
     <div className="mb-10 flex w-screen flex-row justify-center">
-      <div className="w-[76vw]">
+      <div className="w-[85%] lg:w-[76vw]">
         <div className="flex flex-col gap-0 ">
           {vecs.map((vec, i) => (
             <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
-              <h3 className="font-bold lg:text-3xl">{vec.title}</h3>
+              <h3 className="mb-3 text-center text-xl font-bold tracking-wider lg:text-left lg:text-3xl">
+                {vec.title}
+              </h3>
               <blockquote className="list-outside marker:bg-white lg:text-sm ">
                 {vec.points.map((point, i) => (
-                  <li key={i} className="tracking-tight">
+                  <li key={i} className="tracking-tighter">
                     {point}
                   </li>
                 ))}

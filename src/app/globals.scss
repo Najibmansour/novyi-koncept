@@ -170,54 +170,56 @@ $randRot4: random(45);
   font-weight: 300;
 }
 
-.box-left {
-  position: relative;
-  margin-top: -2px;
-  margin-bottom: -2px;
-}
-.box-left::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 600px;
-  padding: 4px;
-  background: linear-gradient(90deg, white 60%, transparent 40%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
+@media only screen and (min-width: 1080px) {
+  .box-left {
+    position: relative;
+    margin-top: -2px;
+    margin-bottom: -2px;
+  }
+  .box-left::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 600px;
+    padding: 4px;
+    background: linear-gradient(90deg, white 75%, transparent 25%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
 
-.box-right {
-  position: relative;
-  margin-top: -2px;
-  margin-bottom: -2px;
-}
-.box-right::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 600px;
-  padding: 4px;
-  background: linear-gradient(-90deg, white 60%, transparent 40%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
+  .box-right {
+    position: relative;
+    margin-top: -2px;
+    margin-bottom: -2px;
+  }
+  .box-right::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 600px;
+    padding: 4px;
+    background: linear-gradient(-90deg, white 75%, transparent 25%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
 
-.box-right:first-child::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 600px;
-  padding: 4px;
-  background: linear-gradient(-90deg, black 60%, transparent 40%);
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
+  .box-right:first-child::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 600px;
+    padding: 4px;
+    background: linear-gradient(-90deg, black 75%, transparent 25%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
 }
