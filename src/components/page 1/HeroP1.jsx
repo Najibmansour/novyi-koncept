@@ -73,7 +73,7 @@ const HeroP1 = () => {
         <div className="h-[100%] w-[100%] lg:h-[90%] lg:w-[90%] ">
           <NavbarP1 className="hidden lg:flex" />
           <div className="grid h-[90%] w-full grid-cols-1 justify-between space-y-5 lg:h-[80%]  lg:grid-cols-2  ">
-            <div className="flex w-full items-center justify-center blur-[8px]">
+            <div className="flex w-full items-center justify-center lg:blur-[8px]">
               <Logo
                 forwardRef={logoRef}
                 className="flex p-10 opacity-0 filter lg:p-10"
