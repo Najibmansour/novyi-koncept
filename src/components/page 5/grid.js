@@ -42,10 +42,10 @@ const GridFour = (props) => {
           key={i}
           className={"h-[40vh] space-y-3  bg-noise p-7 lg:p-14" + box.className}
         >
-          <h3 className="text-lg font-semibold text-white lg:text-2xl">
+          <h3 className="text-lg font-semibold text-white lg:text-3xl">
             {box.title}
           </h3>
-          <p className="text-md text-white lg:text-lg">{box.text}</p>
+          <p className="text-md text-white lg:text-xl">{box.text}</p>
         </article>
       ))}
     </div>
