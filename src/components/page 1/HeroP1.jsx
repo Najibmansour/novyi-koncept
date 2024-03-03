@@ -92,10 +92,10 @@ const HeroP1 = () => {
               <DownArrow className="w-6 lg:w-7" />
             </div>
             <div className="absolute right-0 hidden flex-row gap-3 lg:flex">
-              <Link href="/">
+              <Link href="/" aria-label="open instagram page of novyi">
                 <InstagramLogo2 className="h-12 w-12" />
               </Link>
-              <Link href="/">
+              <Link href="/" aria-label="open VK page of novyi">
                 <Vk_Logo className="h-12 w-12" />
               </Link>
             </div>
