@@ -1,16 +1,22 @@
 import React from "react";
 import Logo from "../svgs/logo/Logo";
+import { cn } from "@/lib/cn";
 
-const NavbarP1 = () => {
+const NavbarP1 = (props) => {
   //Achieving success on marketplaces is EASY!
 
   return (
-    <nav className="hidden h-[13%] w-full items-center justify-between rounded-3xl border-2 border-white px-10 lg:flex lg:flex-row">
+    <nav
+      className={cn(
+        "flex flex-row  items-center justify-between rounded-xl border-2 border-white px-8 lg:h-[13%] lg:w-full lg:rounded-3xl",
+        props.className,
+      )}
+    >
       <div>
-        <Logo className="w-14" />
+        <Logo className="w-10 lg:w-14" />
       </div>
-      <div className="flex w-[50%] flex-row items-center justify-end text-2xl text-white">
-        <h1 className="text-xl lg:text-xl ">
+      <div className="flex w-[50%] flex-row items-center justify-end text-2xl text-white lg:w-[50%]">
+        <h1 className="text-xs lg:text-xl ">
           Добиться успеха на маркетплейсах ЛЕГКО !
         </h1>
       </div>

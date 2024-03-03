@@ -55,7 +55,7 @@ const HeroP1 = () => {
               ease: "power2.in",
             },
             {
-              opacity: window.innerWidth < 800 ? 0.25 : 0.4,
+              opacity: 0.4,
               duration: 1.2,
               ease: "power2.in",
             },
@@ -66,23 +66,23 @@ const HeroP1 = () => {
   }
 
   return (
-    <section className="flex h-[100svh] w-screen flex-col items-center justify-end lg:h-screen lg:flex-row lg:justify-center ">
-      <div className="relative  mb-10 flex h-[80svh] w-[90%] flex-row items-center justify-center overflow-clip rounded-[3rem] bg-opacity-50 from-gray-400  from-[1%] to-indigo-800 to-[99%] grayscale-[0.4] filter lg:mb-0 lg:h-[90%] lg:w-[85%] lg:rounded-[4rem] lg:bg-gradient-to-tr lg:shadow-3xl  lg:blur-0">
-        <div className="h-[90%] w-[90%] ">
-          <NavbarP1 />
-          <div className="grid h-[75%] w-full grid-cols-1 space-y-5 lg:grid-cols-2  ">
-            <div className="flex w-full items-center justify-center">
+    <section className="flex h-screen w-screen flex-col items-center lg:flex-row lg:justify-center ">
+      <NavbarP1 className="m-4 px-2 py-2 lg:hidden" />
+
+      <div className="relative mb-0 flex h-[85svh] w-[90%] flex-row items-center justify-center overflow-clip rounded-[2rem] bg-opacity-50 bg-gradient-to-tr from-gray-400 from-[1%] to-indigo-800 to-[99%] grayscale-[0.4] filter lg:mb-0 lg:h-[90%] lg:w-[90vw] lg:rounded-[4rem]  lg:shadow-3xl">
+        <div className="h-[100%] w-[100%] lg:h-[90%] lg:w-[90%] ">
+          <NavbarP1 className="hidden lg:flex" />
+          <div className="grid h-[90%] w-full grid-cols-1 justify-between space-y-5 lg:h-[80%]  lg:grid-cols-2  ">
+            <div className="flex w-full items-center justify-center ">
               <Logo
                 forwardRef={logoRef}
-                className="absolute bottom-[50%] translate-x-1 translate-y-[50%] px-4 opacity-0 blur-[10px] filter lg:static lg:translate-y-[0%] lg:p-10 lg:px-16 lg:blur-0 "
+                className="flex p-10 opacity-0 filter lg:p-10"
               />
+              {/* <NavbarP1 className="m-4 px-2 py-2 lg:hidden" /> */}
             </div>
-            <div className="flex w-full flex-col items-center justify-center  text-white">
-              <div className="logoFont flex w-[100%] flex-col items-center space-y-4  tracking-wider lg:items-start">
-                <h1 className="text-2xl lg:text-xl ">
-                  Добиться успеха на маркетплейсах ЛЕГКО !
-                </h1>
-                <h2 className="targetText w-[90%] text-lg tracking-wider lg:w-[100%] lg:text-4xl">
+            <div className="flex w-full flex-col items-center justify-center    text-white">
+              <div className="logoFont flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
+                <h2 className="targetText w-full px-4 text-3xl  tracking-wider  lg:text-4xl">
                   Мы, компания Новый Концепт, поможем вам пройти путь от идеи
                   магазина до запуска и первых продаж.
                 </h2>
@@ -90,7 +90,7 @@ const HeroP1 = () => {
             </div>
           </div>
           <div className="absolute bottom-5 flex w-[90%] flex-col items-center justify-center space-y-1 text-lg text-white">
-            <div className="flex animate-bounce flex-col items-center">
+            <div className="hidden animate-bounce flex-col items-center lg:flex">
               <p className="text-sm lg:text-lg">Почему выбирают нас</p>
               <DownArrow className="w-6 lg:w-7" />
             </div>
