@@ -85,7 +85,7 @@ const ModalForm = () => {
             <div className="flex  w-[100%] flex-wrap gap-6 lg:gap-10 ">
               <div className="min-w-full ">
                 {errors.from_name?.message && (
-                  <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
+                  <span className="absolute -mt-6 ml-1 text-sm text-white lg:ml-5">
                     {errors.from_name.message}
                   </span>
                 )}
@@ -94,7 +94,7 @@ const ModalForm = () => {
                   onChange={(e) => setName(e.target.value)}
                   type="text"
                   id="name"
-                  className="text-md min-w-full rounded-2xl border-4 border-purple-100 bg-white bg-opacity-15 px-3 py-2 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8   lg:py-4 lg:text-xl  "
+                  className="text-md min-w-full rounded-2xl border-4 bg-purple-100 px-3  py-2 text-black text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8   lg:py-4 lg:text-xl  "
                   placeholder="Ваше имя"
                   {...register("from_name", {
                     maxLength: {
@@ -109,7 +109,7 @@ const ModalForm = () => {
 
               <div className="min-w-full">
                 {errors.from_email?.message && (
-                  <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
+                  <span className="absolute -mt-6 ml-1 text-sm text-white lg:ml-5">
                     {errors.from_email?.message}
                   </span>
                 )}
@@ -117,7 +117,7 @@ const ModalForm = () => {
                   value={mail}
                   onChange={(e) => setMail(e.target.value)}
                   id="mail"
-                  className=" text-md min-w-full rounded-2xl border-4 border-purple-100 bg-white bg-opacity-15 px-3  py-2  shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8 lg:py-4 lg:text-xl  "
+                  className=" text-md min-w-full rounded-2xl border-4 bg-purple-100 px-3  py-2  text-purple-900  shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8 lg:py-4 lg:text-xl  "
                   placeholder="Email"
                   {...register("from_email", {
                     pattern: {
@@ -130,7 +130,7 @@ const ModalForm = () => {
               </div>
               <div className="min-w-full">
                 {errors.from_phone?.message && (
-                  <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
+                  <span className="absolute -mt-6 ml-1 text-sm text-white lg:ml-5">
                     {errors.from_phone.message}
                   </span>
                 )}
@@ -139,7 +139,7 @@ const ModalForm = () => {
                   onChange={(e) => setTel(e.target.value)}
                   type="text"
                   id="phone"
-                  className=" text-md min-w-full rounded-2xl border-4 border-purple-100   bg-white bg-opacity-15 px-3 py-2 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8 lg:py-4 lg:text-xl  "
+                  className=" text-md min-w-full rounded-2xl border-4  bg-purple-100  px-3  py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8 lg:py-4 lg:text-xl  "
                   placeholder="Телефон (+7)"
                   {...register("from_phone", {
                     pattern: {
@@ -158,7 +158,7 @@ const ModalForm = () => {
 
             <div className="flex w-[100%] flex-col lg:row-span-1 ">
               {errors.message?.message && (
-                <span className="absolute -mt-6 ml-1 text-sm text-red-600 lg:ml-5">
+                <span className="absolute -mt-6 ml-1 text-sm text-white lg:ml-5">
                   {errors.message.message}
                 </span>
               )}
@@ -167,7 +167,7 @@ const ModalForm = () => {
                 onChange={(e) => setDesc(e.target.value)}
                 id="comment"
                 rows="6"
-                className="text-md rounded-2xl border-4 border-purple-100 bg-white bg-opacity-15 px-3 py-2 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50   lg:px-8 lg:py-4 lg:text-xl  "
+                className="text-md rounded-2xl border-4  bg-purple-100  px-3 py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50   lg:px-8 lg:py-4 lg:text-xl  "
                 placeholder="Комментарии"
                 {...register("message", {
                   required: "Please enter your Message",

@@ -25,7 +25,7 @@ const Page2 = () => {
       </div>
       <ModalButton
         text="Оставьте заявку"
-        className="btn-white btn rounded-full text-purple-700 shadow-3xl lg:text-2xl"
+        className="btn-white btn rounded-full text-purple-900 shadow-3xl lg:text-2xl"
       />
 
       <ModalForm />

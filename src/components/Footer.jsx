@@ -16,23 +16,18 @@ export default function Footer() {
         </h3>
         {/* <br /> */}
 
-        <p className="text-md logoFont  my-3 font-bold text-gray-200 lg:text-2xl">
-          Добро пожаловать в мир непревзойдённого качества и доверия
-        </p>
-        {/* <br /> */}
-
         <p className="logoFont text-gray-200  lg:text-xl">
-          Если вам необходимо запустить бизнdescес на маркетплейсах, обратитесь
-          к нам. Мы готовы предоставить вам все необходимые знания, опыт и
-          поддержку, чтобы ваш бизнес мог успешно конкурировать в мире
+          Новый Концепт Добро пожаловать в мир непревзойдённого качества и
+          доверия. Если вам необходимо запустить бизнес на маркетплейсах,
+          обратитесь к нам. Мы готовы предоставить вам все необходимые знания,
+          опыт и поддержку, чтобы ваш бизнес мог успешно конкурировать в мире
           электронной торговли.
         </p>
         <br />
         <p className="logoFont text-gray-200  lg:text-xl">
-          конкурировать в мире электронной торговли. Доверьтесь компании «Новый
-          Концепт» и вы обретете надежного партнера для развития вашего бизнеса
-          на маркетплейсах. С нами вы погрузитесь в безопасную онлайн среду, где
-          ваше спокойствие стоит на первом месте
+          Доверьтесь компании «Новый Концепт» и вы обретете надежного партнера
+          для развития вашего бизнеса на маркетплейсах. С нами вы погрузитесь в
+          безопасную онлайн среду, где ваше спокойствие стоит на первом месте.
         </p>
       </div>
 
@@ -54,14 +49,18 @@ export default function Footer() {
         text="Оставьте заявку"
         className="rounded-2xl border-[3px] px-6 py-2 lg:text-xl"
       /> */}
+      <ModalButton
+        text="Оставьте заявку"
+        className="btn-white btn rounded-full text-purple-900 shadow-3xl lg:text-2xl"
+      />
       <div className="flex items-center justify-center gap-x-4">
-        <Link href="https://wa.me/+79372612618">
+        <Link href="mailto:new-concept@bk.ru">
           <Mail_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
         <Link href="https://wa.me/+79372612618">
           <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
-        <Link href="https://wa.me/+79372612618">
+        <Link href="https://t.me/+79372612618">
           <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
         <Link href="https://wa.me/+79372612618">

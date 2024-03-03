@@ -55,7 +55,7 @@ const HeroP1 = () => {
               ease: "power2.in",
             },
             {
-              opacity: 0.4,
+              opacity: window.innerWidth < 800 ? 0.25 : 0.4,
               duration: 1.2,
               ease: "power2.in",
             },
@@ -66,19 +66,22 @@ const HeroP1 = () => {
   }
 
   return (
-    <section className="flex h-screen w-screen flex-col items-center justify-end lg:flex-row lg:justify-center ">
-      <div className="relative  mb-10 flex h-[80svh] w-[90%] flex-row items-center justify-center overflow-clip rounded-[3rem] bg-opacity-50 bg-gradient-to-tr from-gray-400 from-[1%] to-indigo-800 to-[99%] shadow-3xl grayscale-[0.4] filter lg:mb-0 lg:h-[90%] lg:w-[85%]  lg:rounded-[4rem]">
+    <section className="flex h-[100svh] w-screen flex-col items-center justify-end lg:h-screen lg:flex-row lg:justify-center ">
+      <div className="relative  mb-10 flex h-[80svh] w-[90%] flex-row items-center justify-center overflow-clip rounded-[3rem] bg-opacity-50 from-gray-400  from-[1%] to-indigo-800 to-[99%] grayscale-[0.4] filter lg:mb-0 lg:h-[90%] lg:w-[85%] lg:rounded-[4rem] lg:bg-gradient-to-tr lg:shadow-3xl  lg:blur-0">
         <div className="h-[90%] w-[90%] ">
           <NavbarP1 />
           <div className="grid h-[75%] w-full grid-cols-1 space-y-5 lg:grid-cols-2  ">
             <div className="flex w-full items-center justify-center">
               <Logo
                 forwardRef={logoRef}
-                className="px-16 opacity-0 filter lg:block lg:p-10"
+                className="absolute bottom-[50%] translate-x-1 translate-y-[50%] px-4 opacity-0 blur-[10px] filter lg:static lg:translate-y-[0%] lg:p-10 lg:px-16 lg:blur-0 "
               />
             </div>
             <div className="flex w-full flex-col items-center justify-center  text-white">
-              <div className="logoFont flex w-[90%] flex-col items-center space-y-4  tracking-wider lg:items-start">
+              <div className="logoFont flex w-[100%] flex-col items-center space-y-4  tracking-wider lg:items-start">
+                <h1 className="text-2xl lg:text-xl ">
+                  Добиться успеха на маркетплейсах ЛЕГКО !
+                </h1>
                 <h2 className="targetText w-[90%] text-lg tracking-wider lg:w-[100%] lg:text-4xl">
                   Мы, компания Новый Концепт, поможем вам пройти путь от идеи
                   магазина до запуска и первых продаж.
@@ -86,7 +89,7 @@ const HeroP1 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-5  flex w-[90%] flex-col items-center justify-center space-y-1 text-lg text-white">
+          <div className="absolute bottom-5 flex w-[90%] flex-col items-center justify-center space-y-1 text-lg text-white">
             <div className="flex animate-bounce flex-col items-center">
               <p className="text-sm lg:text-lg">Почему выбирают нас</p>
               <DownArrow className="w-6 lg:w-7" />
@@ -101,7 +104,7 @@ const HeroP1 = () => {
             </div>
           </div>
         </div>
-        <div className="absolute -z-50 h-full w-full  bg-noise blur-[2px] filter"></div>
+        <div className="absolute -z-50 h-full w-full blur-[2px] filter lg:bg-noise"></div>
       </div>
     </section>
   );

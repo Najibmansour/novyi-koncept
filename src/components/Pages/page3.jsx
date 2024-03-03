@@ -208,24 +208,27 @@ export default function Page3() {
   });
 
   return (
-    <div className="mb-10 flex w-screen flex-row justify-center">
-      <div className="w-[85%] lg:w-[76vw]">
-        <ul className="flex flex-col gap-0 ">
-          {vecs.map((vec, i) => (
-            <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
-              <h3 className="mb-3 text-center text-xl font-bold tracking-wider lg:text-left lg:text-3xl">
-                {vec.title}
-              </h3>
-              <ul className="lg:text-md list-outside list-disc marker:bg-white ">
-                {vec.points.map((point, i) => (
-                  <li key={i} className="tracking-tighter">
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </Section>
-          ))}
-        </ul>
+    <div className="flex flex-col items-center gap-10">
+      <h2 className="fontLogo text-5xl text-white">Наши услуги: </h2>
+      <div className="mb-10 flex w-screen flex-row justify-center">
+        <div className="w-[85%] lg:w-[76vw]">
+          <ul className="flex flex-col gap-0 ">
+            {vecs.map((vec, i) => (
+              <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
+                <h3 className="mb-3 text-center text-xl font-bold tracking-wider lg:text-left lg:text-3xl">
+                  {vec.title}
+                </h3>
+                <ul className="list-outside list-disc marker:bg-white lg:text-lg ">
+                  {vec.points.map((point, i) => (
+                    <li key={i} className="tracking-tighter">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </Section>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
   );

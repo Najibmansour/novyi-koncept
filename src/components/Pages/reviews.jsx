@@ -60,13 +60,13 @@ const Reviews = () => {
                     <figure className="absolute  h-10 w-10 rounded-full bg-white lg:block lg:h-16 lg:w-16 " />
                   </div>
                   <div className="flex flex-col">
-                    <h1 className="text-xl font-bold tracking-wide lg:text-4xl">
+                    <h1 className="pl-4 text-xl font-bold tracking-wide lg:text-4xl">
                       Юлия, создатель онлайн-магазина украшений
                     </h1>
                   </div>
                 </div>
               </div>
-              <blockquote className="text-md w-[100%] py-2 leading-4 lg:h-[60%] lg:w-[80%] lg:pl-28 lg:pt-2 lg:text-xl">
+              <blockquote className="text-md w-[100%] py-2  leading-4 lg:h-[60%] lg:w-[80%] lg:pl-28 lg:pt-2 lg:text-xl">
                 Обратились за помощью с целью улучшения карточек товаров и
                 увеличения продаж. Достигли именно тех результатов, которые были
                 нужны и на которые рассчитывали. Вырос трафик выдачи,
@@ -77,9 +77,9 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="group absolute -bottom-1 h-[30%] w-[101%] rounded-b-3xl  bg-gradient-to-t from-gray-300  from-[1%] to-transparent to-[99%]  opacity-0 transition-all  hover:opacity-90  ">
+        <div className="group absolute bottom-0 h-[30%] w-[100%] rounded-b-3xl  bg-gradient-to-t from-gray-300  from-[1%] to-transparent to-[99%]  transition-all hover:opacity-90  lg:opacity-0  ">
           <div className=" flex h-full w-full flex-row items-center justify-center rounded-b-3xl  text-center text-3xl font-bold text-transparent shadow-3xl hover:text-rose-950">
-            <p className="btn btn-ghost mt-12 rounded-full text-xl shadow-2xl hover:bg-gray-200">
+            <p className="btn btn-ghost mt-12 rounded-full shadow-2xl hover:bg-gray-200 lg:text-xl">
               SHOW MORE
             </p>
           </div>
