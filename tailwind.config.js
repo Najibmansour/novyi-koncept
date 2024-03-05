@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       boxShadow: {
         "3xl": "0 30px 50px -10px rgba(0, 0, 0, 0.4)",
+        fullxl: "0px 0px 30px 30px  rgba(0, 0, 0, 0.05)",
       },
       backgroundImage: {
         noise:

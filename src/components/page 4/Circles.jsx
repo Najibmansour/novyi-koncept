@@ -31,8 +31,8 @@ const circles = [
 
 export default function Circles() {
   return (
-    <div className="flex justify-center  ">
-      <div className="grid w-full grid-cols-2 gap-8 lg:grid-cols-5 lg:gap-20 ">
+    <div className="flex justify-center">
+      <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-5 lg:gap-20 ">
         {circles.map((circle, i) => (
           <div key={i} className={circle.classNameAdd}>
             <Circle

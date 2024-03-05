@@ -9,8 +9,8 @@ import ModalButton from "./modal/modalButton";
 
 export default function Footer() {
   return (
-    <footer className="flex h-[90svh] flex-col items-center justify-center gap-5 bg-transparent text-sm text-white  lg:text-xl">
-      <div className="w-[90vw] text-left lg:w-[75vw] ">
+    <footer className="flex h-screen flex-col items-center justify-center space-y-5 bg-transparent text-sm  text-white lg:text-xl">
+      <div className="w-[90vw] space-y-3 text-left  lg:w-[75vw]">
         <h3 className="text-center text-4xl font-bold tracking-wider lg:mb-10 lg:text-5xl">
           Новый Концепт
         </h3>
@@ -31,11 +31,11 @@ export default function Footer() {
         </p>
       </div>
 
-      <address className="mx-4 grid w-[85vw] grid-cols-[1fr_90%] items-center justify-center space-y-2 text-gray-200 lg:w-[80vw] lg:text-2xl">
+      <address className="mx-0 grid w-[92vw] grid-cols-[1fr_90%] items-center justify-center space-y-5 text-gray-200 lg:w-[80vw] lg:text-2xl">
         <div className="flex items-center justify-center">
           <Phone_Icon className="w-6 lg:w-9" />
         </div>
-        <Link href="tel:+79372618">+7 (937) 261 261 8</Link>
+        <Link href="tel:+79372618">+7 937 261 261 8</Link>
         <div className="flex items-center justify-center">
           <Location_Icon className="w-4 lg:w-7" />
         </div>
@@ -51,11 +51,12 @@ export default function Footer() {
       /> */}
       <ModalButton
         text="Оставьте заявку"
-        className="btn-white btn rounded-full text-purple-900 shadow-3xl lg:text-2xl"
+        className="btn-white btn rounded-full text-pink-800 shadow-3xl lg:text-2xl"
       />
+      <br className="hidden lg:block" />
       <div className="flex items-center justify-center gap-x-4">
         <Link href="mailto:new-concept@bk.ru">
-          <Mail_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+          <Mail_Logo className="w-10 transition hover:scale-[1.05] lg:w-12" />
         </Link>
         <Link href="https://wa.me/+79372612618">
           <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />

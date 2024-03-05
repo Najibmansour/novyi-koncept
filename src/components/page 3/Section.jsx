@@ -22,7 +22,7 @@ export default function Section({ direction, Img, children, inRef, id }) {
         <div className="" />
         <div className={parentStyles}>
           <div className="flex items-center justify-center lg:w-[20%] ">
-            <div className="rounded-full bg-white p-10">
+            <div className="shadow-fullxl rounded-full bg-white p-10 ">
               <Img fill="#ffffff" className="h-24 w-24 lg:h-28 lg:w-28" />
             </div>
           </div>

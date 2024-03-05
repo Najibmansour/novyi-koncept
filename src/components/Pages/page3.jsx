@@ -37,7 +37,7 @@ const vecs = [
     vec: Vector1,
   },
   {
-    title: "cоздaние личного кaбинетa нa мaркетплейcaх",
+    title: "Cоздaние личного кaбинетa нa мaркетплейcaх",
     points: [
       "Регистрация магазина  на выбранном маркетплейсе - Wildberries, Ozon  или Яндекс Маркет.",
       ,
@@ -49,7 +49,7 @@ const vecs = [
     vec: Vector2,
   },
   {
-    title: "cоздaние кaрточки товaрa",
+    title: "Cоздaние кaрточки товaрa",
     points: [
       "Наша команда создаст вам продающие карточки товаров:  тексты, изображения и видео с учетом их дальнейшего SEO - продвижения.",
       "Уникальный и индивидуальный дизайн каждой карточки поможет раскрыть характеристики товара, будет подчеркивать его преимущества перед конкурентами и соответствовать вашему бренду. ",
@@ -208,7 +208,7 @@ export default function Page3() {
   });
 
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="flex flex-col items-center gap-10 ">
       <h2 className="fontLogo text-5xl text-white">Наши услуги: </h2>
       <div className="mb-10 flex w-screen flex-row justify-center">
         <div className="w-[85%] lg:w-[76vw]">

@@ -80,12 +80,18 @@ const HeroP1 = () => {
               />
               {/* <NavbarP1 className="m-4 px-2 py-2 lg:hidden" /> */}
             </div>
-            <div className="flex w-full flex-col items-center justify-center    text-white">
-              <div className="logoFont flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
-                <h2 className="targetText w-full px-4 text-3xl  tracking-wider  lg:text-4xl">
-                  Мы, компания Новый Концепт, поможем вам пройти путь от идеи
-                  магазина до запуска и первых продаж.
+            <div className="relative flex w-full flex-col items-center justify-center    text-white">
+              <div className="  flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
+                <h2 className="targetText Новый Концепт w-full  px-4  text-3xl tracking-wider lg:text-5xl">
+                  Мы, поможем вам пройти путь от идеи магазина до запуска и
+                  первых продаж.
                 </h2>
+                <div className="absolute bottom-0 right-0 text-right">
+                  <Link href="tel:+79372612618" className="flex flex-col">
+                    +7 937 261 261 8
+                  </Link>
+                  <Link href="mailto:new-concept@bk.ru">new-concept@bk.ru</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -111,3 +117,5 @@ const HeroP1 = () => {
 };
 
 export default HeroP1;
+
+// Новый Концепт

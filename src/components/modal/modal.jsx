@@ -23,34 +23,43 @@ const ModalForm = () => {
     // console.log(data);
     emailjs
       .send(
-        "novo-concept-service-vqw",
-        "template_vthxzz5",
+        "service_6ag5as8",
+        "template_l3xk2j6",
         {
           from_name: data.from_name,
           from_email: data.from_email,
           from_phone: data.from_phone,
           message: data.message,
         },
-        "FTfq34dz5c8TJFC5s",
+        "hV0F4yY797qSOt5tu",
       )
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("Request sent succesfuly", {
+            unstyled: false,
+            classNames: {
+              toast: "bg-white rounded-xl lg:p-3",
+              title: "text-red-400 lg:text-xl",
+              description: "text-red-400",
+            },
+            duration: 2500,
+          });
         },
         (error) => {
           console.log(error.text);
+          toast.error("Request couldnt be sent", {
+            unstyled: false,
+            classNames: {
+              toast: "bg-white rounded-xl lg:p-3",
+              title: "text-red-400 lg:text-xl",
+              description: "text-red-400",
+            },
+            duration: 2500,
+          });
         },
       );
     document.getElementById("my_modal_5").close();
-    toast.success("Request sent succesfuly", {
-      unstyled: false,
-      classNames: {
-        toast: "bg-white rounded-xl lg:p-3",
-        title: "text-red-400 lg:text-xl",
-        description: "text-red-400",
-      },
-      duration: 2500,
-    });
   };
   return (
     <div>

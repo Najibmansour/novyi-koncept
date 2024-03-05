@@ -29,7 +29,7 @@ export default function HomePage() {
   });
 
   return (
-    <>
+    <main>
       <div className="absolute -z-50 h-[100%] bg-gradient-to-r from-pink-700 to-fuchsia-700">
         <BackgroudGradient />
       </div>
@@ -54,6 +54,6 @@ export default function HomePage() {
       <footer className="">
         <Footer />
       </footer>
-    </>
+    </main>
   );
 }
