@@ -233,8 +233,3 @@ export default function Page3() {
     </div>
   );
 }
-{
-  /* <h1 className="lg:text-4xl text-3xl font-bold text-primary py-2">
-        Наши услуги
-      </h1> */
-}

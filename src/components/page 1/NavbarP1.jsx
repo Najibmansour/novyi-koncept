@@ -14,9 +14,9 @@ const NavbarP1 = (props) => {
     >
       <div className="flex flex-row gap-x-2 lg:gap-x-3">
         <Logo className="w-10 lg:w-14" />
-        <h1 className="w-[10%] text-xs font-semibold text-white lg:text-2xl ">
+        <h2 className="w-[10%] text-xs font-semibold text-white lg:text-2xl ">
           Новый Концепт
-        </h1>
+        </h2>
       </div>
       <div className="flex w-[50%] flex-row items-center justify-end text-2xl text-white lg:w-[50%]">
         <h1 className="text-xs lg:text-2xl ">

@@ -82,11 +82,11 @@ const HeroP1 = () => {
             </div>
             <div className="relative flex w-full flex-col items-center justify-center    text-white">
               <div className="  flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
-                <h2 className="targetText Новый Концепт w-full  px-4  text-3xl tracking-wider lg:text-5xl">
+                <h2 className="targetText  w-full px-4 text-3xl tracking-wider lg:text-5xl">
                   Мы, поможем вам пройти путь от идеи магазина до запуска и
                   первых продаж.
                 </h2>
-                <div className="absolute bottom-0 right-0 text-right">
+                <div className="absolute bottom-0 right-0 hidden text-right lg:block">
                   <Link href="tel:+79372612618" className="flex flex-col">
                     +7 937 261 261 8
                   </Link>
@@ -95,8 +95,8 @@ const HeroP1 = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bottom-5 flex w-[90%] flex-col items-center justify-center space-y-1 text-lg text-white">
-            <div className="hidden animate-bounce flex-col items-center lg:flex">
+          <div className="absolute bottom-5 flex w-[100%] flex-col items-center justify-center space-y-1 text-lg text-white lg:w-[90%]">
+            <div className=" flex animate-bounce flex-col items-center">
               <p className="text-sm lg:text-lg">Почему выбирают нас</p>
               <DownArrow className="w-6 lg:w-7" />
             </div>
@@ -110,7 +110,7 @@ const HeroP1 = () => {
             </div>
           </div>
         </div>
-        <div className="absolute -z-50 h-full w-full blur-[2px] filter lg:bg-noise"></div>
+        <div className="absolute -z-50 h-full w-full blur-[2px] filter lg:bg-noise" />
       </div>
     </section>
   );

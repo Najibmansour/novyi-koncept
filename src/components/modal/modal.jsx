@@ -65,9 +65,9 @@ const ModalForm = () => {
     <div>
       <dialog
         id="my_modal_5"
-        className="modal modal-bottom  items-center justify-center sm:modal-middle "
+        className="modal modal-bottom  items-center justify-center"
       >
-        <div className="mt-20 flex flex-col items-center justify-center gap-3 rounded-t-3xl border-2 border-gray-300 bg-gradient-to-tr from-gray-400 from-[1%] to-indigo-800 to-[99%] pt-8 shadow-3xl grayscale-[0.6]  filter lg:mt-0 lg:gap-5 lg:rounded-2xl lg:p-10">
+        <div className="flex flex-col items-center justify-center gap-3 rounded-3xl border-2 border-gray-300 bg-gradient-to-tr from-gray-400 from-[1%] to-indigo-800 to-[99%] pt-8 shadow-3xl  grayscale-[0.6] filter lg:gap-5 lg:p-10">
           <div className="relative flex w-full flex-row justify-center ">
             <form method="dialog">
               <button className="btn btn-circle btn-ghost btn-sm absolute -top-5 right-3 text-white lg:-right-8 lg:-top-8">
@@ -103,7 +103,7 @@ const ModalForm = () => {
                   onChange={(e) => setName(e.target.value)}
                   type="text"
                   id="name"
-                  className="text-md min-w-full rounded-2xl border-4 bg-purple-100 px-3  py-2 text-black text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8   lg:py-4 lg:text-xl  "
+                  className="text-md min-w-full rounded-2xl border-4 bg-purple-100 px-3  py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8   lg:py-4 lg:text-xl  "
                   placeholder="Ваше имя"
                   {...register("from_name", {
                     maxLength: {
