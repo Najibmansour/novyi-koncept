@@ -33,7 +33,7 @@ const reviews = [
 const Reviews = () => {
   return (
     <section className="flex w-screen flex-col items-center justify-center lg:h-screen">
-      <h3 className="text-3xl font-bold text-white lg:text-5xl">
+      <h3 className="text-2xl font-bold text-white lg:text-5xl">
         Обзор и Рейтинг
       </h3>
       <div className="mx-10 my-5 grid h-[80%] w-[80%] gap-5 lg:my-10 lg:grid-cols-2 lg:grid-rows-3 ">

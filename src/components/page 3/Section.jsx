@@ -15,14 +15,14 @@ export default function Section({ direction, Img, children, inRef, id }) {
       <article
         id={id}
         ref={inRef}
-        className={`Box text relative flex w-[100%] flex-col items-center gap-20 text-white lg:gap-0  ${
+        className={`Box text relative flex w-[100%] flex-col items-center gap-12 text-white lg:gap-0  ${
           direction === "right" ? "Box-Left " : "Box-Right "
         }`}
       >
         <div className="" />
         <div className={parentStyles}>
           <div className="flex items-center justify-center lg:w-[20%] ">
-            <div className="shadow-fullxl rounded-full bg-white p-10 ">
+            <div className="rounded-full bg-white p-10 shadow-fullxl ">
               <Img fill="#ffffff" className="h-24 w-24 lg:h-28 lg:w-28" />
             </div>
           </div>

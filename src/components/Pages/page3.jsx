@@ -208,11 +208,13 @@ export default function Page3() {
   });
 
   return (
-    <div className="flex flex-col items-center gap-10 ">
-      <h2 className="fontLogo text-5xl text-white">Наши услуги: </h2>
-      <div className="mb-10 flex w-screen flex-row justify-center">
+    <div className="flex flex-col items-center lg:gap-10 ">
+      <h2 className="fontLogo text-2xl text-white lg:text-5xl ">
+        Наши услуги:{" "}
+      </h2>
+      <div className="flex w-screen flex-row justify-center lg:mb-10">
         <div className="w-[85%] lg:w-[76vw]">
-          <ul className="flex flex-col gap-0 ">
+          <ul className="flex flex-col">
             {vecs.map((vec, i) => (
               <Section direction={vec.dir} Img={vec.vec} key={i} id={vec.dir}>
                 <h3 className="mb-3 text-center text-xl font-bold tracking-wider lg:text-left lg:text-3xl">

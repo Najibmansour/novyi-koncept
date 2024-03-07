@@ -13,7 +13,7 @@ const Page2 = () => {
             <span className="font-['Helvetica-Bold',Helvetica] text-xl font-semibold text-white lg:w-[30%] lg:text-5xl">
               {"Наша миccия - "}
             </span>
-            <span className="logoFont text-xl text-white lg:w-[50rem] lg:text-5xl">
+            <span className="logoFont text-2xl text-white lg:w-[50rem] lg:text-5xl">
               освободить время клиентов и увеличить их прибыль.
             </span>
           </p>
