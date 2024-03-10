@@ -73,7 +73,7 @@ const PointsText = (props) => {
           {descList.map((e) => {
             return (
               <li key={e.id} className="w-full">
-                <p className="flex flex-row-reverse lg:w-[100%] lg:flex-row ">
+                <p className="flex flex-row-reverse lg:w-[100%]  ">
                   <span className="flex-1 text-wrap tracking-[0.06rem]  lg:text-2xl">
                     {e.title}
                   </span>

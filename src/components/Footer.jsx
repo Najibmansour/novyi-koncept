@@ -31,7 +31,7 @@ export default function Footer() {
         </p>
       </div>
 
-      <address className="mx-0 grid w-[92vw] grid-cols-[1fr_90%] items-center justify-center space-y-5 text-gray-200 lg:w-[80vw] lg:text-2xl">
+      <address className="mx-0 grid w-[92vw] grid-cols-[1fr_90%] items-center justify-center space-y-2 text-gray-200 lg:w-[80vw] lg:space-y-5 lg:text-2xl">
         <div className="flex items-center justify-center">
           <Phone_Icon className="w-6 lg:w-9" />
         </div>
