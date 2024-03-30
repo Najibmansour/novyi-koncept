@@ -20,7 +20,7 @@ const NavbarP1 = (props) => {
       </div>
       <div className="flex w-[50%] flex-row items-center justify-end text-2xl text-white lg:w-[50%]">
         <h1 className="text-xs lg:text-2xl ">
-          Добиться успеха на маркетплейсах ЛЕГКО !
+          Добиться успеха на маркетплейсах ЛЕГКО!
         </h1>
       </div>
     </div>

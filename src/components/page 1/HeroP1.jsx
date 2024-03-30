@@ -83,14 +83,16 @@ const HeroP1 = () => {
             <div className="relative flex w-full flex-col items-center justify-center    text-white">
               <div className="  flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
                 <h2 className="targetText  w-full px-4 text-3xl tracking-wider lg:text-5xl">
-                  Мы, поможем вам пройти путь от идеи магазина до запуска и
-                  первых продаж.
+                  Мы поможем вам пройти путь от идеи магазина до запуска и
+                  первых продаж
                 </h2>
                 <div className="absolute bottom-0 right-0 hidden text-right lg:block">
                   <Link href="tel:+79372612618" className="flex flex-col">
                     +7 937 261 261 8
                   </Link>
-                  <Link href="mailto:new-concept@bk.ru">new-concept@bk.ru</Link>
+                  <Link href="mailto:info@novyikoncept.com">
+                    info@novyikoncept.com
+                  </Link>
                 </div>
               </div>
             </div>
@@ -101,7 +103,10 @@ const HeroP1 = () => {
               <DownArrow className="w-6 lg:w-7" />
             </div>
             <div className="absolute right-0 hidden flex-row gap-3 lg:flex">
-              <Link href="/" aria-label="open instagram page of novyi">
+              <Link
+                href="https://www.instagram.com/novyi.koncept/"
+                aria-label="open instagram page of novyi"
+              >
                 <InstagramLogo2 className="h-12 w-12" />
               </Link>
               <Link href="/" aria-label="open VK page of novyi">

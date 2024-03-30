@@ -14,7 +14,7 @@ const Page2 = () => {
               {"Наша миccия - "}
             </span>
             <span className="logoFont text-2xl text-white lg:w-[50rem] lg:text-5xl">
-              освободить время клиентов и увеличить их прибыль.
+              освободить время клиентов и увеличить их прибыль
             </span>
           </p>
         </div>

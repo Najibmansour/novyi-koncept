@@ -23,15 +23,15 @@ const ModalForm = () => {
     // console.log(data);
     emailjs
       .send(
-        "service_6ag5as8",
-        "template_l3xk2j6",
+        "service_vcpuhhb",
+        "template_uk7u9lz",
         {
           from_name: data.from_name,
           from_email: data.from_email,
           from_phone: data.from_phone,
           message: data.message,
         },
-        "hV0F4yY797qSOt5tu",
+        "3TuyAqaERG7dnvQEJ",
       )
       .then(
         (result) => {

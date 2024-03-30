@@ -12,22 +12,22 @@ export default function Footer() {
     <footer className="flex h-screen flex-col items-center justify-center space-y-5 bg-transparent text-sm  text-white lg:text-xl">
       <div className="w-[90vw] space-y-3 text-left  lg:w-[75vw]">
         <h3 className="text-center text-4xl font-bold tracking-wider lg:mb-10 lg:text-5xl">
-          Новый Концепт
+          ООО Новый Концепт
         </h3>
         {/* <br /> */}
 
         <p className="logoFont text-gray-200  lg:text-xl">
-          Новый Концепт Добро пожаловать в мир непревзойдённого качества и
-          доверия. Если вам необходимо запустить бизнес на маркетплейсах,
-          обратитесь к нам. Мы готовы предоставить вам все необходимые знания,
-          опыт и поддержку, чтобы ваш бизнес мог успешно конкурировать в мире
-          электронной торговли.
+          Добро пожаловать в мир непревзойдённого качества и доверия. Если вам
+          необходимо запустить бизнес на маркетплейсах, обратитесь к нам. Мы
+          готовы предоставить вам все необходимые знания, опыт и поддержку,
+          чтобы ваш бизнес мог успешно конкурировать в мире электронной
+          торговли.
         </p>
         <br />
         <p className="logoFont text-gray-200  lg:text-xl">
           Доверьтесь компании «Новый Концепт» и вы обретете надежного партнера
           для развития вашего бизнеса на маркетплейсах. С нами вы погрузитесь в
-          безопасную онлайн среду, где ваше спокойствие стоит на первом месте.
+          безопасную онлайн-среда, где ваше спокойствие стоит на первом месте.
         </p>
       </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
         <div className="flex items-center justify-center">
           <Mail_Logo className="w-4 lg:w-7" />
         </div>
-        <Link href="mailto:new-concept@bk.ru">new-concept@bk.ru</Link>
+        <Link href="mailto:info@novyikoncept.com">info@novyikoncept.com</Link>
       </address>
       {/* <ModalButton
         text="Оставьте заявку"
@@ -55,7 +55,7 @@ export default function Footer() {
       />
       <br className="hidden lg:block" />
       <div className="flex items-center justify-center gap-x-4">
-        <Link href="mailto:new-concept@bk.ru">
+        <Link href="mailto:info@novyikoncept.com">
           <Mail_Logo className="w-10 transition hover:scale-[1.05] lg:w-12" />
         </Link>
         <Link href="https://wa.me/+79372612618">

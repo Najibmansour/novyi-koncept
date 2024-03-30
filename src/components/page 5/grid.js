@@ -6,7 +6,7 @@ const boxes = [
     title: "Как мы будем взаимодействовать в процессе работы? ",
     text: "Мы закрепим за вами персонального менеджера, 	который будет вести ваш проект и будет находиться  на связи.",
     className:
-      "lg:rounded-tl-[4.5rem] lg:border-r-2 lg:border-b-2 lg:text-right border-t-0",
+      "lg:rounded-tl-[4.5rem] lg:border-r-2 lg:border-b-2 lg:text-right border-t-0 ",
     textCss: "",
   },
   {
@@ -49,10 +49,10 @@ const GridFour = (props) => {
             box.className,
           )}
         >
-          <h3 className=" text-md font-semibold leading-4 tracking-wide text-white lg:text-3xl ">
+          <h3 className="text-md  font-semibold leading-4 tracking-wide text-white lg:text-3xl ">
             {box.title}
           </h3>
-          <p className=" text-sm leading-4 text-white lg:text-xl ">
+          <p className=" text-sm leading-4 text-white lg:text-2xl ">
             {box.text}
           </p>
         </article>
