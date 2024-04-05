@@ -33,24 +33,19 @@ export default function HomePage() {
       <div className="absolute -z-50 h-[100%] bg-gradient-to-r from-pink-700 to-fuchsia-700">
         <BackgroudGradient />
       </div>
-      <section className="">
-        <HeroP1 />
-      </section>
-      <section className="">
-        <Page2 />
-      </section>
-      <section className="">
-        <Page3 />
-      </section>
-      <section className="">
-        <Reviews />
-      </section>
-      <section className="">
-        <Table />
-      </section>
-      <section className="">
-        <CirclesPage />
-      </section>
+
+      <HeroP1 />
+
+      <Page2 />
+
+      <Page3 />
+
+      <Reviews />
+
+      <Table />
+
+      <CirclesPage />
+
       <footer className="">
         <Footer />
       </footer>

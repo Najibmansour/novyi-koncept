@@ -9,6 +9,9 @@ import DownArrow from "../svgs/downArrow";
 import Vk_Logo from "../svgs/logo/Vk_Logo";
 import InstagramLogo2 from "../svgs/logo/Instagram2";
 import Link from "next/link";
+import Mail_Logo from "../svgs/logo/Mail_Logo";
+import Telegram_Logo from "../svgs/logo/Telegram_Logo";
+import Whatsapp_Logo from "../svgs/logo/Whatsapp_Logo";
 
 const HeroP1 = () => {
   const logoRef = useRef();
@@ -78,22 +81,13 @@ const HeroP1 = () => {
                 forwardRef={logoRef}
                 className="flex p-10 opacity-0 filter lg:p-10"
               />
-              {/* <NavbarP1 className="m-4 px-2 py-2 lg:hidden" /> */}
             </div>
             <div className="relative flex w-full flex-col items-center justify-center    text-white">
-              <div className="  flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
-                <h2 className="targetText  w-full px-4 text-3xl tracking-wider lg:text-5xl">
+              <div className="flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
+                <h2 className="targetText w-full px-4 text-3xl tracking-wider md:max-lg:text-sm lg:text-5xl ">
                   Мы поможем вам пройти путь от идеи магазина до запуска и
                   первых продаж
                 </h2>
-                <div className="absolute bottom-0 right-0 hidden text-right lg:block">
-                  <Link href="tel:+79372612618" className="flex flex-col">
-                    +7 937 261 261 8
-                  </Link>
-                  <Link href="mailto:info@novyikoncept.com">
-                    info@novyikoncept.com
-                  </Link>
-                </div>
               </div>
             </div>
           </div>
@@ -102,16 +96,29 @@ const HeroP1 = () => {
               <p className="text-sm lg:text-lg">Почему выбирают нас</p>
               <DownArrow className="w-6 lg:w-7" />
             </div>
-            <div className="absolute right-0 hidden flex-row gap-3 lg:flex">
-              <Link
-                href="https://www.instagram.com/novyi.koncept/"
-                aria-label="open instagram page of novyi"
-              >
-                <InstagramLogo2 className="h-12 w-12" />
-              </Link>
-              <Link href="/" aria-label="open VK page of novyi">
-                <Vk_Logo className="h-12 w-12" />
-              </Link>
+            <div className="absolute bottom-0 right-0 hidden lg:block">
+              <div className=" hidden text-right lg:block">
+                <Link href="tel:+79372612618" className="flex flex-col">
+                  +7 937 261 261 8
+                </Link>
+                <Link href="mailto:info@novyikoncept.com">
+                  info@novyikoncept.com
+                </Link>
+              </div>
+              <div className="flex-row items-center gap-3 lg:flex">
+                <Link href="mailto:info@novyikoncept.com">
+                  <Mail_Logo className="w-10 transition hover:scale-[1.05] lg:w-12" />
+                </Link>
+                <Link href="https://vk.com/newconcept_russia" target="_blank">
+                  <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+                </Link>
+                <Link href="https://t.me/+79372612618" target="_blank">
+                  <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+                </Link>
+                <Link href="https://wa.me/+79372612618" target="_blank">
+                  <Whatsapp_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
