@@ -98,8 +98,8 @@ const HeroP1 = () => {
             </div>
             <div className="absolute bottom-0 right-0 hidden lg:block">
               <div className=" hidden text-right lg:block">
-                <Link href="tel:+79372612618" className="flex flex-col">
-                  +7 937 261 261 8
+                <Link href="tel:+79271617858" className="flex flex-col">
+                  +7 927 161 785 8
                 </Link>
                 <Link href="mailto:info@novyikoncept.com">
                   info@novyikoncept.com
@@ -112,10 +112,10 @@ const HeroP1 = () => {
                 <Link href="https://vk.com/newconcept_russia" target="_blank">
                   <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
                 </Link>
-                <Link href="https://t.me/+79372612618" target="_blank">
+                <Link href="https://t.me/+79271617858" target="_blank">
                   <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
                 </Link>
-                <Link href="https://wa.me/+79372612618" target="_blank">
+                <Link href="https://wa.me/+79271617858" target="_blank">
                   <Whatsapp_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
                 </Link>
               </div>

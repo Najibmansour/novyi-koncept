@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="flex items-center justify-center">
           <Phone_Icon className="w-6 lg:w-9" />
         </div>
-        <Link href="tel:+79372618">+7 937 261 261 8</Link>
+        <Link href="tel:+79372618">+7 927 161 785 8</Link>
         <div className="flex items-center justify-center">
           <Location_Icon className="w-4 lg:w-7" />
         </div>
@@ -61,10 +61,10 @@ export default function Footer() {
         <Link href="https://vk.com/newconcept_russia">
           <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
-        <Link href="https://t.me/+79372612618">
+        <Link href="https://t.me/+79271617858">
           <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
-        <Link href="https://wa.me/+79372612618">
+        <Link href="https://wa.me/+79271617858">
           <Whatsapp_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
       </div>
