@@ -9,7 +9,7 @@ import ModalButton from "./modal/modalButton";
 
 export default function Footer() {
   return (
-    <footer className="flex h-screen flex-col items-center justify-center space-y-5 bg-transparent text-sm  text-white lg:text-xl">
+    <footer className="flex h-auto flex-col items-center justify-center space-y-5 bg-transparent text-sm text-white  lg:mt-5 lg:text-xl">
       <div className="w-[90vw] space-y-3 text-left  lg:w-[75vw]">
         <h3 className="text-center text-4xl font-bold tracking-wider lg:mb-10 lg:text-5xl">
           ООО Новый Концепт
@@ -35,7 +35,7 @@ export default function Footer() {
         <div className="flex items-center justify-center">
           <Phone_Icon className="w-6 lg:w-9" />
         </div>
-        <Link href="tel:+79372618">+7 927 161 785 8</Link>
+        <Link href="tel:+79372612618">+7937 261 261 8</Link>
         <div className="flex items-center justify-center">
           <Location_Icon className="w-4 lg:w-7" />
         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
         <Link href="https://t.me/+79271617858">
           <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
-        <Link href="https://wa.me/+79271617858">
+        <Link href="https://wa.me/+79372612618">
           <Whatsapp_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
       </div>

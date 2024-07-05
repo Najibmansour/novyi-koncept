@@ -32,24 +32,24 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <section className="flex w-screen flex-col items-center justify-center lg:h-screen">
+    <section className="flex w-screen flex-col items-center justify-center">
       <h3 className="text-2xl font-bold text-white lg:text-5xl">
         Отзывы клиентов
       </h3>
-      <div className="mx-10 my-5 grid h-[87%] w-[80%] gap-5 lg:my-6 lg:grid-cols-2 lg:grid-rows-3 ">
+      <div className="mx-10 my-5 grid h-auto w-[80%] gap-5 lg:my-6 lg:grid-cols-2 lg:grid-rows-3 ">
         {reviews.map((review, i) => (
           <article
             key={i}
-            className=" rounded-3xl border-4 border-white bg-white bg-opacity-20 p-4 text-white transition-transform lg:hover:scale-[1.02]"
+            className="rounded-3xl border-4 border-white bg-white bg-opacity-20 p-4 text-white transition-transform lg:hover:scale-[1.02]"
           >
             <div className="relative flex flex-row">
-              <Bullet className="absolute top-[5px] mr-4 w-2 lg:top-3 lg:w-3" />
+              <Bullet className="absolute top-[5px] mr-4 w-2 lg:top-3 lg:w-2" />
 
-              <h5 className="pl-4 text-lg font-semibold leading-5 tracking-wide lg:pl-5  lg:text-2xl">
+              <h5 className="pl-4 text-lg font-semibold  leading-5 tracking-wide lg:pl-5 lg:text-xl">
                 {review.title}
               </h5>
             </div>
-            <blockquote className=" leading-4 lg:text-lg lg:leading-5">
+            <blockquote className="italic leading-4 lg:text-lg lg:leading-5">
               {review.desc}
             </blockquote>
           </article>

@@ -73,7 +73,7 @@ const HeroP1 = () => {
       <NavbarP1 className="m-4 px-2 py-2 lg:hidden" />
 
       <div className="relative mb-0 flex h-[85svh] w-[90%] flex-row items-center justify-center overflow-clip rounded-[2rem] bg-opacity-50 bg-gradient-to-tr from-gray-400 from-[1%] to-indigo-800 to-[99%] grayscale-[0.4] filter lg:mb-0 lg:h-[90%] lg:w-[90vw] lg:rounded-[4rem]  lg:shadow-3xl">
-        <div className="h-[100%] w-[100%] lg:h-[90%] lg:w-[90%] ">
+        <div className="h-[100%] w-[100%] lg:h-[90%] lg:min-h-[90%] lg:w-[90%] ">
           <NavbarP1 className="hidden lg:flex" />
           <div className="grid h-[90%] w-full grid-cols-1 justify-between space-y-5 lg:h-[80%]  lg:grid-cols-2  ">
             <div className="flex w-full items-center justify-center lg:blur-[8px]">
@@ -98,8 +98,8 @@ const HeroP1 = () => {
             </div>
             <div className="absolute bottom-0 right-0 hidden lg:block">
               <div className=" hidden text-right lg:block">
-                <Link href="tel:+79271617858" className="flex flex-col">
-                  +7 927 161 785 8
+                <Link href="tel:+79372612618" className="flex flex-col">
+                  +7937 261 261 8
                 </Link>
                 <Link href="mailto:info@novyikoncept.com">
                   info@novyikoncept.com
@@ -109,14 +109,14 @@ const HeroP1 = () => {
                 <Link href="mailto:info@novyikoncept.com">
                   <Mail_Logo className="w-10 transition hover:scale-[1.05] lg:w-12" />
                 </Link>
-                <Link href="https://vk.com/newconcept_russia" target="_blank">
-                  <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+                <Link href="https://vk.com/newconcept_russia">
+                  <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-11" />
                 </Link>
-                <Link href="https://t.me/+79271617858" target="_blank">
-                  <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+                <Link href="https://t.me/+79271617858">
+                  <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-11" />
                 </Link>
-                <Link href="https://wa.me/+79271617858" target="_blank">
-                  <Whatsapp_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
+                <Link href="https://wa.me/+79372612618">
+                  <Whatsapp_Logo className="w-9 transition hover:scale-[1.05] lg:w-11" />
                 </Link>
               </div>
             </div>
@@ -131,3 +131,5 @@ const HeroP1 = () => {
 export default HeroP1;
 
 // Новый Концепт
+
+// talk about yandex business for maps,
