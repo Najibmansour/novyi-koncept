@@ -61,7 +61,7 @@ export default function Footer() {
         <Link href="https://vk.com/newconcept_russia">
           <Vk_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
-        <Link href="https://t.me/+79271617858">
+        <Link href="https://t.me/+79372612618">
           <Telegram_Logo className="w-9 transition hover:scale-[1.05] lg:w-12" />
         </Link>
         <Link href="https://wa.me/+79372612618">
