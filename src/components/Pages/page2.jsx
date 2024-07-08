@@ -23,10 +23,6 @@ const Page2 = () => {
           <PointsText className="" />
         </div>
       </div>
-      <ModalButton
-        text="Оставьте заявку"
-        className="btn-white btn rounded-full text-purple-900 shadow-3xl lg:text-2xl"
-      />
 
       <ModalForm />
     </section>

@@ -12,6 +12,7 @@ import Link from "next/link";
 import Mail_Logo from "../svgs/logo/Mail_Logo";
 import Telegram_Logo from "../svgs/logo/Telegram_Logo";
 import Whatsapp_Logo from "../svgs/logo/Whatsapp_Logo";
+import ModalButton from "../modal/modalButton";
 
 const HeroP1 = () => {
   const logoRef = useRef();
@@ -82,9 +83,9 @@ const HeroP1 = () => {
                 className="flex p-10 opacity-0 filter lg:p-10"
               />
             </div>
-            <div className="relative flex w-full flex-col items-center justify-center    text-white">
-              <div className="flex w-[95%] flex-col items-start space-y-4  tracking-wider lg:items-start">
-                <h2 className="targetText w-full px-4 text-3xl tracking-wider md:max-lg:text-sm lg:text-5xl ">
+            <div className="relative flex w-full flex-col items-center justify-start text-white">
+              <div className="flex w-[95%] flex-col items-start space-y-4 tracking-wider lg:items-start">
+                <h2 className="targetText w-full px-4 text-3xl tracking-wider md:max-lg:text-sm lg:text-6xl ">
                   Мы поможем вам пройти путь от идеи магазина до запуска и
                   первых продаж
                 </h2>
@@ -123,6 +124,10 @@ const HeroP1 = () => {
           </div>
         </div>
         <div className="absolute -z-50 h-full w-full blur-[2px] filter lg:bg-noise" />
+        <ModalButton
+          text="Оставьте заявку"
+          className="btn-white btn absolute bottom-36 rounded-full text-purple-900 shadow-3xl lg:text-2xl"
+        />
       </div>
     </section>
   );
