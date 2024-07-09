@@ -126,7 +126,7 @@ const HeroP1 = () => {
         <div className="absolute -z-50 h-full w-full blur-[2px] filter lg:bg-noise" />
         <ModalButton
           text="Оставьте заявку"
-          className="btn-white btn absolute bottom-36 rounded-full text-purple-900 shadow-3xl lg:text-2xl"
+          className="btn-white btn btn-sm absolute bottom-16 rounded-full text-purple-900 shadow-3xl lg:btn-md lg:bottom-36 lg:text-2xl"
         />
       </div>
     </section>
