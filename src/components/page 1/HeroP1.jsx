@@ -19,7 +19,7 @@ const HeroP1 = () => {
   if (typeof window !== "undefined") {
     const myText = new SplitType(".targetText", { types: "words" });
 
-    console.log(myText.words);
+    // console.log(myText.words);
 
     useGSAP(() => {
       let mm = gsap.matchMedia();
@@ -95,7 +95,7 @@ const HeroP1 = () => {
           <div className="absolute bottom-5 flex w-[100%] flex-col items-center justify-center space-y-1 text-lg text-white lg:w-[90%]">
             <div className=" flex animate-bounce flex-col items-center">
               <p className="text-sm lg:text-lg">Почему выбирают нас</p>
-              <DownArrow className="w-6 lg:w-7" />
+              <DownArrow className="w-4 lg:w-7" />
             </div>
             <div className="absolute bottom-0 right-0 hidden lg:block">
               <div className=" hidden text-right lg:block">
@@ -134,7 +134,3 @@ const HeroP1 = () => {
 };
 
 export default HeroP1;
-
-// Новый Концепт
-
-// talk about yandex business for maps,

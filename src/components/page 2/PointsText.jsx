@@ -33,7 +33,7 @@ const PointsText = (props) => {
   const points = useRef();
   useGSAP(() => {
     let boxes = gsap.utils.toArray(points.current.children);
-    console.log(boxes);
+    // console.log(boxes);
 
     gsap.fromTo(
       boxes,

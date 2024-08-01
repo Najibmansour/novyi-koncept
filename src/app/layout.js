@@ -1,5 +1,8 @@
 import { Toaster } from "sonner";
 import "./globals.scss";
+import Head from "next/head";
+import Image from "next/image";
+import Script from "next/script";
 
 export const metadata = {
   title: {
@@ -202,7 +205,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <Toaster position="top-center" richColors />
-      <body className=" ">{children}</body>
+      <body className=" ">
+        {children}
+
+        <div>
+          <img
+            src="https://mc.yandex.ru/watch/96946113"
+            style={{ position: "absolute", left: "-9999px" }}
+            alt=""
+          />
+        </div>
+      </body>
     </html>
   );
 }
