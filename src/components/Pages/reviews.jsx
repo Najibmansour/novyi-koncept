@@ -40,7 +40,7 @@ const Reviews = () => {
         {reviews.map((review, i) => (
           <article
             key={i}
-            className="rounded-3xl border-4 border-white bg-white bg-opacity-20 p-4 text-white transition-transform lg:hover:scale-[1.02]"
+            className="space-y-1.5 rounded-3xl border-4 border-white bg-white bg-opacity-20 p-4 text-white transition-transform lg:hover:scale-[1.02]"
           >
             <div className="relative flex flex-row">
               <Bullet className="absolute top-[5px] mr-4 w-2 lg:top-3 lg:w-2" />
@@ -49,7 +49,7 @@ const Reviews = () => {
                 {review.title}
               </h5>
             </div>
-            <blockquote className="italic leading-4 lg:text-lg lg:leading-normal">
+            <blockquote className="text-justify italic leading-4 lg:text-lg lg:leading-normal">
               {review.desc}
             </blockquote>
           </article>

@@ -33,19 +33,12 @@ export default function HomePage() {
       <div className="absolute -z-50 h-[100%] bg-gradient-to-r from-pink-700 to-fuchsia-700">
         <BackgroudGradient />
       </div>
-
       <HeroP1 />
-
       <Page2 />
-
       <Page3 />
-
       <Reviews />
-
       <Table />
-
       <CirclesPage />
-
       <footer className="">
         <Footer />
       </footer>

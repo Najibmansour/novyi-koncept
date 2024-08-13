@@ -111,7 +111,7 @@ const ModalForm = () => {
                       message: "Must have at max 30 characters",
                     },
                     pattern: { value: /^[^\d]+$/, message: "Not valid name" },
-                    required: "Name is required",
+                    required: "Требуется имя",
                   })}
                 />
               </div>
@@ -133,7 +133,7 @@ const ModalForm = () => {
                       value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
                       message: "Not a valid email",
                     },
-                    required: "Email is required",
+                    required: "Требуется электронная почта",
                   })}
                 />
               </div>
@@ -153,13 +153,13 @@ const ModalForm = () => {
                   {...register("from_phone", {
                     pattern: {
                       value: /^\d+$/,
-                      message: "Dont use symbols or spaces or letters",
+                      message: "Не используйте символы, пробелы или буквы",
                     },
                     maxLength: {
                       value: 15,
-                      message: "Not a valid phone number",
+                      message: "Недействительный номер телефона",
                     },
-                    required: "Phone number is required",
+                    required: "Требуется номер телефона",
                   })}
                 />
               </div>
@@ -176,13 +176,13 @@ const ModalForm = () => {
                 onChange={(e) => setDesc(e.target.value)}
                 id="comment"
                 rows="6"
-                className="text-md rounded-2xl border-4  bg-purple-100  px-3 py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50   lg:px-8 lg:py-4 lg:text-xl  "
+                className="text-md resize-none rounded-2xl border-4 bg-purple-100  px-3 py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50 lg:px-8 lg:py-4 lg:text-xl"
                 placeholder="Комментарии"
                 {...register("message", {
-                  required: "Please enter your Message",
+                  required: "Требуется сообщениеие",
                   maxLength: {
                     value: 400,
-                    message: "Cant be more than 400 characters long",
+                    message: "Не может быть длиннее 400 символов.",
                   },
                 })}
               />

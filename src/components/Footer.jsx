@@ -9,14 +9,14 @@ import ModalButton from "./modal/modalButton";
 
 export default function Footer() {
   return (
-    <footer className="flex h-auto flex-col items-center justify-center space-y-5 bg-transparent text-sm text-white  lg:mt-5 lg:text-xl">
+    <footer className="flex h-auto flex-col items-center justify-center space-y-5 bg-transparent text-sm !text-white  lg:mt-5 lg:text-xl">
       <div className="w-[90vw] space-y-3 text-left  lg:w-[75vw]">
         <h3 className="text-center text-4xl font-bold tracking-wider lg:mb-10 lg:text-5xl">
           ООО Новый Концепт
         </h3>
         {/* <br /> */}
 
-        <p className="logoFont text-gray-200  lg:text-xl">
+        <p className="logoFont   lg:text-xl">
           Добро пожаловать в мир непревзойдённого качества и доверия. Если вам
           необходимо запустить бизнес на маркетплейсах, обратитесь к нам. Мы
           готовы предоставить вам все необходимые знания, опыт и поддержку,
@@ -24,14 +24,14 @@ export default function Footer() {
           торговли.
         </p>
         <br />
-        <p className="logoFont text-gray-200  lg:text-xl">
+        <p className="logoFont   lg:text-xl">
           Доверьтесь компании «Новый Концепт» и вы обретете надежного партнера
           для развития вашего бизнеса на маркетплейсах. С нами вы погрузитесь в
           безопасную онлайн-среда, где ваше спокойствие стоит на первом месте.
         </p>
       </div>
 
-      <address className="mx-0 grid w-[92vw] grid-cols-[1fr_90%] items-center justify-center space-y-2 text-gray-200 lg:w-[80vw] lg:space-y-5 lg:text-2xl">
+      <address className="mx-0 grid w-[92vw] grid-cols-[1fr_90%] items-center justify-center space-y-2  lg:w-[80vw] lg:space-y-5 lg:text-2xl">
         <div className="flex items-center justify-center">
           <Phone_Icon className="w-6 lg:w-9" />
         </div>

@@ -31,7 +31,7 @@ const circles = [
 
 export default function Circles() {
   return (
-    <div className="flex justify-center">
+    <div className=" flex justify-center">
       <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-5 lg:gap-20 ">
         {circles.map((circle, i) => (
           <div key={i} className={circle.classNameAdd}>
@@ -50,9 +50,7 @@ export default function Circles() {
 function Circle({ IconComponent, text, classNameAdd }) {
   return (
     <div
-      className={
-        "flex w-min flex-col transition-transform hover:-translate-y-5 lg:col-span-1"
-      }
+      className={"my-6 flex w-min flex-col transition-transform lg:col-span-1"}
     >
       <div className="rounded-full border-4 border-white p-5 lg:p-8 ">
         <IconComponent />
