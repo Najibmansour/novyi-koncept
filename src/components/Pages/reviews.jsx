@@ -45,11 +45,11 @@ const Reviews = () => {
             <div className="relative flex flex-row">
               <Bullet className="absolute top-[5px] mr-4 w-2 lg:top-3 lg:w-2" />
 
-              <h5 className="pl-4 text-lg font-semibold  leading-5 tracking-wide lg:pl-5 lg:text-xl">
+              <h5 className="pl-4 text-lg font-semibold  leading-5 tracking-wide lg:pl-5 lg:text-2xl">
                 {review.title}
               </h5>
             </div>
-            <blockquote className="italic leading-4 lg:text-lg lg:leading-5">
+            <blockquote className="italic leading-4 lg:text-lg lg:leading-normal">
               {review.desc}
             </blockquote>
           </article>
