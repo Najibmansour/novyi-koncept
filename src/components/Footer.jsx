@@ -54,7 +54,7 @@ export default function Footer() {
         className="btn-white btn rounded-full text-pink-800 shadow-3xl lg:text-2xl"
       />
       <br className="hidden lg:block" />
-      <div className="flex items-center justify-center gap-x-4">
+      <div className="flex items-center justify-center gap-x-4 text-white">
         <Link href="mailto:info@novyikoncept.com">
           <Mail_Logo className="w-10 transition hover:scale-[1.05] lg:w-12" />
         </Link>
