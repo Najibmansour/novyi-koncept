@@ -1,12 +1,14 @@
 import React from "react";
 import Logo from "../svgs/logo/Logo";
 import { cn } from "@/lib/cn";
+import Link from "next/link";
 
 const NavbarP1 = (props) => {
   //Achieving success on marketplaces is EASY!
 
   return (
-    <div
+    <Link
+      href="/"
       className={cn(
         "flex flex-row  items-center justify-between rounded-xl border-2 border-white px-8 lg:h-[13%] lg:w-full lg:rounded-3xl",
         props.className,
@@ -23,7 +25,7 @@ const NavbarP1 = (props) => {
           Добиться успеха на маркетплейсах ЛЕГКО!
         </h1>
       </div>
-    </div>
+    </Link>
   );
 };
 
