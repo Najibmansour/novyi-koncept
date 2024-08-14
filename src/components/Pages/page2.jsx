@@ -4,9 +4,13 @@ import PictureLaptop from "../page 2/picture";
 import ModalForm from "../modal/modal";
 import ModalButton from "../modal/modalButton";
 
-const Page2 = () => {
+const Page2 = ({ passRef }) => {
   return (
-    <section className="flex h-auto w-screen flex-col items-center justify-center gap-6 lg:gap-14">
+    <section
+      className="flex h-auto w-screen flex-col items-center justify-center gap-6 lg:gap-14"
+      ref={passRef}
+      id="page_2"
+    >
       <div className="grid w-[80%] grid-cols-1 gap-10 gap-y-4 lg:ml-10 lg:grid-cols-2 lg:grid-rows-3">
         <div className=" flex flex-row items-end justify-center pb-5 lg:order-first lg:col-span-2">
           <p>

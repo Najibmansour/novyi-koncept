@@ -14,8 +14,9 @@ import Telegram_Logo from "../svgs/logo/Telegram_Logo";
 import Whatsapp_Logo from "../svgs/logo/Whatsapp_Logo";
 import ModalButton from "../modal/modalButton";
 
-const HeroP1 = () => {
+const HeroP1 = ({ passRef }) => {
   const logoRef = useRef();
+
   if (typeof window !== "undefined") {
     const myText = new SplitType(".targetText", { types: "words" });
 
@@ -93,9 +94,11 @@ const HeroP1 = () => {
             </div>
           </div>
           <div className="absolute bottom-5 flex w-[100%] flex-col items-center justify-center space-y-1 text-lg text-white lg:w-[90%]">
-            <div className=" flex animate-bounce flex-col items-center">
-              <p className="text-sm lg:text-lg">Почему выбирают нас</p>
-              <DownArrow className="w-4 lg:w-7" />
+            <div className=" animate-bounce ">
+              <Link href="/#page_2" className="flex flex-col items-center">
+                <p className="text-sm lg:text-lg">Почему выбирают нас</p>
+                <DownArrow className="w-4 lg:w-7" />
+              </Link>
             </div>
             <div className="absolute bottom-0 right-0 hidden lg:block">
               <div className=" hidden text-right lg:block">

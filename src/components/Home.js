@@ -11,30 +11,36 @@ import Reviews from "./Pages/reviews";
 import Table from "@/components/Pages/page5";
 import CirclesPage from "@/components/Pages/page4";
 import Page3 from "./Pages/page3";
+import { useRef } from "react";
 
 export const metadata = { title: "Achieving success on marketplaces is EASY!" };
 
 export default function HomePage() {
   gsap.registerPlugin(ScrollTrigger);
-  useGSAP(() => {
-    const lenis = new Lenis();
 
-    lenis.on("scroll", ScrollTrigger.update);
+  // lennis scroll does not work with smooth-scroll on html tag
 
-    gsap.ticker.add((time) => {
-      lenis.raf(time * 1000);
-    });
+  // useGSAP(() => {
+  //   const lenis = new Lenis();
 
-    gsap.ticker.lagSmoothing(0);
-  });
+  //   lenis.on("scroll", ScrollTrigger.update);
+
+  //   gsap.ticker.add((time) => {
+  //     lenis.raf(time * 1000);
+  //   });
+
+  //   gsap.ticker.lagSmoothing(0);
+  // });
+
+  const scrollP2Ref = useRef();
 
   return (
-    <main>
+    <main className="">
       <div className="absolute -z-50 h-[100%] bg-gradient-to-r from-pink-700 to-fuchsia-700">
         <BackgroudGradient />
       </div>
-      <HeroP1 />
-      <Page2 />
+      <HeroP1 passRef={scrollP2Ref} />
+      <Page2 passRef={scrollP2Ref} />
       <Page3 />
       <Reviews />
       <Table />
