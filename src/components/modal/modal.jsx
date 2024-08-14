@@ -79,7 +79,7 @@ const ModalForm = () => {
               Оставьте заявку
             </h2>
           </div>
-          <p className="visible w-[90%]  text-center text-xs lg:hidden lg:w-[30vw] lg:text-xl ">
+          <p className="visible w-[90%] text-center text-xs text-purple-100 lg:hidden lg:w-[30vw] lg:text-xl ">
             Я разрешаю обработку персональных данных и соглашаюсь c политикой
             конфедициальности
           </p>
