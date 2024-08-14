@@ -104,7 +104,7 @@ const ModalForm = () => {
                   type="text"
                   id="name"
                   className="text-md min-w-full rounded-2xl border-4 bg-purple-100 px-3  py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8   lg:py-4 lg:text-xl  "
-                  placeholder="Ваше имя"
+                  placeholder=""
                   {...register("from_name", {
                     maxLength: {
                       value: 30,
@@ -127,7 +127,7 @@ const ModalForm = () => {
                   onChange={(e) => setMail(e.target.value)}
                   id="mail"
                   className=" text-md min-w-full rounded-2xl border-4 bg-purple-100 px-3  py-2  text-purple-900  shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8 lg:py-4 lg:text-xl  "
-                  placeholder="Email"
+                  placeholder=""
                   {...register("from_email", {
                     pattern: {
                       value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
@@ -149,7 +149,7 @@ const ModalForm = () => {
                   type="text"
                   id="phone"
                   className=" text-md min-w-full rounded-2xl border-4  bg-purple-100  px-3  py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50     lg:px-8 lg:py-4 lg:text-xl  "
-                  placeholder="Телефон (+7)"
+                  placeholder=""
                   {...register("from_phone", {
                     pattern: {
                       value: /^\d+$/,
@@ -177,7 +177,7 @@ const ModalForm = () => {
                 id="comment"
                 rows="6"
                 className="text-md resize-none rounded-2xl border-4 bg-purple-100  px-3 py-2 text-purple-900 shadow-sm placeholder:text-purple-900 placeholder:text-opacity-50 lg:px-8 lg:py-4 lg:text-xl"
-                placeholder="Комментарии"
+                placeholder=""
                 {...register("message", {
                   required: "Требуется сообщениеие",
                   maxLength: {
