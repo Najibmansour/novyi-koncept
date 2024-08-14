@@ -3,6 +3,8 @@ import "./globals.scss";
 import Head from "next/head";
 import Image from "next/image";
 import Script from "next/script";
+import Footer from "@/components/Footer";
+import FooterNew from "@/components/Pages/footer";
 
 export const metadata = {
   title: {
@@ -207,7 +209,7 @@ export default function RootLayout({ children }) {
       <Toaster position="top-center" richColors />
       <body className=" ">
         {children}
-
+        {/* ma 7atet footer hon cz byenza3 other components */}
         <div>
           <img
             src="https://mc.yandex.ru/watch/96946113"
