@@ -17,6 +17,7 @@ import gsap from "gsap";
 
 const vecs = [
   {
+    service_id: "service_1",
     title: "Подбор товaрa для выходa нa мaркетплейcы",
     points: [
       `Выберем товар с помощью детальной аналитик – с расчетом затрат, цен, суммы на продвижение и конкуренции в данной нише`,
@@ -26,6 +27,7 @@ const vecs = [
     vec: Vector,
   },
   {
+    service_id: "service_2",
     title: "Рacчет юнит-экономики",
     points: [
       "Определим расходную часть при выводе товаров на маркетплейс",
@@ -37,6 +39,7 @@ const vecs = [
   },
 
   {
+    service_id: "service_3",
     title: "Запуск магазина с нуля",
     points: [
       "Поможем с выбором товара и регистрацией магазина на подходящем маркетплейсе: Wildberries, Ozon или Яндекс.Маркет",
@@ -51,6 +54,7 @@ const vecs = [
   },
 
   {
+    service_id: "service_4",
     title: "Cоздaние кaрточки товaрa",
     points: [
       "Наша команда создаст вам продающие карточки товаров:  тексты, изображения и видео с учетом их дальнейшего SEO - продвижения",
@@ -62,6 +66,7 @@ const vecs = [
     vec: Vector3,
   },
   {
+    service_id: "service_5",
     title: "Оформление поcтaвок",
     points: [
       "Управляем процессом оформления поставок, включая обработку заказов и контроль отправки товаров",
@@ -73,6 +78,7 @@ const vecs = [
     vec: Vector4,
   },
   {
+    service_id: "service_6",
     title: "SEO-продвижение и оптимизaция кaрточек товaров",
     points: [
       "Для начинающих селлеров поможем оптимизировать данные товаров с самого начала, что повысит вероятность привлечения клиентов и увеличит объем продаж",
@@ -86,6 +92,7 @@ const vecs = [
     vec: Vector5,
   },
   {
+    service_id: "service_7",
     title: "Аудит карточек товаров в уже существующем магазине",
     points: [
       "Проверим все карточки магазина, а также выдачу карточек по регионам",
@@ -104,6 +111,7 @@ const vecs = [
     vec: Vector6,
   },
   {
+    service_id: "service_8",
     title: " Настройка рекламных кампаний",
     points: [
       ,
@@ -123,6 +131,7 @@ const vecs = [
     vec: Vector7,
   },
   {
+    service_id: "service_9",
     title: "Рaботa c отзывaми",
     desc: "Разработаем шаблоны правильных ответов на отзывы и обеспечим их своевременную публикацию. А так же поможем вам с ответами на вопросы",
     title2: "Почему это важно",
@@ -136,6 +145,7 @@ const vecs = [
     vec: Vector8,
   },
   {
+    service_id: "service_10",
     title: "Полное сопровождение магазина",
     points: [
       "Полностью освободим вас от операционной работы в вашем магазине на маркетплейсе, а также увеличим продажи и выручку магазин",
@@ -144,18 +154,6 @@ const vecs = [
     dir: "left",
     vec: Vector9,
   },
-  // {
-  //   title: "Cоздaние личного кaбинетa нa мaркетплейcaх",
-  //   points: [
-  //     "Регистрация магазина  на выбранном маркетплейсе - Wildberries, Ozon  или Яндекс Маркет",
-  //     ,
-  //     "Загрузка товаров и документов на маркетплейс, заполнение характеристик и других обязательных полей",
-  //     ,
-  //     "Создание медиа контента ( фото, видео, дизайн карточек , инфографика) . Выделим преимущества товаров на фоне конкурентов",
-  //   ],
-  //   dir: "right",
-  //   vec: Vector2,
-  // },
 ];
 
 export default function Page3() {
@@ -175,7 +173,7 @@ export default function Page3() {
           reduceMotion: "(prefers-reduced-motion: reduce)",
         },
         (cont) => {
-          let { isDesktop, isMobile, reduceMotion } = cont.conditions;
+          let { isDesktop, isMobile } = cont.conditions;
           gsap.fromTo(
             box,
             {
@@ -209,8 +207,11 @@ export default function Page3() {
   });
 
   return (
-    <section className="flex flex-col items-center lg:gap-10 ">
-      <h2 className="fontLogo text-2xl text-white lg:text-5xl ">
+    <section id="Нашиуслуги" className="flex flex-col items-center lg:gap-10 ">
+      <h2
+        id="Нашиуслуги"
+        className="fontLogo text-2xl font-bold text-white lg:text-5xl"
+      >
         Наши услуги:{" "}
       </h2>
       <div className="flex w-screen flex-row justify-center lg:mb-10">

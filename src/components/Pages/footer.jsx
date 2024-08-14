@@ -1,6 +1,3 @@
-import InstagramIcon from "@/assets/svg_icons/instagram";
-import TelegramIcon from "@/assets/svg_icons/telegram";
-import WhatsappIcon from "@/assets/svg_icons/whatsapp";
 import Link from "next/link";
 import React from "react";
 import Mail_Logo from "../svgs/logo/Mail_Logo";
@@ -8,94 +5,120 @@ import Vk_Logo from "../svgs/logo/Vk_Logo";
 import Telegram_Logo from "../svgs/logo/Telegram_Logo";
 import Whatsapp_Logo from "../svgs/logo/Whatsapp_Logo";
 import ModalButton from "../modal/modalButton";
+import Phone_Icon from "../svgs/logo/Phone_Icon";
+import Location_Icon from "../svgs/logo/Location_Icon";
 
 const FooterNew = () => {
   return (
-    <footer class="mt-10 bg-pink-950 px-[0] py-[70px]">
-      <div class="m-auto max-w-[1170px] ">
-        <div class="flex flex-col gap-5 md:flex-row md:flex-wrap md:gap-0">
-          <div class="w-1/3 space-y-7 px-[15px] py-[0] [@media(max-width:767px)]:mb-[30px] [@media(max-width:767px)]:w-1/2">
+    <footer className="mt-10 bg-pink-950 px-[0] py-[70px] text-white">
+      <div className="m-auto md:max-w-[1170px] ">
+        <div className="flex flex-col gap-5 md:flex-row md:flex-wrap md:gap-0">
+          <div className="w-1/3 space-y-7 px-[15px] py-[0] [@media(max-width:767px)]:mb-[30px] [@media(max-width:767px)]:w-1/2">
             <h4 className="relative text-[20px] font-medium capitalize text-[#ffffff] before:absolute before:-bottom-[10px] before:left-[0] before:box-border before:h-[2px] before:w-[50px] before:bg-fuchsia-800 before:content-['']">
-              About Us
+              О нас
             </h4>
             <ul className="list-none  space-y-5 pl-0 ">
               <li>
-                <a
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#Нашмиccия"
                 >
-                  What is our company
-                </a>
+                  Наша миccия
+                </Link>
               </li>
-              <li>
-                <a
+              {/* <li>
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#Нашиуслугиstategy"
                 >
-                  What is the work strategy{" "}
-                </a>
-              </li>
+                  Стратегический подход
+                </Link>
+              </li> */}
               <li>
-                <a
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#Отзывыклиентов"
                 >
-                  Why Choose us
-                </a>
+                  Отзывы клиентов
+                </Link>
               </li>
             </ul>
           </div>
-          <div class="w-1/3 space-y-7 px-[15px] py-[0] [@media(max-width:767px)]:mb-[30px] [@media(max-width:767px)]:w-1/2">
+          <div className="w-1/3 space-y-4 px-[15px] py-[0] [@media(max-width:767px)]:mb-[30px] [@media(max-width:767px)]:w-1/2">
             <h4 className="relative text-[20px] font-medium capitalize text-[#ffffff] before:absolute before:-bottom-[10px] before:left-[0] before:box-border before:h-[2px] before:w-[50px] before:bg-fuchsia-800 before:content-['']">
-              Our Services
+              Информация:
             </h4>
-            <ul className="list-none  space-y-5 pl-0">
+            {/* <ul className="list-none  space-y-5 pl-0">
               <li>
-                <a
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#service_1"
                 >
-                  Sales Abroad
-                </a>
+                  Оформление поcтaвок
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#"
                 >
-                  Marketing
-                </a>
+                  SEO
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#"
                 >
-                  Advertising
-                </a>
+                  Аудит
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#"
                 >
-                  Analyse
-                </a>
+                  Pекламных
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
-                  href=""
+                  href="/#"
                 >
-                  Branding
-                </a>
+                  Рaботa c отзывaми
+                </Link>
               </li>
-            </ul>
+              <li>
+                <Link
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  href="/#"
+                >
+                  Полное сопровождение магазина
+                </Link>
+              </li>
+            </ul> */}
+
+            <Link
+              href="tel:+79372612618"
+              className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+            >
+              +7937 261 261 8
+            </Link>
+            {/* <span className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]">
+              410012, г. Саратов, ул. Слонова, д. 1, ДЦ «Парус»
+            </span> */}
+            <Link
+              href="mailto:info@novyikoncept.com"
+              className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+            >
+              info@novyikoncept.com
+            </Link>
           </div>
 
-          <div class="w-1/3 space-y-7 px-[15px] py-[0] [@media(max-width:767px)]:mb-[30px] [@media(max-width:767px)]:w-1/2">
-            <h4 className="relative text-[20px] font-medium capitalize text-[#ffffff] before:absolute before:-bottom-[10px] before:left-[0] before:box-border before:h-[2px] before:w-[50px] before:bg-fuchsia-800 before:content-['']">
-              follow us
+          <div className="w-1/3 space-y-7 px-[15px] py-[0] [@media(max-width:767px)]:mb-[30px] [@media(max-width:767px)]:w-1/2">
+            <h4 className="relative text-[20px]  font-medium capitalize text-[#ffffff] before:absolute before:-bottom-[10px] before:left-[0] before:box-border before:h-[2px] before:w-[50px] before:bg-fuchsia-800 before:content-['']">
+              Подписывайтесь на нас
             </h4>
             <div className="flex flex-row items-center gap-5">
               <Link href="mailto:info@novyikoncept.com">

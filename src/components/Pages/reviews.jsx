@@ -32,7 +32,10 @@ const reviews = [
 
 const Reviews = () => {
   return (
-    <section className="flex w-screen flex-col items-center justify-center">
+    <section
+      id="Отзывыклиентов"
+      className="flex w-screen flex-col items-center justify-center"
+    >
       <h3 className="text-2xl font-bold text-white lg:text-5xl">
         Отзывы клиентов
       </h3>
