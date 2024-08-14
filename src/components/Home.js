@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/components/Footer";
 import Page2 from "@/components/Pages/page2";
 import { useGSAP } from "@gsap/react";
 import Lenis from "@studio-freight/lenis";

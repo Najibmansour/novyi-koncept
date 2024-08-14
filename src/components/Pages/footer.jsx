@@ -21,7 +21,7 @@ const FooterNew = () => {
             <ul className="list-none  space-y-5 pl-0 ">
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   What is our company
@@ -29,7 +29,7 @@ const FooterNew = () => {
               </li>
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   What is the work strategy{" "}
@@ -37,7 +37,7 @@ const FooterNew = () => {
               </li>
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   Why Choose us
@@ -52,7 +52,7 @@ const FooterNew = () => {
             <ul className="list-none  space-y-5 pl-0">
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   Sales Abroad
@@ -60,7 +60,7 @@ const FooterNew = () => {
               </li>
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   Marketing
@@ -68,7 +68,7 @@ const FooterNew = () => {
               </li>
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   Advertising
@@ -76,7 +76,7 @@ const FooterNew = () => {
               </li>
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   Analyse
@@ -84,7 +84,7 @@ const FooterNew = () => {
               </li>
               <li>
                 <a
-                  className="block text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
+                  className="block pl-4 text-[18px] font-light capitalize text-[#ffffff] no-underline [transition:all_0.3s_ease] hover:pl-[8px] hover:text-[#ffffff]"
                   href=""
                 >
                   Branding
