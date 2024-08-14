@@ -13,7 +13,7 @@ const FooterNew = () => {
   return (
     <footer class="mt-10 bg-pink-950 px-[0] py-[70px]">
       <div class="m-auto max-w-[1170px] ">
-        <div class="flex flex-wrap">
+        <div class="flex flex-col gap-5 lg:flex-wrap lg:gap-0">
           <div class="w-1/3 space-y-7 px-[15px] py-[0] [@media(max-width:767px)]:mb-[30px] [@media(max-width:767px)]:w-1/2">
             <h4 className="relative text-[20px] font-medium capitalize text-[#ffffff] before:absolute before:-bottom-[10px] before:left-[0] before:box-border before:h-[2px] before:w-[50px] before:bg-fuchsia-800 before:content-['']">
               About Us
