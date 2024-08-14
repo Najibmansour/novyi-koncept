@@ -95,10 +95,16 @@ const HeroP1 = ({ passRef }) => {
           </div>
           <div className="absolute bottom-5 flex w-[100%] flex-col items-center justify-center space-y-1 text-lg text-white lg:w-[90%]">
             <div className=" animate-bounce ">
-              <Link href="/#page_2" className="flex flex-col items-center">
+              <button
+                href="/#page_2"
+                className="flex flex-col items-center"
+                onClick={() => {
+                  passRef.current.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 <p className="text-sm lg:text-lg">Почему выбирают нас</p>
                 <DownArrow className="w-4 lg:w-7" />
-              </Link>
+              </button>
             </div>
             <div className="absolute bottom-0 right-0 hidden lg:block">
               <div className=" hidden text-right lg:block">

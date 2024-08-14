@@ -203,7 +203,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ru" className="scroll-smooth">
+    <html lang="ru">
       <Toaster position="top-center" richColors />
       <body className=" ">
         {children}
