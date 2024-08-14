@@ -12,6 +12,7 @@ import CirclesPage from "@/components/Pages/page4";
 import Page3 from "./Pages/page3";
 import { useRef } from "react";
 import FooterNew from "./Pages/footer";
+import Footer from "./Footer";
 
 export const metadata = { title: "Achieving success on marketplaces is EASY!" };
 
@@ -45,7 +46,10 @@ export default function HomePage() {
       <Reviews />
       <Table />
       <CirclesPage />
-      <FooterNew></FooterNew>
+      {/* <FooterNew></FooterNew> */}
+      <footer>
+        <Footer></Footer>
+      </footer>
     </main>
   );
 }
